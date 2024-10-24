@@ -43,6 +43,7 @@ set_target_properties(steamapi PROPERTIES
 
 add_library(elden-x STATIC
   src/elden-x/utils/modutils.cpp
+  src/elden-x/utils/localization.cpp
   src/elden-x/params/params.cpp)
 
 set_target_properties(elden-x PROPERTIES LINKER_LANGUAGE CXX)

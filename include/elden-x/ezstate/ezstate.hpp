@@ -52,13 +52,8 @@ struct transition
     transitions sub_transitions;
     expression evaluator;
 
-    template <size_t evaluator_chars>
-    inline transition(state *target_state, const char (&evaluator_string)[evaluator_chars],
-                      events pass_events = {})
-        : target_state(target_state),
-          evaluator(reinterpret_cast<unsigned char *>(const_cast<char *>(evaluator_string)),
-                    evaluator_chars - 1),
-          pass_events(pass_events)
+    inline transition(state *target_state, expression evaluator)
+        : target_state(target_state), evaluator(evaluator)
     {
     }
 };
