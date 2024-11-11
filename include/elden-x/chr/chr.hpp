@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../stl.hpp"
+#include "player_game_data.hpp"
 
 namespace from
 {
@@ -80,12 +81,17 @@ class ChrIns
     CS::SpecialEffect *special_effects;
     unsigned char unk180[0x10];
     modules_type *modules;
+    unsigned char unk198[0x3d8];
 };
 
 class PlayerIns : public CS::ChrIns
 {
   public:
     virtual ~PlayerIns() = default;
+
+    unsigned char unk570[0x10];
+    CS::PlayerGameData *player_game_data;
+    unsigned char unk588[0x1b8];
 };
 
 }
