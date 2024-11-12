@@ -42,6 +42,7 @@ class ChrAsm
     unsigned char unk8[0x1c];
     gear_type<unsigned int> gear_gaitem_ids;
     gear_type<int> gear_ids;
+    unsigned char unkd4[0x10];
 };
 
 class EquipInventoryData
@@ -49,29 +50,29 @@ class EquipInventoryData
   public:
     virtual ~EquipInventoryData() = default;
 
-    unsigned char unk8[0xa0];
+    unsigned char unk8[0x120];
 };
 
 class EquipGameData
 {
   public:
-    unsigned char unk0[0x6c];
-    CS::ChrAsm chr_asm;
-    unsigned char unk148[0x18];
+    unsigned char unk0[0x158];
     CS::EquipInventoryData equip_inventory_data;
     CS::EquipMagicData *equip_magic_data;
     CS::EquipItemData *equip_item_data;
-    unsigned char unk218[0x218];
+    unsigned char unk290[0x21c];
 };
 
 class PlayerGameData
 {
   public:
-    unsigned char unk0[0x9c];
-    wchar_t *name;
-    unsigned char unka8[0x20c];
+    virtual ~PlayerGameData() = default;
+
+    unsigned char unk8[0x94];
+    wchar_t name[16];
+    unsigned char unkbc[0x1f4];
     CS::EquipGameData equip_game_data;
-    unsigned char unk6e8[0x360];
+    unsigned char unk6e0[0x408];
 };
 
 }
