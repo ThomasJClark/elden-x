@@ -10,6 +10,8 @@ namespace CS
 class CSMenuManImp
 {
   public:
+    static CSMenuManImp *instance();
+
     virtual ~CSMenuManImp() = default;
 
     unsigned char unk8[0x78];

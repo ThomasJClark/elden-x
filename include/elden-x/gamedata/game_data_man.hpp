@@ -37,6 +37,8 @@ class CSMenuSystemSaveLoad
 class GameDataMan
 {
   public:
+    static GameDataMan *instance();
+
     virtual ~GameDataMan() = default;
 
     CS::PlayerGameData *player_game_data;

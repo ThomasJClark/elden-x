@@ -10,6 +10,8 @@ namespace CS
 class WorldChrManImp
 {
   public:
+    static WorldChrManImp *instance();
+
     struct net_player_type
     {
         CS::PlayerIns *player;
