@@ -45,6 +45,7 @@ add_library(elden-x STATIC
   src/elden-x/chr/world_chr_man.cpp
   src/elden-x/gamedata/game_data_man.cpp
   src/elden-x/menu/menu_man.cpp
+  src/elden-x/messages.cpp
   src/elden-x/utils/modutils.cpp
   src/elden-x/utils/localization.cpp
   src/elden-x/params/params.cpp)

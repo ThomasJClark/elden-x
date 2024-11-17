@@ -6,7 +6,11 @@ namespace from
 namespace CS
 {
 
-class MsgRepositoryImp;
+class MsgRepositoryImp
+{
+  public:
+    static MsgRepositoryImp *instance();
+};
 
 }
 
