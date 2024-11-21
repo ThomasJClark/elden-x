@@ -1,7 +1,10 @@
 #pragma once
 
+#include "../paramdef/SP_EFFECT_PARAM_ST.hpp"
 #include "../stl.hpp"
 #include "player_game_data.hpp"
+
+#include <array>
 
 namespace from
 {
@@ -11,7 +14,48 @@ namespace CS
 
 class ChrIns;
 
-class SpecialEffect;
+struct SpecialEffectEntryAccumulatorInfo
+{
+    void *unk0;
+    int upper_trigger_count;
+    int effect_on_upper_or_higher;
+    int lower_trigger_count;
+    int effect_on_lower_or_below;
+    int unk18;
+    unsigned int unk1c;
+};
+
+class SpecialEffect
+{
+  public:
+    virtual ~SpecialEffect() = default;
+
+    struct sp_effect_entry;
+    struct sp_effect_entry
+    {
+        paramdef::SP_EFFECT_PARAM_ST *param;
+        unsigned int param_id;
+        unsigned int unkc;
+        CS::SpecialEffectEntryAccumulatorInfo accumulator_info;
+        sp_effect_entry *next;
+        sp_effect_entry *previous;
+        float duration;
+        float duration2;
+        float total_duration;
+        float interval_timer;
+        unsigned int unk50[0x28];
+    };
+
+    sp_effect_entry *head;
+    CS::ChrIns *owner;
+    void *unk18;
+    unsigned char unk20[0x118];
+};
+static_assert(0x8 == __builtin_offsetof(SpecialEffect, head));
+static_assert(0x10 == __builtin_offsetof(SpecialEffect, owner));
+static_assert(0x18 == __builtin_offsetof(SpecialEffect, unk18));
+static_assert(0x20 == __builtin_offsetof(SpecialEffect, unk20));
+static_assert(0x138 == sizeof(SpecialEffect));
 
 class CSChrModelParamModifierModule
 {
@@ -89,8 +133,27 @@ class CSChrModelParamModifierModule
     static_assert(0xd8 == sizeof(modifier));
 
     CS::ChrIns *owner;
-
     from::vector<modifier> modifiers;
+};
+
+class CSChrVfxModule
+{
+    virtual ~CSChrVfxModule() = default;
+
+  public:
+    struct vfx_entry
+    {
+        int material_ex_id;
+        int sp_effect_vfx_id;
+        int sp_effect_vfx_id2;
+    };
+
+    CS::ChrIns *owner;
+    std::array<vfx_entry, 4> vfx;
+    int unk40;
+    int unk44;
+    int unk48;
+    int unk4c;
 };
 
 class ChrIns
@@ -100,7 +163,9 @@ class ChrIns
 
     struct modules_type
     {
-        void *unk_modules[26];
+        void *unk0[23];
+        CS::CSChrVfxModule *vfx_module;
+        void *unkc0[2];
         CS::CSChrModelParamModifierModule *model_param_modifier_module;
     };
 
