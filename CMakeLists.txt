@@ -35,21 +35,14 @@ FetchContent_MakeAvailable(minhook pattern16 spdlog)
 add_library(pattern16 INTERFACE)
 target_include_directories(pattern16 INTERFACE ${pattern16_SOURCE_DIR}/include)
 
-add_library(steamapi STATIC IMPORTED GLOBAL)
-set_property(TARGET steamapi APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
-set_target_properties(steamapi PROPERTIES
-        IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG CXX
-        IMPORTED_LOCATION_DEBUG steam_api64.lib)
-
 add_library(elden-x STATIC
   src/elden-x/chr/world_chr_man.cpp
   src/elden-x/gamedata/game_data_man.cpp
   src/elden-x/menu/menu_man.cpp
   src/elden-x/messages.cpp
   src/elden-x/utils/modutils.cpp
-  src/elden-x/utils/localization.cpp
   src/elden-x/params/params.cpp)
 
 set_target_properties(elden-x PROPERTIES LINKER_LANGUAGE CXX)
 target_include_directories(elden-x PUBLIC include)
-target_link_libraries(elden-x minhook pattern16 spdlog ${PROJECT_SOURCE_DIR}/steam_api64.lib)
+target_link_libraries(elden-x minhook pattern16 spdlog)
