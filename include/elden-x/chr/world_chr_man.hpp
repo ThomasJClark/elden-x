@@ -1,6 +1,6 @@
 #pragma once
 
-#include "chr.hpp"
+#include "player.hpp"
 
 namespace from
 {

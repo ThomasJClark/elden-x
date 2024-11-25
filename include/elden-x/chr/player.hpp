@@ -1,7 +1,10 @@
 #pragma once
 
+#include "chr.hpp"
+
 namespace from
 {
+
 namespace CS
 {
 
@@ -126,6 +129,46 @@ static_assert(0x9c == __builtin_offsetof(PlayerGameData, name));
 static_assert(0x2b0 == __builtin_offsetof(PlayerGameData, equip_game_data));
 static_assert(0x760 == __builtin_offsetof(PlayerGameData, unk760));
 static_assert(0xb68 == sizeof(PlayerGameData));
+
+class PlayerNetworkSession
+{
+  public:
+    virtual ~PlayerNetworkSession() = default;
+
+    unsigned long long steam_id;
+};
+
+class PlayerSessionHolder
+{
+  public:
+    virtual ~PlayerSessionHolder() = default;
+
+    void *unk8;
+    CS::PlayerNetworkSession *network_session;
+    CS::PlayerNetworkSession *network_session2;
+    int unk20;
+};
+static_assert(0x8 == __builtin_offsetof(PlayerSessionHolder, unk8));
+static_assert(0x10 == __builtin_offsetof(PlayerSessionHolder, network_session));
+static_assert(0x18 == __builtin_offsetof(PlayerSessionHolder, network_session2));
+static_assert(0x20 == __builtin_offsetof(PlayerSessionHolder, unk20));
+static_assert(0x28 == sizeof(PlayerSessionHolder));
+
+class PlayerIns : public CS::ChrIns
+{
+  public:
+    virtual ~PlayerIns() = default;
+
+    CS::PlayerGameData *game_data;
+    unsigned char unk588[0x10];
+    CS::PlayerSessionHolder session_holder;
+    unsigned char unk5c0[0x180];
+};
+static_assert(0x580 == __builtin_offsetof(PlayerIns, game_data));
+static_assert(0x588 == __builtin_offsetof(PlayerIns, unk588));
+static_assert(0x598 == __builtin_offsetof(PlayerIns, session_holder));
+static_assert(0x5c0 == __builtin_offsetof(PlayerIns, unk5c0));
+static_assert(0x740 == sizeof(PlayerIns));
 
 }
 }
