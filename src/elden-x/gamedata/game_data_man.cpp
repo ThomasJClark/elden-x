@@ -21,7 +21,7 @@ from::CS::GameDataMan *from::CS::GameDataMan::instance()
 
         if (!address)
         {
-            spdlog::error("Unable to find GameDataMan. Incompatible game version?");
+            SPDLOG_ERROR("Unable to find GameDataMan. Incompatible game version?");
             return nullptr;
         }
     }

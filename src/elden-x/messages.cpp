@@ -16,7 +16,7 @@ from::CS::MsgRepositoryImp *from::CS::MsgRepositoryImp::instance()
 
         if (!address)
         {
-            spdlog::error("Unable to find MsgRepositoryImp. Incompatible game version?");
+            SPDLOG_ERROR("Unable to find MsgRepositoryImp. Incompatible game version?");
             return nullptr;
         }
     }

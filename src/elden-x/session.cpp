@@ -19,7 +19,7 @@ from::CS::CSSessionManagerImp *from::CS::CSSessionManagerImp::instance()
 
         if (!address)
         {
-            spdlog::error("Unable to find CSSessionManagerImp. Incompatible game version?");
+            SPDLOG_ERROR("Unable to find CSSessionManagerImp. Incompatible game version?");
             return nullptr;
         }
     }

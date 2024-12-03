@@ -18,7 +18,7 @@ from::CS::CSMenuManImp *from::CS::CSMenuManImp::instance()
 
         if (!address)
         {
-            spdlog::error("Unable to find CSMenuManImp. Incompatible game version?");
+            SPDLOG_ERROR("Unable to find CSMenuManImp. Incompatible game version?");
             return nullptr;
         }
     }

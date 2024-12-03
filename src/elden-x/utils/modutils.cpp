@@ -37,14 +37,14 @@ void modutils::initialize()
 
     wchar_t exe_filename[MAX_PATH] = {0};
     GetModuleFileNameW(module_handle, exe_filename, MAX_PATH);
-    spdlog::info("Found handle for eldenring.exe process: {}", convert.to_bytes(exe_filename));
+    SPDLOG_INFO("Found handle for eldenring.exe process: {}", convert.to_bytes(exe_filename));
 
     auto exe_directory = filesystem::path(exe_filename).parent_path();
     for (auto i = 0; i < size(sus_filenames); i++)
     {
         if (filesystem::exists(exe_directory / sus_filenames[i]))
         {
-            spdlog::error("Game may be modified, compatibility is unlikely [{}]", i);
+            SPDLOG_ERROR("Game may be modified, compatibility is unlikely [{}]", i);
         }
     }
 

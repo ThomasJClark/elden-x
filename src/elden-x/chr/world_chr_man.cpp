@@ -19,7 +19,7 @@ from::CS::WorldChrManImp *from::CS::WorldChrManImp::instance()
 
         if (!address)
         {
-            spdlog::error("Unable to find WorldChrMan. Incompatible game version?");
+            SPDLOG_ERROR("Unable to find WorldChrMan. Incompatible game version?");
             return nullptr;
         }
     }
