@@ -69,6 +69,7 @@ constexpr ezstate::command open_dupe_shop{.bank = 1, .id = 146};
 constexpr ezstate::command set_event_flag_value{.bank = 1, .id = 147};
 constexpr ezstate::command open_champions_equipment_sho{.bank = 1, .id = 148};
 constexpr ezstate::command add_talk_list_data_if{.bank = 5, .id = 19};
+constexpr ezstate::command add_talk_list_data_alt{.bank = 5, .id = 149};
 
 }
 }
