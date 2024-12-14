@@ -1,3 +1,5 @@
+#include "../chr/player.hpp"
+
 #include <array>
 
 namespace from
@@ -13,16 +15,6 @@ size_t sort_index_all_items = 12;
 
 namespace CS
 {
-
-class PlayerGameData
-{
-  public:
-    virtual ~PlayerGameData() = default;
-
-    unsigned char unk8[0xda];
-
-    unsigned char max_reinforce_level;
-};
 
 class CSMenuSystemSaveLoad
 {

@@ -117,15 +117,25 @@ class PlayerGameData
   public:
     virtual ~PlayerGameData() = default;
 
+    std::wstring_view name()
+    {
+        return std::wstring_view{&name_c_str[0]};
+    }
+
     unsigned char unk8[0x94];
-    wchar_t name[16];
-    unsigned char unkbc[0x1f4];
+    wchar_t name_c_str[16];
+    unsigned char unkbc[0x26];
+    unsigned char max_reinforce_level;
+    unsigned char unke3[0x1cd];
     CS::EquipGameData equip_game_data;
     unsigned char unk760[0x408];
 };
 
 static_assert(0x8 == __builtin_offsetof(PlayerGameData, unk8));
-static_assert(0x9c == __builtin_offsetof(PlayerGameData, name));
+static_assert(0x9c == __builtin_offsetof(PlayerGameData, name_c_str));
+static_assert(0xbc == __builtin_offsetof(PlayerGameData, unkbc));
+static_assert(0xe2 == __builtin_offsetof(PlayerGameData, max_reinforce_level));
+static_assert(0xe3 == __builtin_offsetof(PlayerGameData, unke3));
 static_assert(0x2b0 == __builtin_offsetof(PlayerGameData, equip_game_data));
 static_assert(0x760 == __builtin_offsetof(PlayerGameData, unk760));
 static_assert(0xb68 == sizeof(PlayerGameData));
