@@ -11,33 +11,42 @@ void initialize();
 void enable_hooks();
 void deinitialize();
 
-struct ScanArgs
+struct scanopts
 {
-    const std::string aob;
-    void *address = nullptr;
-    const ptrdiff_t offset = 0;
-    const std::vector<std::pair<ptrdiff_t, ptrdiff_t>> relative_offsets = {};
+    typedef std::vector<std::pair<ptrdiff_t, ptrdiff_t>> relative_offsets_type;
+
+    std::string aob;
+    void *address;
+    ptrdiff_t offset = 0;
+    relative_offsets_type relative_offsets = {};
 };
 
-void *scan(const ScanArgs &args);
-
-void hook(void *function, void *detour, void **trampoline);
-
-template <typename ReturnType> inline ReturnType *scan(const ScanArgs &args)
+namespace impl
 {
-    return reinterpret_cast<ReturnType *>(scan(args));
+void *scan(const scanopts &opts);
+void hook(void *function, void *detour, void **trampoline);
+void *get_singleton_address(const std::string &singleton_name);
 }
 
-template <typename FunctionType>
-inline FunctionType *hook(const ScanArgs &args, FunctionType &detour, FunctionType *&trampoline)
+template <typename T> inline T *get_singleton(const std::string &singleton_name)
 {
-    auto function = scan<FunctionType>(args);
+    return reinterpret_cast<T *>(impl::get_singleton_address(singleton_name));
+}
+
+template <typename T> inline T *scan(const scanopts &opts)
+{
+    return reinterpret_cast<T *>(impl::scan(opts));
+}
+
+template <typename F> inline F *hook(const scanopts &opts, F &detour, F *&trampoline)
+{
+    auto function = scan<F>(opts);
     if (function == nullptr)
     {
         throw std::runtime_error("Failed to find original function address");
     }
-    hook(reinterpret_cast<void *>(function), reinterpret_cast<void *>(&detour),
-         reinterpret_cast<void **>(&trampoline));
+    impl::hook(reinterpret_cast<void *>(function), reinterpret_cast<void *>(&detour),
+               reinterpret_cast<void **>(&trampoline));
     return function;
 }
 

@@ -2,6 +2,8 @@
 
 #include <span>
 
+#include "./utils/modutils.hpp"
+
 namespace from
 {
 namespace CS
@@ -10,7 +12,10 @@ namespace CS
 class CSSessionManagerImp
 {
   public:
-    static CSSessionManagerImp *instance();
+    static CSSessionManagerImp *instance()
+    {
+        return modutils::get_singleton<CSSessionManagerImp>("CSSessionManager");
+    }
 
     struct player_entry
     {

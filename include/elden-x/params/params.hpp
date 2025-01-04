@@ -2,6 +2,8 @@
 
 #include "param_file.hpp"
 
+#include "../utils/modutils.hpp"
+
 namespace from
 {
 
@@ -41,9 +43,13 @@ class SoloParamRepository : public FD4::FD4ResCap
 {
   public:
     static bool are_params_ready();
+
     static void wait_for_params();
 
-    static SoloParamRepository *instance();
+    static SoloParamRepository *instance()
+    {
+        return modutils::get_singleton<SoloParamRepository>("SoloParamRepository");
+    }
 
     virtual ~SoloParamRepository() = default;
 

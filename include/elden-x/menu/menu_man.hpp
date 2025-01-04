@@ -2,6 +2,8 @@
 
 #include "popup_menu.hpp"
 
+#include "../utils/modutils.hpp"
+
 namespace from
 {
 namespace CS
@@ -10,7 +12,10 @@ namespace CS
 class CSMenuManImp
 {
   public:
-    static CSMenuManImp *instance();
+    static CSMenuManImp *instance()
+    {
+        return modutils::get_singleton<from::CS::CSMenuManImp>("CSMenuMan");
+    }
 
     virtual ~CSMenuManImp() = default;
 

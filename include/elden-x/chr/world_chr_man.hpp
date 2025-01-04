@@ -2,6 +2,8 @@
 
 #include "player.hpp"
 
+#include "../utils/modutils.hpp"
+
 namespace from
 {
 namespace CS
@@ -10,7 +12,10 @@ namespace CS
 class WorldChrManImp
 {
   public:
-    static WorldChrManImp *instance();
+    static WorldChrManImp *instance()
+    {
+        return modutils::get_singleton<from::CS::WorldChrManImp>("WorldChrMan");
+    }
 
     struct net_player_type
     {

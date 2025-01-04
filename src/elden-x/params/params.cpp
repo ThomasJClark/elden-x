@@ -7,25 +7,6 @@
 
 static from::CS::SoloParamRepository **address = nullptr;
 
-from::CS::SoloParamRepository *from::CS::SoloParamRepository::instance()
-{
-    if (!address)
-    {
-        address = modutils::scan<from::CS::SoloParamRepository *>({
-            .aob = "48 8B 0D ?? ?? ?? ?? 48 85 C9 0F 84 ?? ?? ?? ?? 45 33 C0 BA 90",
-            .relative_offsets = {{3, 7}},
-        });
-
-        if (!address)
-        {
-            SPDLOG_ERROR("Unable to find SoloParamRepository. Incompatible game version?");
-            return nullptr;
-        }
-    }
-
-    return *address;
-}
-
 bool from::CS::SoloParamRepository::are_params_ready()
 {
     auto solo_param_repository = from::CS::SoloParamRepository::instance();
