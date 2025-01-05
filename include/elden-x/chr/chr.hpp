@@ -13,6 +13,14 @@ namespace CS
 
 class ChrIns;
 
+struct mapid_st
+{
+    unsigned char subregion;
+    unsigned char region;
+    unsigned char block;
+    unsigned char area;
+};
+
 struct SpecialEffectEntryAccumulatorInfo
 {
     void *unk0;
@@ -56,10 +64,56 @@ static_assert(0x18 == __builtin_offsetof(SpecialEffect, unk18));
 static_assert(0x20 == __builtin_offsetof(SpecialEffect, unk20));
 static_assert(0x138 == sizeof(SpecialEffect));
 
-class CSChrModelParamModifierModule
+class CSChrModuleBase
 {
-    virtual ~CSChrModelParamModifierModule() = default;
+  public:
+    virtual ~CSChrModuleBase() = default;
 
+    CS::ChrIns *owner;
+};
+
+class CSChrDataModule : public CSChrModuleBase
+{
+  public:
+    unsigned char unk10[0x128];
+    int hp;
+    int hp_max;
+    int hp_max_uncapped;
+    int hp_base;
+    int fp;
+    int fp_max;
+    int fp_base;
+    int stamina;
+    int stamina_max;
+    int stamina_base;
+    float recoverable_hp_left1;
+    float recoverable_hp_left2;
+    float recoverable_hp_time;
+    unsigned char unk16c[0xbc];
+    wchar_t *chr_name;
+    unsigned char unk230[0x50];
+};
+
+static_assert(0x138 == __builtin_offsetof(CSChrDataModule, hp));
+static_assert(0x13c == __builtin_offsetof(CSChrDataModule, hp_max));
+static_assert(0x140 == __builtin_offsetof(CSChrDataModule, hp_max_uncapped));
+static_assert(0x144 == __builtin_offsetof(CSChrDataModule, hp_base));
+static_assert(0x148 == __builtin_offsetof(CSChrDataModule, fp));
+static_assert(0x14c == __builtin_offsetof(CSChrDataModule, fp_max));
+static_assert(0x150 == __builtin_offsetof(CSChrDataModule, fp_base));
+static_assert(0x154 == __builtin_offsetof(CSChrDataModule, stamina));
+static_assert(0x158 == __builtin_offsetof(CSChrDataModule, stamina_max));
+static_assert(0x15c == __builtin_offsetof(CSChrDataModule, stamina_base));
+static_assert(0x160 == __builtin_offsetof(CSChrDataModule, recoverable_hp_left1));
+static_assert(0x164 == __builtin_offsetof(CSChrDataModule, recoverable_hp_left2));
+static_assert(0x168 == __builtin_offsetof(CSChrDataModule, recoverable_hp_time));
+static_assert(0x16c == __builtin_offsetof(CSChrDataModule, unk16c));
+static_assert(0x228 == __builtin_offsetof(CSChrDataModule, chr_name));
+static_assert(0x230 == __builtin_offsetof(CSChrDataModule, unk230));
+static_assert(0x280 == sizeof(CSChrDataModule));
+
+class CSChrModelParamModifierModule : public CSChrModuleBase
+{
   public:
     struct modifier_value
     {
@@ -131,14 +185,11 @@ class CSChrModelParamModifierModule
     static_assert(0xd4 == __builtin_offsetof(modifier, unkd4));
     static_assert(0xd8 == sizeof(modifier));
 
-    CS::ChrIns *owner;
     from::vector<modifier> modifiers;
 };
 
-class CSChrVfxModule
+class CSChrVfxModule : public CSChrModuleBase
 {
-    virtual ~CSChrVfxModule() = default;
-
   public:
     struct vfx_entry
     {
@@ -147,7 +198,6 @@ class CSChrVfxModule
         int sp_effect_vfx_id2;
     };
 
-    CS::ChrIns *owner;
     std::array<vfx_entry, 4> vfx;
     int unk40;
     int unk44;
@@ -160,20 +210,38 @@ class ChrIns
   public:
     virtual ~ChrIns() = default;
 
-    struct modules_type
+    struct modules_st
     {
-        void *unk0[23];
+        CS::CSChrDataModule *data_module;
+        void *unk8[22];
         CS::CSChrVfxModule *vfx_module;
         void *unkc0[2];
         CS::CSChrModelParamModifierModule *model_param_modifier_module;
     };
 
-    unsigned char unk8[0x170];
+    unsigned char unk8[0x28];
+    mapid_st current_map;
+    mapid_st previous_map;
+    mapid_st current_map2;
+    mapid_st previous_map2;
+    unsigned char unk40[0x138];
     CS::SpecialEffect *special_effects;
     unsigned char unk180[0x10];
-    modules_type *modules;
+    modules_st *modules;
     unsigned char unk198[0x3e8];
 };
+
+static_assert(0x8 == __builtin_offsetof(ChrIns, unk8));
+static_assert(0x30 == __builtin_offsetof(ChrIns, current_map));
+static_assert(0x34 == __builtin_offsetof(ChrIns, previous_map));
+static_assert(0x38 == __builtin_offsetof(ChrIns, current_map2));
+static_assert(0x3c == __builtin_offsetof(ChrIns, previous_map2));
+static_assert(0x40 == __builtin_offsetof(ChrIns, unk40));
+static_assert(0x178 == __builtin_offsetof(ChrIns, special_effects));
+static_assert(0x180 == __builtin_offsetof(ChrIns, unk180));
+static_assert(0x190 == __builtin_offsetof(ChrIns, modules));
+static_assert(0x198 == __builtin_offsetof(ChrIns, unk198));
+static_assert(0x580 == sizeof(ChrIns));
 
 }
 }

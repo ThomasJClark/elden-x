@@ -36,6 +36,7 @@ add_library(pattern16 INTERFACE)
 target_include_directories(pattern16 INTERFACE ${pattern16_SOURCE_DIR}/include)
 
 add_library(elden-x STATIC
+  src/elden-x/messages.cpp
   src/elden-x/gamedata/game_data_man.cpp
   src/elden-x/utils/modutils.cpp
   src/elden-x/params/params.cpp)

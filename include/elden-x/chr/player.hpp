@@ -115,6 +115,18 @@ static_assert(0x4b0 == sizeof(EquipGameData));
 class PlayerGameData
 {
   public:
+    struct attributes_st
+    {
+        int vigor;
+        int mind;
+        int endurance;
+        int strength;
+        int dexterity;
+        int intelligence;
+        int faith;
+        int arcane;
+    };
+
     virtual ~PlayerGameData() = default;
 
     std::wstring_view name()
@@ -122,7 +134,18 @@ class PlayerGameData
         return std::wstring_view{&name_c_str[0]};
     }
 
-    unsigned char unk8[0x94];
+    unsigned char unk8[0x8];
+    int hp;
+    int hp_max;
+    int fp;
+    int fp_max;
+    int stamina;
+    int stamina_max;
+    unsigned char unk28[0x14];
+    attributes_st attributes;
+    unsigned char unk5c[0xc];
+    int rune_level;
+    unsigned char unk6c[0x30];
     wchar_t name_c_str[16];
     unsigned char unkbc[0x26];
     unsigned char max_reinforce_level;
@@ -132,6 +155,17 @@ class PlayerGameData
 };
 
 static_assert(0x8 == __builtin_offsetof(PlayerGameData, unk8));
+static_assert(0x10 == __builtin_offsetof(PlayerGameData, hp));
+static_assert(0x14 == __builtin_offsetof(PlayerGameData, hp_max));
+static_assert(0x18 == __builtin_offsetof(PlayerGameData, fp));
+static_assert(0x1c == __builtin_offsetof(PlayerGameData, fp_max));
+static_assert(0x20 == __builtin_offsetof(PlayerGameData, stamina));
+static_assert(0x24 == __builtin_offsetof(PlayerGameData, stamina_max));
+static_assert(0x28 == __builtin_offsetof(PlayerGameData, unk28));
+static_assert(0x3c == __builtin_offsetof(PlayerGameData, attributes));
+static_assert(0x5c == __builtin_offsetof(PlayerGameData, unk5c));
+static_assert(0x68 == __builtin_offsetof(PlayerGameData, rune_level));
+static_assert(0x6c == __builtin_offsetof(PlayerGameData, unk6c));
 static_assert(0x9c == __builtin_offsetof(PlayerGameData, name_c_str));
 static_assert(0xbc == __builtin_offsetof(PlayerGameData, unkbc));
 static_assert(0xe2 == __builtin_offsetof(PlayerGameData, max_reinforce_level));
