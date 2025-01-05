@@ -1,5 +1,7 @@
 #pragma once
 
+#include <stdexcept>
+
 namespace from
 {
 namespace CS
@@ -14,9 +16,18 @@ template <typename T> class ChrSet
   public:
     unsigned char unk8[0x50];
 
-    virtual unsigned int capacity(){};
-    virtual T *at(unsigned int index){};
-    virtual T &operator[](unsigned int index){};
+    virtual unsigned int capacity()
+    {
+        return 0;
+    };
+    virtual T *at(unsigned int index)
+    {
+        return nullptr;
+    };
+    virtual T &operator[](unsigned int index)
+    {
+        return *at(index);
+    };
     virtual void unkfn3(){};
     virtual void unkfn4(){};
     virtual void unkfn5(){};
