@@ -11,7 +11,7 @@ enum class menu_sort : unsigned int
     item_type_ascending = 0x80005141
 };
 
-size_t sort_index_all_items = 12;
+static constexpr size_t sort_index_all_items = 12;
 
 namespace CS
 {
