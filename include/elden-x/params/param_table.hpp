@@ -21,7 +21,7 @@
 #include <type_traits>
 #include <utility>
 
-namespace from
+namespace er
 {
 namespace param
 {
@@ -83,7 +83,7 @@ template <typename ParamType> class param_table
      *
      * Example:
      * @code{.cpp} auto [row, row_exists] =
-     *     from::param::EquipParamAccessory[5020]; @endcode
+     *     er::param::EquipParamAccessory[5020]; @endcode
      *
      * @param row The row id.
      * @return std::pair<paramdef_type&, bool>
@@ -513,4 +513,4 @@ inline param_table<param_type<param_index::WeatherLotTexParam_m61, paramdef::WEA
 // clang-format on
 
 } // namespace param
-} // namespace from
+} // namespace er

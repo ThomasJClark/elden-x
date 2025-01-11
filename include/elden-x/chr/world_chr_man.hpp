@@ -5,7 +5,7 @@
 
 #include "../utils/modutils.hpp"
 
-namespace from
+namespace er
 {
 namespace CS
 {
@@ -15,7 +15,7 @@ class WorldChrManImp
   public:
     static WorldChrManImp *instance()
     {
-        return modutils::get_singleton<from::CS::WorldChrManImp>("WorldChrMan");
+        return modutils::get_singleton<er::CS::WorldChrManImp>("WorldChrMan");
     }
 
     virtual ~WorldChrManImp() = default;

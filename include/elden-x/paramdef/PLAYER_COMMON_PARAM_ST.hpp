@@ -1,20 +1,23 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace from {
-namespace paramdef {
+namespace er
+{
+namespace paramdef
+{
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct PLAYER_COMMON_PARAM_ST {
+struct PLAYER_COMMON_PARAM_ST
+{
     /**
      * @brief Player's automatic foot effect SFX identifier [3 digits]
      *
      * The identifier used for the SFX ID of the automatic foot effect. It
      * corresponds to ZZZ of XYYZZZ.
      */
-    int playerFootEffect_bySFX{ 0 };
+    int playerFootEffect_bySFX{0};
 
     /**
      * @brief Player hidden fade time during precision shooting
@@ -22,7 +25,7 @@ struct PLAYER_COMMON_PARAM_ST {
      * The fade time when hiding the player during precision shooting. The unit
      * is seconds
      */
-    float snipeModeDrawAlpha_FadeTime{ 0.f };
+    float snipeModeDrawAlpha_FadeTime{0.f};
 
     /**
      * @brief Player toughness recovery time correction value
@@ -30,17 +33,17 @@ struct PLAYER_COMMON_PARAM_ST {
      * A correction value used to calculate the player's toughness recovery
      * time.
      */
-    float toughnessRecoverCorrection{ 0.f };
+    float toughnessRecoverCorrection{0.f};
 
     /**
      * @brief Magic memory slot initial value
      */
-    unsigned char baseMagicSlotSize{ 0 };
+    unsigned char baseMagicSlotSize{0};
 
     /**
      * @brief Talisman equipment slot initial value
      */
-    unsigned char baseAccSlotNum{ 0 };
+    unsigned char baseAccSlotNum{0};
 
     unsigned char reserved02[2];
 
@@ -49,58 +52,58 @@ struct PLAYER_COMMON_PARAM_ST {
      *
      * Animation ID when picking up a drop item
      */
-    int animeID_DropItemPick{ 0 };
+    int animeID_DropItemPick{0};
 
     /**
      * @brief Player resistance value recovery amount_sleep [point / s]
      */
-    float resistRecoverPoint_Sleep_Player{ 0.f };
+    float resistRecoverPoint_Sleep_Player{0.f};
 
     /**
      * @brief Flare overwrite induction performance [deg / s]
      *
      * Flare overwrite guidance performance [deg / s] (-1: no overwrite)
      */
-    int flareOverrideHomingAngle{ -1 };
+    int flareOverrideHomingAngle{-1};
 
     /**
      * @brief Flare overwrite guidance stop distance [m]
      *
      * Flare overwrite guidance stop distance [m] (-1: no overwrite)
      */
-    float flareOverrideHomingStopRange{ -1.f };
+    float flareOverrideHomingStopRange{-1.f};
 
     /**
      * @brief Animation ID when acquiring Nemuri item
      */
-    int animeID_SleepCollectorItemPick{ 0 };
+    int animeID_SleepCollectorItemPick{0};
 
     /**
      * @brief Weapon attribute ban event flag base ID
      */
-    unsigned int unlockEventFlagBaseId_forWepAttr{ 0 };
+    unsigned int unlockEventFlagBaseId_forWepAttr{0};
 
     /**
      * @brief Special effect ID for activating large runes via the system
      *
      * Special effect Id to call when a large rune is activated from the system
      */
-    int systemEnchant_BigRune{ 0 };
+    int systemEnchant_BigRune{0};
 
     /**
      * @brief Insufficient status Basic attack power reduction
      */
-    float lowStatus_AtkPowDown{ 0.f };
+    float lowStatus_AtkPowDown{0.f};
 
     /**
      * @brief Insufficient status Stamina consumption ratio
      */
-    float lowStatus_ConsumeStaminaRate{ 0.f };
+    float lowStatus_ConsumeStaminaRate{0.f};
 
     /**
      * @brief Insufficient status Playing attack power
      */
-    short lowStatus_AtkGuardBreak{ 0 };
+    short lowStatus_AtkGuardBreak{0};
 
     /**
      * @brief Shield status correction Judgment status maximum value
@@ -108,7 +111,7 @@ struct PLAYER_COMMON_PARAM_ST {
      * Maximum status value to increase performance used when calculating the
      * status correction value of shield performance
      */
-    short guardStatusCorrect_MaxStatusVal{ 0 };
+    short guardStatusCorrect_MaxStatusVal{0};
 
     /**
      * @brief Weapon attribute ban event flag number of steps
@@ -118,39 +121,39 @@ struct PLAYER_COMMON_PARAM_ST {
      * base ID >> + Weapon attribute ID x << Weapon attribute ban event flag
      * number of steps >>
      */
-    unsigned short unlockEventFlagStepNum_forWepAttr{ 1 };
+    unsigned short unlockEventFlagStepNum_forWepAttr{1};
 
     /**
      * @brief Causal Retribution_Number of Damages Before Counterattack
      */
-    unsigned short retributionMagic_damageCountNum{ 0 };
+    unsigned short retributionMagic_damageCountNum{0};
 
     /**
      * @brief Causal response_Number of damages until counterattack Duration [s]
      */
-    unsigned short retributionMagic_damageCountRemainTime{ 0 };
+    unsigned short retributionMagic_damageCountRemainTime{0};
 
     /**
      * @brief Causal Retribution_Counterattack Magic Damipoli ID
      */
-    unsigned short retributionMagic_burstDmypolyId{ 0 };
+    unsigned short retributionMagic_burstDmypolyId{0};
 
     /**
      * @brief Causal Retribution_Counterattack Magic Param ID
      */
-    int retributionMagic_burstMagicParamId{ -1 };
+    int retributionMagic_burstMagicParamId{-1};
 
     /**
      * @brief Riding precision shooting camera offset height
      */
-    float chrAimCam_rideOffsetHeight{ 0.f };
+    float chrAimCam_rideOffsetHeight{0.f};
 
     unsigned char reserved23[4];
 
     /**
      * @brief Quiver adsorption Damipoly ID
      */
-    int arrowCaseWepBindDmypolyId{ 0 };
+    int arrowCaseWepBindDmypolyId{0};
 
     /**
      * @brief Bolt tube adsorption Damipoly ID
@@ -158,7 +161,7 @@ struct PLAYER_COMMON_PARAM_ST {
      * Bolt cylinder adsorption Damipoly ID (However, if the bolt cylinder is
      * used alone, the quiver Damipoly ID is used)
      */
-    int boltPouchWepBindDmypolyId{ 0 };
+    int boltPouchWepBindDmypolyId{0};
 
     /**
      * @brief Multi-time client bottle correction magnification
@@ -166,7 +169,7 @@ struct PLAYER_COMMON_PARAM_ST {
      * Multi-time client bottle correction magnification (0.5 specified to halve
      * the number of possessions)
      */
-    float estusFlaskAllocateRate{ 0.f };
+    float estusFlaskAllocateRate{0.f};
 
     unsigned char reserved38[2];
 
@@ -174,42 +177,42 @@ struct PLAYER_COMMON_PARAM_ST {
      * @brief Angle at which a kick can be taken when viewed from the front of
      * the player
      */
-    unsigned char kickAcceptanceDeg{ 0 };
+    unsigned char kickAcceptanceDeg{0};
 
     /**
      * @brief Analog Weight Ratio for NPC Players_Lightweight
      *
      * Analog weight ratio for NPC players [%]. lightweight.
      */
-    unsigned char npcPlayerAnalogWeightRate_Light{ 0 };
+    unsigned char npcPlayerAnalogWeightRate_Light{0};
 
     /**
      * @brief Analog Weight Ratio for NPC Players_Medium Weight
      *
      * Analog weight ratio for NPC players [%]. Medium weight.
      */
-    unsigned char npcPlayerAnalogWeightRate_Normal{ 0 };
+    unsigned char npcPlayerAnalogWeightRate_Normal{0};
 
     /**
      * @brief Analog Weight Ratio for NPC Players_Weight
      *
      * Analog weight ratio for NPC players [%]. weight.
      */
-    unsigned char npcPlayerAnalogWeightRate_Heavy{ 0 };
+    unsigned char npcPlayerAnalogWeightRate_Heavy{0};
 
     /**
      * @brief Analog Weight Ratio for NPC Players_Overweight
      *
      * Analog weight ratio for NPC players [%]. Overweight.
      */
-    unsigned char npcPlayerAnalogWeightRate_WeightOver{ 0 };
+    unsigned char npcPlayerAnalogWeightRate_WeightOver{0};
 
     /**
      * @brief Analog Weight Ratio for NPC Players_Ultra Lightweight
      *
      * Analog weight ratio for NPC players [%]. Super lightweight.
      */
-    unsigned char npcPlayerAnalogWeightRate_SuperLight{ 0 };
+    unsigned char npcPlayerAnalogWeightRate_SuperLight{0};
 
     unsigned char reserved45[4];
 
@@ -218,7 +221,7 @@ struct PLAYER_COMMON_PARAM_ST {
      *
      * Criteria ID for special effects applied for lap correction
      */
-    int clearCountCorrectBaseSpEffectId{ 0 };
+    int clearCountCorrectBaseSpEffectId{0};
 
     /**
      * @brief Arrow, bolt model Id offset
@@ -226,7 +229,7 @@ struct PLAYER_COMMON_PARAM_ST {
      * Offset added to the model ID when equipped in slot 1 when displaying the
      * arrow and bolt models. (Model Id + offset value)
      */
-    int arrowBoltModelIdOffset{ 0 };
+    int arrowBoltModelIdOffset{0};
 
     /**
      * @brief Threshold for the remaining number of model masks based on the
@@ -236,7 +239,7 @@ struct PLAYER_COMMON_PARAM_ST {
      * [%] of the threshold value when applying the display mask by the number.
      * (If it is more than this value, it is displayed in one step)
      */
-    signed char arrowBoltRemainingNumModelMaskThreshold1{ 0 };
+    signed char arrowBoltRemainingNumModelMaskThreshold1{0};
 
     /**
      * @brief Threshold for the remaining number of model masks based on the
@@ -246,119 +249,119 @@ struct PLAYER_COMMON_PARAM_ST {
      * display mask based on the number of arrows and bolt models. (If it is
      * more than this value, it is displayed in 2 steps)
      */
-    signed char arrowBoltRemainingNumModelMaskThreshold2{ 0 };
+    signed char arrowBoltRemainingNumModelMaskThreshold2{0};
 
     unsigned char reserved27[2];
 
     /**
      * @brief Player resistance recovery amount_poison [point / s]
      */
-    float resistRecoverPoint_Poision_Player{ 0.f };
+    float resistRecoverPoint_Poision_Player{0.f};
 
     /**
      * @brief Player resistance value recovery amount_plague [point / s]
      */
-    float resistRecoverPoint_Desease_Player{ 0.f };
+    float resistRecoverPoint_Desease_Player{0.f};
 
     /**
      * @brief Player resistance recovery amount_bleeding [point / s]
      */
-    float resistRecoverPoint_Blood_Player{ 0.f };
+    float resistRecoverPoint_Blood_Player{0.f};
 
     /**
      * @brief Player resistance recovery amount_curse [point / s]
      */
-    float resistRecoverPoint_Curse_Player{ 0.f };
+    float resistRecoverPoint_Curse_Player{0.f};
 
     /**
      * @brief Player resistance value recovery amount_cold air [point / s]
      */
-    float resistRecoverPoint_Freeze_Player{ 0.f };
+    float resistRecoverPoint_Freeze_Player{0.f};
 
     /**
      * @brief Enemy resistance recovery amount_poison [point / s]
      */
-    float resistRecoverPoint_Poision_Enemy{ 0.f };
+    float resistRecoverPoint_Poision_Enemy{0.f};
 
     /**
      * @brief Enemy resistance value recovery amount_plague [point / s]
      */
-    float resistRecoverPoint_Desease_Enemy{ 0.f };
+    float resistRecoverPoint_Desease_Enemy{0.f};
 
     /**
      * @brief Enemy resistance recovery amount_bleeding [point / s]
      */
-    float resistRecoverPoint_Blood_Enemy{ 0.f };
+    float resistRecoverPoint_Blood_Enemy{0.f};
 
     /**
      * @brief Enemy resistance recovery amount_curse [point / s]
      */
-    float resistRecoverPoint_Curse_Enemy{ 0.f };
+    float resistRecoverPoint_Curse_Enemy{0.f};
 
     /**
      * @brief Enemy resistance value recovery amount_cold air [point / s]
      */
-    float resistRecoverPoint_Freeze_Enemy{ 0.f };
+    float resistRecoverPoint_Freeze_Enemy{0.f};
 
     /**
      * @brief Left hand two-handed request button long press time [s]
      *
      * Button input time when holding both left hand
      */
-    float requestTimeLeftBothHand{ 0.f };
+    float requestTimeLeftBothHand{0.f};
 
     /**
      * @brief Player resistance value recovery amount_madness [point / s]
      */
-    float resistRecoverPoint_Madness_Player{ 0.f };
+    float resistRecoverPoint_Madness_Player{0.f};
 
     /**
      * @brief Material Item acquisition animation ID
      *
      * Animation ID when picking up a material item
      */
-    int animeID_MaterialItemPick{ 0 };
+    int animeID_MaterialItemPick{0};
 
     /**
      * @brief Yellow Cloth HP Est Bottle Correction Magnification
      */
-    float hpEstusFlaskAllocateRateForYellowMonk{ 0.f };
+    float hpEstusFlaskAllocateRateForYellowMonk{0.f};
 
     /**
      * @brief Yellow Cloth HP Est Bottle Offset
      */
-    int hpEstusFlaskAllocateOffsetForYellowMonk{ 0 };
+    int hpEstusFlaskAllocateOffsetForYellowMonk{0};
 
     /**
      * @brief Yellow Cloth MP Est Bottle Correction Magnification
      */
-    float mpEstusFlaskAllocateRateForYellowMonk{ 0.f };
+    float mpEstusFlaskAllocateRateForYellowMonk{0.f};
 
     /**
      * @brief Yellow Cloth MP Est Bottle Offset
      */
-    int mpEstusFlaskAllocateOffsetForYellowMonk{ 0 };
+    int mpEstusFlaskAllocateOffsetForYellowMonk{0};
 
     /**
      * @brief Enemy resistance value recovery amount_sleep [point / s]
      */
-    float resistRecoverPoint_Sleep_Enemy{ 0.f };
+    float resistRecoverPoint_Sleep_Enemy{0.f};
 
     /**
      * @brief Enemy resistance value recovery amount_madness [point / s]
      */
-    float resistRecoverPoint_Madness_Enemy{ 0.f };
+    float resistRecoverPoint_Madness_Enemy{0.f};
 
     /**
      * @brief Abnormal condition_immediate death_immediate death Item ID
      */
-    int resistCurseItemId{ -1 };
+    int resistCurseItemId{-1};
 
     /**
      * @brief Abnormal condition_immediate death_maximum number of instant death
      * items
      */
-    unsigned char resistCurseItemMaxNum{ 0 };
+    unsigned char resistCurseItemMaxNum{0};
 
     unsigned char reserved_123[3];
 
@@ -366,31 +369,31 @@ struct PLAYER_COMMON_PARAM_ST {
      * @brief Abnormal condition_Instant death_Instant death Item possession
      * Special effect base ID
      */
-    int resistCurseItemSpEffectBaseId{ -1 };
+    int resistCurseItemSpEffectBaseId{-1};
 
     /**
      * @brief Abnormal condition_immediate death_immediate death item lottery
      * ID_for map
      */
-    int resistCurseItemLotParamId_map{ -1 };
+    int resistCurseItemLotParamId_map{-1};
 
-    int unknown_0xcc{ 0 };
+    int unknown_0xcc{0};
 
-    int unknown_0xd0{ 0 };
+    int unknown_0xd0{0};
 
-    int unknown_0xd4{ 0 };
+    int unknown_0xd4{0};
 
-    int unknown_0xd8{ 0 };
+    int unknown_0xd8{0};
 
-    int unknown_0xdc{ 0 };
+    int unknown_0xdc{0};
 
-    int unknown_0xe0{ 0 };
+    int unknown_0xe0{0};
 
     unsigned char reserved41[28];
 };
 
 }; // namespace paramdef
-}; // namespace from
+}; // namespace er
 
-static_assert(sizeof(from::paramdef::PLAYER_COMMON_PARAM_ST) == 256,
-    "PLAYER_COMMON_PARAM_ST paramdef size does not match detected size");
+static_assert(sizeof(er::paramdef::PLAYER_COMMON_PARAM_ST) == 256,
+              "PLAYER_COMMON_PARAM_ST paramdef size does not match detected size");

@@ -5,7 +5,7 @@
 /**
  * Many of the known commands for ELDEN RING talkscripts, taken for the most part from ESDLang
  */
-namespace from
+namespace er
 {
 namespace talk_command
 {

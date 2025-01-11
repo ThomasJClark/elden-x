@@ -13,7 +13,7 @@
 #include <cstdint>
 #include <span>
 
-namespace from
+namespace er
 {
 namespace param
 {
@@ -208,4 +208,4 @@ struct param_file_wrapper
     }
 };
 } // namespace param
-} // namespace from
+} // namespace er

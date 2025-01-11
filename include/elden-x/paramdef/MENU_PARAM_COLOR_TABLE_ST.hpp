@@ -1,17 +1,20 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace from {
-namespace paramdef {
+namespace er
+{
+namespace paramdef
+{
 /**
  * @brief This struct was automatically generated from XML paramdefs.
- * 
+ *
  */
-struct MENU_PARAM_COLOR_TABLE_ST {
+struct MENU_PARAM_COLOR_TABLE_ST
+{
     /**
      * @brief Interpolation method
      */
-    unsigned char lerpMode{ 0 };
+    unsigned char lerpMode{0};
 
     unsigned char pad1[3];
 
@@ -20,7 +23,7 @@ struct MENU_PARAM_COLOR_TABLE_ST {
      *
      * Hue. Treat as a fixed value in interpolation
      */
-    unsigned short h{ 0 };
+    unsigned short h{0};
 
     unsigned char pad2[2];
 
@@ -29,46 +32,46 @@ struct MENU_PARAM_COLOR_TABLE_ST {
      *
      * Saturation 1. Treated as the first point of interpolation
      */
-    float s1{ 1.f };
+    float s1{1.f};
 
     /**
      * @brief brightness
      *
      * Brightness 1. Treated as the first point of interpolation
      */
-    float v1{ 1.f };
+    float v1{1.f};
 
     /**
      * @brief saturation
      *
      * Saturation 2. Treated as the second point of interpolation
      */
-    float s2{ 1.f };
+    float s2{1.f};
 
     /**
      * @brief brightness
      *
      * Brightness 2. Treated as the second point of interpolation
      */
-    float v2{ 1.f };
+    float v2{1.f};
 
     /**
      * @brief saturation
      *
      * Saturation 3. Treated as the third point of interpolation
      */
-    float s3{ 1.f };
+    float s3{1.f};
 
     /**
      * @brief brightness
      *
      * Brightness 3. Treated as the third point of interpolation
      */
-    float v3{ 1.f };
+    float v3{1.f};
 };
 
 }; // namespace paramdef
-}; // namespace from
+}; // namespace er
 
-static_assert(sizeof(from::paramdef::MENU_PARAM_COLOR_TABLE_ST) == 32,
-    "MENU_PARAM_COLOR_TABLE_ST paramdef size does not match detected size");
+static_assert(sizeof(er::paramdef::MENU_PARAM_COLOR_TABLE_ST) == 32,
+              "MENU_PARAM_COLOR_TABLE_ST paramdef size does not match detected size");

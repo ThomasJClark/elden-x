@@ -4,7 +4,7 @@
 
 #include "./utils/modutils.hpp"
 
-namespace from
+namespace er
 {
 namespace CS
 {

@@ -1,27 +1,30 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace from {
-namespace paramdef {
+namespace er
+{
+namespace paramdef
+{
 /**
  * @brief This struct was automatically generated from XML paramdefs.
- * 
+ *
  */
-struct PERFORMANCE_CHECK_PARAM {
+struct PERFORMANCE_CHECK_PARAM
+{
     /**
      * @brief Report destination_Job type tag
      */
-    unsigned char workTag{ 0 };
+    unsigned char workTag{0};
 
     /**
      * @brief Report destination_category tag
      */
-    unsigned char categoryTag{ 0 };
+    unsigned char categoryTag{0};
 
     /**
      * @brief Comparison symbol
      */
-    unsigned char compareType{ 0 };
+    unsigned char compareType{0};
 
     /**
      * @brief Reservation 1
@@ -31,7 +34,7 @@ struct PERFORMANCE_CHECK_PARAM {
     /**
      * @brief Comparison value
      */
-    float compareValue{ 0.f };
+    float compareValue{0.f};
 
     /**
      * @brief Reservation 2
@@ -47,4 +50,4 @@ struct PERFORMANCE_CHECK_PARAM {
 };
 
 }; // namespace paramdef
-}; // namespace from
+}; // namespace er

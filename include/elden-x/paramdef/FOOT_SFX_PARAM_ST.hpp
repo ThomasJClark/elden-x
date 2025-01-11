@@ -1,13 +1,16 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace from {
-namespace paramdef {
+namespace er
+{
+namespace paramdef
+{
 /**
  * @brief This struct was automatically generated from XML paramdefs.
- * 
+ *
  */
-struct FOOT_SFX_PARAM_ST {
+struct FOOT_SFX_PARAM_ST
+{
     /**
      * @brief SFX identifier: 00
      *
@@ -16,7 +19,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_00{ 0 };
+    unsigned int sfxId_00{0};
 
     /**
      * @brief SFX identifier: 01
@@ -26,7 +29,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_01{ 0 };
+    unsigned int sfxId_01{0};
 
     /**
      * @brief SFX identifier: 02
@@ -36,7 +39,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_02{ 0 };
+    unsigned int sfxId_02{0};
 
     /**
      * @brief SFX identifier: 03
@@ -46,7 +49,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_03{ 0 };
+    unsigned int sfxId_03{0};
 
     /**
      * @brief SFX identifier: 04
@@ -56,7 +59,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_04{ 0 };
+    unsigned int sfxId_04{0};
 
     /**
      * @brief SFX identifier: 05
@@ -66,7 +69,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_05{ 0 };
+    unsigned int sfxId_05{0};
 
     /**
      * @brief SFX identifier: 06
@@ -76,7 +79,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_06{ 0 };
+    unsigned int sfxId_06{0};
 
     /**
      * @brief SFX identifier: 07
@@ -86,7 +89,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_07{ 0 };
+    unsigned int sfxId_07{0};
 
     /**
      * @brief SFX identifier: 08
@@ -96,7 +99,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_08{ 0 };
+    unsigned int sfxId_08{0};
 
     /**
      * @brief SFX identifier: 09
@@ -106,7 +109,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_09{ 0 };
+    unsigned int sfxId_09{0};
 
     /**
      * @brief SFX identifier: 10
@@ -116,7 +119,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_10{ 0 };
+    unsigned int sfxId_10{0};
 
     /**
      * @brief SFX identifier: 11
@@ -126,7 +129,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_11{ 0 };
+    unsigned int sfxId_11{0};
 
     /**
      * @brief SFX identifier: 12
@@ -136,7 +139,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_12{ 0 };
+    unsigned int sfxId_12{0};
 
     /**
      * @brief SFX identifier: 13
@@ -146,7 +149,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_13{ 0 };
+    unsigned int sfxId_13{0};
 
     /**
      * @brief SFX identifier: 14
@@ -156,7 +159,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_14{ 0 };
+    unsigned int sfxId_14{0};
 
     /**
      * @brief SFX identifier: 15
@@ -166,7 +169,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_15{ 0 };
+    unsigned int sfxId_15{0};
 
     /**
      * @brief SFX identifier: 16
@@ -176,7 +179,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_16{ 0 };
+    unsigned int sfxId_16{0};
 
     /**
      * @brief SFX identifier: 17
@@ -186,7 +189,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_17{ 0 };
+    unsigned int sfxId_17{0};
 
     /**
      * @brief SFX identifier: 18
@@ -196,7 +199,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_18{ 0 };
+    unsigned int sfxId_18{0};
 
     /**
      * @brief SFX identifier: 19
@@ -206,7 +209,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_19{ 0 };
+    unsigned int sfxId_19{0};
 
     /**
      * @brief SFX identifier: 20
@@ -216,7 +219,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_20{ 0 };
+    unsigned int sfxId_20{0};
 
     /**
      * @brief SFX identifier: 21
@@ -226,7 +229,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_21{ 0 };
+    unsigned int sfxId_21{0};
 
     /**
      * @brief SFX identifier: 22
@@ -236,7 +239,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_22{ 0 };
+    unsigned int sfxId_22{0};
 
     /**
      * @brief SFX identifier: 23
@@ -246,7 +249,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_23{ 0 };
+    unsigned int sfxId_23{0};
 
     /**
      * @brief SFX identifier: 24
@@ -256,7 +259,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_24{ 0 };
+    unsigned int sfxId_24{0};
 
     /**
      * @brief SFX identifier: 25
@@ -266,7 +269,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_25{ 0 };
+    unsigned int sfxId_25{0};
 
     /**
      * @brief SFX identifier: 26
@@ -276,7 +279,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_26{ 0 };
+    unsigned int sfxId_26{0};
 
     /**
      * @brief SFX identifier: 27
@@ -286,7 +289,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_27{ 0 };
+    unsigned int sfxId_27{0};
 
     /**
      * @brief SFX identifier: 28
@@ -296,7 +299,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_28{ 0 };
+    unsigned int sfxId_28{0};
 
     /**
      * @brief SFX identifier: 29
@@ -306,7 +309,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_29{ 0 };
+    unsigned int sfxId_29{0};
 
     /**
      * @brief SFX identifier: 30
@@ -316,7 +319,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_30{ 0 };
+    unsigned int sfxId_30{0};
 
     /**
      * @brief SFX identifier: 31
@@ -326,7 +329,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_31{ 0 };
+    unsigned int sfxId_31{0};
 
     /**
      * @brief SFX identifier: 32
@@ -336,7 +339,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_32{ 0 };
+    unsigned int sfxId_32{0};
 
     /**
      * @brief SFX identifier: 33
@@ -346,7 +349,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_33{ 0 };
+    unsigned int sfxId_33{0};
 
     /**
      * @brief SFX identifier: 34
@@ -356,7 +359,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_34{ 0 };
+    unsigned int sfxId_34{0};
 
     /**
      * @brief SFX identifier: 35
@@ -366,7 +369,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_35{ 0 };
+    unsigned int sfxId_35{0};
 
     /**
      * @brief SFX identifier: 36
@@ -376,7 +379,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_36{ 0 };
+    unsigned int sfxId_36{0};
 
     /**
      * @brief SFX identifier: 37
@@ -386,7 +389,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_37{ 0 };
+    unsigned int sfxId_37{0};
 
     /**
      * @brief SFX identifier: 38
@@ -396,7 +399,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_38{ 0 };
+    unsigned int sfxId_38{0};
 
     /**
      * @brief SFX identifier: 39
@@ -406,7 +409,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_39{ 0 };
+    unsigned int sfxId_39{0};
 
     /**
      * @brief SFX identifier: 40
@@ -416,7 +419,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_40{ 0 };
+    unsigned int sfxId_40{0};
 
     /**
      * @brief SFX identifier: 41
@@ -426,7 +429,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_41{ 0 };
+    unsigned int sfxId_41{0};
 
     /**
      * @brief SFX identifier: 42
@@ -436,7 +439,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_42{ 0 };
+    unsigned int sfxId_42{0};
 
     /**
      * @brief SFX identifier: 43
@@ -446,7 +449,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_43{ 0 };
+    unsigned int sfxId_43{0};
 
     /**
      * @brief SFX identifier: 44
@@ -456,7 +459,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_44{ 0 };
+    unsigned int sfxId_44{0};
 
     /**
      * @brief SFX identifier: 45
@@ -466,7 +469,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_45{ 0 };
+    unsigned int sfxId_45{0};
 
     /**
      * @brief SFX identifier: 46
@@ -476,7 +479,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_46{ 0 };
+    unsigned int sfxId_46{0};
 
     /**
      * @brief SFX identifier: 47
@@ -486,7 +489,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_47{ 0 };
+    unsigned int sfxId_47{0};
 
     /**
      * @brief SFX identifier: 48
@@ -496,7 +499,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_48{ 0 };
+    unsigned int sfxId_48{0};
 
     /**
      * @brief SFX identifier: 49
@@ -506,7 +509,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_49{ 0 };
+    unsigned int sfxId_49{0};
 
     /**
      * @brief SFX identifier: 50
@@ -516,7 +519,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_50{ 0 };
+    unsigned int sfxId_50{0};
 
     /**
      * @brief SFX identifier: 51
@@ -526,7 +529,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_51{ 0 };
+    unsigned int sfxId_51{0};
 
     /**
      * @brief SFX identifier: 52
@@ -536,7 +539,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_52{ 0 };
+    unsigned int sfxId_52{0};
 
     /**
      * @brief SFX identifier: 53
@@ -546,7 +549,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_53{ 0 };
+    unsigned int sfxId_53{0};
 
     /**
      * @brief SFX identifier: 54
@@ -556,7 +559,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_54{ 0 };
+    unsigned int sfxId_54{0};
 
     /**
      * @brief SFX identifier: 55
@@ -566,7 +569,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_55{ 0 };
+    unsigned int sfxId_55{0};
 
     /**
      * @brief SFX identifier: 56
@@ -576,7 +579,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_56{ 0 };
+    unsigned int sfxId_56{0};
 
     /**
      * @brief SFX identifier: 57
@@ -586,7 +589,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_57{ 0 };
+    unsigned int sfxId_57{0};
 
     /**
      * @brief SFX identifier: 58
@@ -596,7 +599,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_58{ 0 };
+    unsigned int sfxId_58{0};
 
     /**
      * @brief SFX identifier: 59
@@ -606,7 +609,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_59{ 0 };
+    unsigned int sfxId_59{0};
 
     /**
      * @brief SFX identifier: 60
@@ -616,7 +619,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_60{ 0 };
+    unsigned int sfxId_60{0};
 
     /**
      * @brief SFX identifier: 61
@@ -626,7 +629,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_61{ 0 };
+    unsigned int sfxId_61{0};
 
     /**
      * @brief SFX identifier: 62
@@ -636,7 +639,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_62{ 0 };
+    unsigned int sfxId_62{0};
 
     /**
      * @brief SFX identifier: 63
@@ -646,7 +649,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_63{ 0 };
+    unsigned int sfxId_63{0};
 
     /**
      * @brief SFX identifier: 64
@@ -656,7 +659,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_64{ 0 };
+    unsigned int sfxId_64{0};
 
     /**
      * @brief SFX identifier: 65
@@ -666,7 +669,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_65{ 0 };
+    unsigned int sfxId_65{0};
 
     /**
      * @brief SFX identifier: 66
@@ -676,7 +679,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_66{ 0 };
+    unsigned int sfxId_66{0};
 
     /**
      * @brief SFX identifier: 67
@@ -686,7 +689,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_67{ 0 };
+    unsigned int sfxId_67{0};
 
     /**
      * @brief SFX identifier: 68
@@ -696,7 +699,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_68{ 0 };
+    unsigned int sfxId_68{0};
 
     /**
      * @brief SFX identifier: 69
@@ -706,7 +709,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_69{ 0 };
+    unsigned int sfxId_69{0};
 
     /**
      * @brief SFX identifier: 70
@@ -716,7 +719,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_70{ 0 };
+    unsigned int sfxId_70{0};
 
     /**
      * @brief SFX identifier: 71
@@ -726,7 +729,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_71{ 0 };
+    unsigned int sfxId_71{0};
 
     /**
      * @brief SFX identifier: 72
@@ -736,7 +739,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_72{ 0 };
+    unsigned int sfxId_72{0};
 
     /**
      * @brief SFX identifier: 73
@@ -746,7 +749,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_73{ 0 };
+    unsigned int sfxId_73{0};
 
     /**
      * @brief SFX identifier: 74
@@ -756,7 +759,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_74{ 0 };
+    unsigned int sfxId_74{0};
 
     /**
      * @brief SFX identifier: 75
@@ -766,7 +769,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_75{ 0 };
+    unsigned int sfxId_75{0};
 
     /**
      * @brief SFX identifier: 76
@@ -776,7 +779,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_76{ 0 };
+    unsigned int sfxId_76{0};
 
     /**
      * @brief SFX identifier: 77
@@ -786,7 +789,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_77{ 0 };
+    unsigned int sfxId_77{0};
 
     /**
      * @brief SFX identifier: 78
@@ -796,7 +799,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_78{ 0 };
+    unsigned int sfxId_78{0};
 
     /**
      * @brief SFX identifier: 79
@@ -806,7 +809,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_79{ 0 };
+    unsigned int sfxId_79{0};
 
     /**
      * @brief SFX identifier: 80
@@ -816,7 +819,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_80{ 0 };
+    unsigned int sfxId_80{0};
 
     /**
      * @brief SFX identifier: 81
@@ -826,7 +829,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_81{ 0 };
+    unsigned int sfxId_81{0};
 
     /**
      * @brief SFX identifier: 82
@@ -836,7 +839,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_82{ 0 };
+    unsigned int sfxId_82{0};
 
     /**
      * @brief SFX identifier: 83
@@ -846,7 +849,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_83{ 0 };
+    unsigned int sfxId_83{0};
 
     /**
      * @brief SFX identifier: 84
@@ -856,7 +859,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_84{ 0 };
+    unsigned int sfxId_84{0};
 
     /**
      * @brief SFX identifier: 85
@@ -866,7 +869,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_85{ 0 };
+    unsigned int sfxId_85{0};
 
     /**
      * @brief SFX identifier: 86
@@ -876,7 +879,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_86{ 0 };
+    unsigned int sfxId_86{0};
 
     /**
      * @brief SFX identifier: 87
@@ -886,7 +889,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_87{ 0 };
+    unsigned int sfxId_87{0};
 
     /**
      * @brief SFX identifier: 88
@@ -896,7 +899,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_88{ 0 };
+    unsigned int sfxId_88{0};
 
     /**
      * @brief SFX identifier: 89
@@ -906,7 +909,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_89{ 0 };
+    unsigned int sfxId_89{0};
 
     /**
      * @brief SFX identifier: 90
@@ -916,7 +919,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_90{ 0 };
+    unsigned int sfxId_90{0};
 
     /**
      * @brief SFX identifier: 91
@@ -926,7 +929,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_91{ 0 };
+    unsigned int sfxId_91{0};
 
     /**
      * @brief SFX identifier: 92
@@ -936,7 +939,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_92{ 0 };
+    unsigned int sfxId_92{0};
 
     /**
      * @brief SFX identifier: 93
@@ -946,7 +949,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_93{ 0 };
+    unsigned int sfxId_93{0};
 
     /**
      * @brief SFX identifier: 94
@@ -956,7 +959,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_94{ 0 };
+    unsigned int sfxId_94{0};
 
     /**
      * @brief SFX identifier: 95
@@ -966,7 +969,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_95{ 0 };
+    unsigned int sfxId_95{0};
 
     /**
      * @brief SFX identifier: 96
@@ -976,7 +979,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_96{ 0 };
+    unsigned int sfxId_96{0};
 
     /**
      * @brief SFX identifier: 97
@@ -986,7 +989,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_97{ 0 };
+    unsigned int sfxId_97{0};
 
     /**
      * @brief SFX identifier: 98
@@ -996,7 +999,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_98{ 0 };
+    unsigned int sfxId_98{0};
 
     /**
      * @brief SFX identifier: 99
@@ -1006,7 +1009,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_99{ 0 };
+    unsigned int sfxId_99{0};
 
     /**
      * @brief SFX identifier: 100
@@ -1016,7 +1019,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_100{ 0 };
+    unsigned int sfxId_100{0};
 
     /**
      * @brief SFX identifier: 101
@@ -1026,7 +1029,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_101{ 0 };
+    unsigned int sfxId_101{0};
 
     /**
      * @brief SFX identifier: 102
@@ -1036,7 +1039,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_102{ 0 };
+    unsigned int sfxId_102{0};
 
     /**
      * @brief SFX identifier: 103
@@ -1046,7 +1049,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_103{ 0 };
+    unsigned int sfxId_103{0};
 
     /**
      * @brief SFX identifier: 104
@@ -1056,7 +1059,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_104{ 0 };
+    unsigned int sfxId_104{0};
 
     /**
      * @brief SFX identifier: 105
@@ -1066,7 +1069,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_105{ 0 };
+    unsigned int sfxId_105{0};
 
     /**
      * @brief SFX identifier: 106
@@ -1076,7 +1079,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_106{ 0 };
+    unsigned int sfxId_106{0};
 
     /**
      * @brief SFX identifier: 107
@@ -1086,7 +1089,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_107{ 0 };
+    unsigned int sfxId_107{0};
 
     /**
      * @brief SFX identifier: 108
@@ -1096,7 +1099,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_108{ 0 };
+    unsigned int sfxId_108{0};
 
     /**
      * @brief SFX identifier: 109
@@ -1106,7 +1109,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_109{ 0 };
+    unsigned int sfxId_109{0};
 
     /**
      * @brief SFX identifier: 110
@@ -1116,7 +1119,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_110{ 0 };
+    unsigned int sfxId_110{0};
 
     /**
      * @brief SFX identifier: 111
@@ -1126,7 +1129,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_111{ 0 };
+    unsigned int sfxId_111{0};
 
     /**
      * @brief SFX identifier: 112
@@ -1136,7 +1139,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_112{ 0 };
+    unsigned int sfxId_112{0};
 
     /**
      * @brief SFX identifier: 113
@@ -1146,7 +1149,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_113{ 0 };
+    unsigned int sfxId_113{0};
 
     /**
      * @brief SFX identifier: 114
@@ -1156,7 +1159,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_114{ 0 };
+    unsigned int sfxId_114{0};
 
     /**
      * @brief SFX identifier: 115
@@ -1166,7 +1169,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_115{ 0 };
+    unsigned int sfxId_115{0};
 
     /**
      * @brief SFX identifier: 116
@@ -1176,7 +1179,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_116{ 0 };
+    unsigned int sfxId_116{0};
 
     /**
      * @brief SFX identifier: 117
@@ -1186,7 +1189,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_117{ 0 };
+    unsigned int sfxId_117{0};
 
     /**
      * @brief SFX identifier: 118
@@ -1196,7 +1199,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_118{ 0 };
+    unsigned int sfxId_118{0};
 
     /**
      * @brief SFX identifier: 119
@@ -1206,7 +1209,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_119{ 0 };
+    unsigned int sfxId_119{0};
 
     /**
      * @brief SFX identifier: 120
@@ -1216,7 +1219,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_120{ 0 };
+    unsigned int sfxId_120{0};
 
     /**
      * @brief SFX identifier: 121
@@ -1226,7 +1229,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_121{ 0 };
+    unsigned int sfxId_121{0};
 
     /**
      * @brief SFX identifier: 122
@@ -1236,7 +1239,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_122{ 0 };
+    unsigned int sfxId_122{0};
 
     /**
      * @brief SFX identifier: 123
@@ -1246,7 +1249,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_123{ 0 };
+    unsigned int sfxId_123{0};
 
     /**
      * @brief SFX identifier: 124
@@ -1256,7 +1259,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_124{ 0 };
+    unsigned int sfxId_124{0};
 
     /**
      * @brief SFX identifier: 125
@@ -1266,7 +1269,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_125{ 0 };
+    unsigned int sfxId_125{0};
 
     /**
      * @brief SFX identifier: 126
@@ -1276,7 +1279,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_126{ 0 };
+    unsigned int sfxId_126{0};
 
     /**
      * @brief SFX identifier: 127
@@ -1286,7 +1289,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_127{ 0 };
+    unsigned int sfxId_127{0};
 
     /**
      * @brief SFX identifier: 128
@@ -1296,7 +1299,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_128{ 0 };
+    unsigned int sfxId_128{0};
 
     /**
      * @brief SFX identifier: 129
@@ -1306,7 +1309,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_129{ 0 };
+    unsigned int sfxId_129{0};
 
     /**
      * @brief SFX identifier: 130
@@ -1316,7 +1319,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_130{ 0 };
+    unsigned int sfxId_130{0};
 
     /**
      * @brief SFX identifier: 131
@@ -1326,7 +1329,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_131{ 0 };
+    unsigned int sfxId_131{0};
 
     /**
      * @brief SFX identifier: 132
@@ -1336,7 +1339,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_132{ 0 };
+    unsigned int sfxId_132{0};
 
     /**
      * @brief SFX identifier: 133
@@ -1346,7 +1349,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_133{ 0 };
+    unsigned int sfxId_133{0};
 
     /**
      * @brief SFX identifier: 134
@@ -1356,7 +1359,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_134{ 0 };
+    unsigned int sfxId_134{0};
 
     /**
      * @brief SFX identifier: 135
@@ -1366,7 +1369,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_135{ 0 };
+    unsigned int sfxId_135{0};
 
     /**
      * @brief SFX identifier: 136
@@ -1376,7 +1379,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_136{ 0 };
+    unsigned int sfxId_136{0};
 
     /**
      * @brief SFX identifier: 137
@@ -1386,7 +1389,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_137{ 0 };
+    unsigned int sfxId_137{0};
 
     /**
      * @brief SFX identifier: 138
@@ -1396,7 +1399,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_138{ 0 };
+    unsigned int sfxId_138{0};
 
     /**
      * @brief SFX identifier: 139
@@ -1406,7 +1409,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_139{ 0 };
+    unsigned int sfxId_139{0};
 
     /**
      * @brief SFX identifier: 140
@@ -1416,7 +1419,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_140{ 0 };
+    unsigned int sfxId_140{0};
 
     /**
      * @brief SFX identifier: 141
@@ -1426,7 +1429,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_141{ 0 };
+    unsigned int sfxId_141{0};
 
     /**
      * @brief SFX identifier: 142
@@ -1436,7 +1439,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_142{ 0 };
+    unsigned int sfxId_142{0};
 
     /**
      * @brief SFX identifier: 143
@@ -1446,7 +1449,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_143{ 0 };
+    unsigned int sfxId_143{0};
 
     /**
      * @brief SFX identifier: 144
@@ -1456,7 +1459,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_144{ 0 };
+    unsigned int sfxId_144{0};
 
     /**
      * @brief SFX identifier: 145
@@ -1466,7 +1469,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_145{ 0 };
+    unsigned int sfxId_145{0};
 
     /**
      * @brief SFX identifier: 146
@@ -1476,7 +1479,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_146{ 0 };
+    unsigned int sfxId_146{0};
 
     /**
      * @brief SFX identifier: 147
@@ -1486,7 +1489,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_147{ 0 };
+    unsigned int sfxId_147{0};
 
     /**
      * @brief SFX identifier: 148
@@ -1496,7 +1499,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_148{ 0 };
+    unsigned int sfxId_148{0};
 
     /**
      * @brief SFX identifier: 149
@@ -1506,7 +1509,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_149{ 0 };
+    unsigned int sfxId_149{0};
 
     /**
      * @brief SFX identifier: 150
@@ -1516,7 +1519,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_150{ 0 };
+    unsigned int sfxId_150{0};
 
     /**
      * @brief SFX identifier: 151
@@ -1526,7 +1529,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_151{ 0 };
+    unsigned int sfxId_151{0};
 
     /**
      * @brief SFX identifier: 152
@@ -1536,7 +1539,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_152{ 0 };
+    unsigned int sfxId_152{0};
 
     /**
      * @brief SFX identifier: 153
@@ -1546,7 +1549,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_153{ 0 };
+    unsigned int sfxId_153{0};
 
     /**
      * @brief SFX identifier: 154
@@ -1556,7 +1559,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_154{ 0 };
+    unsigned int sfxId_154{0};
 
     /**
      * @brief SFX identifier: 155
@@ -1566,7 +1569,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_155{ 0 };
+    unsigned int sfxId_155{0};
 
     /**
      * @brief SFX identifier: 156
@@ -1576,7 +1579,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_156{ 0 };
+    unsigned int sfxId_156{0};
 
     /**
      * @brief SFX identifier: 157
@@ -1586,7 +1589,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_157{ 0 };
+    unsigned int sfxId_157{0};
 
     /**
      * @brief SFX identifier: 158
@@ -1596,7 +1599,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_158{ 0 };
+    unsigned int sfxId_158{0};
 
     /**
      * @brief SFX identifier: 159
@@ -1606,7 +1609,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_159{ 0 };
+    unsigned int sfxId_159{0};
 
     /**
      * @brief SFX identifier: 160
@@ -1616,7 +1619,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_160{ 0 };
+    unsigned int sfxId_160{0};
 
     /**
      * @brief SFX identifier: 161
@@ -1626,7 +1629,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_161{ 0 };
+    unsigned int sfxId_161{0};
 
     /**
      * @brief SFX identifier: 162
@@ -1636,7 +1639,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_162{ 0 };
+    unsigned int sfxId_162{0};
 
     /**
      * @brief SFX identifier: 163
@@ -1646,7 +1649,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_163{ 0 };
+    unsigned int sfxId_163{0};
 
     /**
      * @brief SFX identifier: 164
@@ -1656,7 +1659,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_164{ 0 };
+    unsigned int sfxId_164{0};
 
     /**
      * @brief SFX identifier: 165
@@ -1666,7 +1669,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_165{ 0 };
+    unsigned int sfxId_165{0};
 
     /**
      * @brief SFX identifier: 166
@@ -1676,7 +1679,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_166{ 0 };
+    unsigned int sfxId_166{0};
 
     /**
      * @brief SFX identifier: 167
@@ -1686,7 +1689,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_167{ 0 };
+    unsigned int sfxId_167{0};
 
     /**
      * @brief SFX identifier: 168
@@ -1696,7 +1699,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_168{ 0 };
+    unsigned int sfxId_168{0};
 
     /**
      * @brief SFX identifier: 169
@@ -1706,7 +1709,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_169{ 0 };
+    unsigned int sfxId_169{0};
 
     /**
      * @brief SFX identifier: 170
@@ -1716,7 +1719,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_170{ 0 };
+    unsigned int sfxId_170{0};
 
     /**
      * @brief SFX identifier: 171
@@ -1726,7 +1729,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_171{ 0 };
+    unsigned int sfxId_171{0};
 
     /**
      * @brief SFX identifier: 172
@@ -1736,7 +1739,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_172{ 0 };
+    unsigned int sfxId_172{0};
 
     /**
      * @brief SFX identifier: 173
@@ -1746,7 +1749,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_173{ 0 };
+    unsigned int sfxId_173{0};
 
     /**
      * @brief SFX identifier: 174
@@ -1756,7 +1759,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_174{ 0 };
+    unsigned int sfxId_174{0};
 
     /**
      * @brief SFX identifier: 175
@@ -1766,7 +1769,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_175{ 0 };
+    unsigned int sfxId_175{0};
 
     /**
      * @brief SFX identifier: 176
@@ -1776,7 +1779,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_176{ 0 };
+    unsigned int sfxId_176{0};
 
     /**
      * @brief SFX identifier: 177
@@ -1786,7 +1789,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_177{ 0 };
+    unsigned int sfxId_177{0};
 
     /**
      * @brief SFX identifier: 178
@@ -1796,7 +1799,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_178{ 0 };
+    unsigned int sfxId_178{0};
 
     /**
      * @brief SFX identifier: 179
@@ -1806,7 +1809,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_179{ 0 };
+    unsigned int sfxId_179{0};
 
     /**
      * @brief SFX identifier: 180
@@ -1816,7 +1819,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_180{ 0 };
+    unsigned int sfxId_180{0};
 
     /**
      * @brief SFX identifier: 181
@@ -1826,7 +1829,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_181{ 0 };
+    unsigned int sfxId_181{0};
 
     /**
      * @brief SFX identifier: 182
@@ -1836,7 +1839,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_182{ 0 };
+    unsigned int sfxId_182{0};
 
     /**
      * @brief SFX identifier: 183
@@ -1846,7 +1849,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_183{ 0 };
+    unsigned int sfxId_183{0};
 
     /**
      * @brief SFX identifier: 184
@@ -1856,7 +1859,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_184{ 0 };
+    unsigned int sfxId_184{0};
 
     /**
      * @brief SFX identifier: 185
@@ -1866,7 +1869,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_185{ 0 };
+    unsigned int sfxId_185{0};
 
     /**
      * @brief SFX identifier: 186
@@ -1876,7 +1879,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_186{ 0 };
+    unsigned int sfxId_186{0};
 
     /**
      * @brief SFX identifier: 187
@@ -1886,7 +1889,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_187{ 0 };
+    unsigned int sfxId_187{0};
 
     /**
      * @brief SFX identifier: 188
@@ -1896,7 +1899,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_188{ 0 };
+    unsigned int sfxId_188{0};
 
     /**
      * @brief SFX identifier: 189
@@ -1906,7 +1909,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_189{ 0 };
+    unsigned int sfxId_189{0};
 
     /**
      * @brief SFX identifier: 190
@@ -1916,7 +1919,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_190{ 0 };
+    unsigned int sfxId_190{0};
 
     /**
      * @brief SFX identifier: 191
@@ -1926,7 +1929,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_191{ 0 };
+    unsigned int sfxId_191{0};
 
     /**
      * @brief SFX identifier: 192
@@ -1936,7 +1939,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_192{ 0 };
+    unsigned int sfxId_192{0};
 
     /**
      * @brief SFX identifier: 193
@@ -1946,7 +1949,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_193{ 0 };
+    unsigned int sfxId_193{0};
 
     /**
      * @brief SFX identifier: 194
@@ -1956,7 +1959,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_194{ 0 };
+    unsigned int sfxId_194{0};
 
     /**
      * @brief SFX identifier: 195
@@ -1966,7 +1969,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_195{ 0 };
+    unsigned int sfxId_195{0};
 
     /**
      * @brief SFX identifier: 196
@@ -1976,7 +1979,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_196{ 0 };
+    unsigned int sfxId_196{0};
 
     /**
      * @brief SFX identifier: 197
@@ -1986,7 +1989,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_197{ 0 };
+    unsigned int sfxId_197{0};
 
     /**
      * @brief SFX identifier: 198
@@ -1996,7 +1999,7 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_198{ 0 };
+    unsigned int sfxId_198{0};
 
     /**
      * @brief SFX identifier: 199
@@ -2006,11 +2009,11 @@ struct FOOT_SFX_PARAM_ST {
      * identifier" item of the special effect parameter, SFX identifier set in
      * the TAE action "Foot effect"
      */
-    unsigned int sfxId_199{ 0 };
+    unsigned int sfxId_199{0};
 };
 
 }; // namespace paramdef
-}; // namespace from
+}; // namespace er
 
-static_assert(sizeof(from::paramdef::FOOT_SFX_PARAM_ST) == 800,
-    "FOOT_SFX_PARAM_ST paramdef size does not match detected size");
+static_assert(sizeof(er::paramdef::FOOT_SFX_PARAM_ST) == 800,
+              "FOOT_SFX_PARAM_ST paramdef size does not match detected size");

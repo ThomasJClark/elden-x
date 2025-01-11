@@ -1,13 +1,16 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace from {
-namespace paramdef {
+namespace er
+{
+namespace paramdef
+{
 /**
  * @brief This struct was automatically generated from XML paramdefs.
- * 
+ *
  */
-struct CS_KEY_ASSIGN_MENUITEM_PARAM {
+struct CS_KEY_ASSIGN_MENUITEM_PARAM
+{
     /**
      * @brief text
      *
@@ -15,7 +18,7 @@ struct CS_KEY_ASSIGN_MENUITEM_PARAM {
      * name ID. No text specified ⇒ Not displayed in pad / key settings
      * (operation list display only)
      */
-    int textID{ 0 };
+    int textID{0};
 
     /**
      * @brief Key
@@ -23,14 +26,14 @@ struct CS_KEY_ASSIGN_MENUITEM_PARAM {
      * User input key to be assigned. If not specified, it will be treated as a
      * category display item.
      */
-    int key{ -1 };
+    int key{-1};
 
     /**
      * @brief lift
      *
      * Is it possible to unassign (default: possible)
      */
-    bool enableUnassign{ true };
+    bool enableUnassign{true};
 
     /**
      * @brief pad
@@ -38,7 +41,7 @@ struct CS_KEY_ASSIGN_MENUITEM_PARAM {
      * Is it possible to change the pad operation assignment (default:
      * possible)?
      */
-    bool enablePadConfig{ true };
+    bool enablePadConfig{true};
 
     /**
      * @brief mouse
@@ -46,7 +49,7 @@ struct CS_KEY_ASSIGN_MENUITEM_PARAM {
      * Is it possible to change the mouse operation assignment (default:
      * possible)?
      */
-    bool enableMouseConfig{ true };
+    bool enableMouseConfig{true};
 
     /**
      * @brief group
@@ -54,7 +57,7 @@ struct CS_KEY_ASSIGN_MENUITEM_PARAM {
      * Group for determining duplicate assignments. Cannot be duplicated in the
      * same group
      */
-    unsigned char group{ 0 };
+    unsigned char group{0};
 
     /**
      * @brief text
@@ -62,27 +65,27 @@ struct CS_KEY_ASSIGN_MENUITEM_PARAM {
      * Item name to be displayed in the operation list. 0 :: Do not display in
      * the list
      */
-    int mappingTextID{ 0 };
+    int mappingTextID{0};
 
     /**
      * @brief pad
      *
      * Whether to display with key config (pad) (default: display)
      */
-    bool viewPad{ true };
+    bool viewPad{true};
 
     /**
      * @brief Mouse / keyboard
      *
      * Whether to display with key config (mouse / keyboard) (default: display)
      */
-    bool viewKeyboardMouse{ true };
+    bool viewKeyboardMouse{true};
 
     unsigned char padding[6];
 };
 
 }; // namespace paramdef
-}; // namespace from
+}; // namespace er
 
-static_assert(sizeof(from::paramdef::CS_KEY_ASSIGN_MENUITEM_PARAM) == 24,
-    "CS_KEY_ASSIGN_MENUITEM_PARAM paramdef size does not match detected size");
+static_assert(sizeof(er::paramdef::CS_KEY_ASSIGN_MENUITEM_PARAM) == 24,
+              "CS_KEY_ASSIGN_MENUITEM_PARAM paramdef size does not match detected size");

@@ -2,7 +2,7 @@
 
 #include <span>
 
-namespace from
+namespace er
 {
 namespace ezstate
 {

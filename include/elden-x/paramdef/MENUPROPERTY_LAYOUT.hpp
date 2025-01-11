@@ -1,13 +1,16 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace from {
-namespace paramdef {
+namespace er
+{
+namespace paramdef
+{
 /**
  * @brief This struct was automatically generated from XML paramdefs.
- * 
+ *
  */
-struct MENUPROPERTY_LAYOUT {
+struct MENUPROPERTY_LAYOUT
+{
     /**
      * @brief Layout path
      */
@@ -16,7 +19,7 @@ struct MENUPROPERTY_LAYOUT {
     /**
      * @brief Property ID
      */
-    int PropertyID{ 0 };
+    int PropertyID{0};
 
     /**
      * @brief Item name Text ID
@@ -24,20 +27,20 @@ struct MENUPROPERTY_LAYOUT {
      * If a valid text ID is set, this will be displayed in preference to the
      * property name.
      */
-    int CaptionTextID{ 0 };
+    int CaptionTextID{0};
 
     /**
      * @brief Help text ID
      *
      * Only if this is a valid text ID will it be selectable in the field help.
      */
-    int HelpTextID{ 0 };
+    int HelpTextID{0};
 
     unsigned char reserved[4];
 };
 
 }; // namespace paramdef
-}; // namespace from
+}; // namespace er
 
-static_assert(sizeof(from::paramdef::MENUPROPERTY_LAYOUT) == 32,
-    "MENUPROPERTY_LAYOUT paramdef size does not match detected size");
+static_assert(sizeof(er::paramdef::MENUPROPERTY_LAYOUT) == 32,
+              "MENUPROPERTY_LAYOUT paramdef size does not match detected size");

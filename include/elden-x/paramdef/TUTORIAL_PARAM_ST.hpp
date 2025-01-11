@@ -1,19 +1,22 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace from {
-namespace paramdef {
+namespace er
+{
+namespace paramdef
+{
 /**
  * @brief This struct was automatically generated from XML paramdefs.
- * 
+ *
  */
-struct TUTORIAL_PARAM_ST {
+struct TUTORIAL_PARAM_ST
+{
     /**
      * @brief Do you remove it from the NT version output?
      *
      * Parameters marked with ○ are excluded in the NT version package.
      */
-    bool disableParam_NT : 1 { false };
+    bool disableParam_NT : 1 {false};
 
     /**
      * @brief Reserve for package output 1
@@ -30,7 +33,7 @@ struct TUTORIAL_PARAM_ST {
      *
      * Specifies the type of tutorial menu to display
      */
-    unsigned char menuType{ 0 };
+    unsigned char menuType{0};
 
     /**
      * @brief Display timing
@@ -39,14 +42,14 @@ struct TUTORIAL_PARAM_ST {
      * open this menu. Specify 0: "-" if you do not want to display it when you
      * open the menu.
      */
-    unsigned char triggerType{ 0 };
+    unsigned char triggerType{0};
 
     /**
      * @brief Impressions
      *
      * Number of times to display (default: 0: once in the game)
      */
-    unsigned char repeatType{ 0 };
+    unsigned char repeatType{0};
 
     unsigned char pad1[1];
 
@@ -56,7 +59,7 @@ struct TUTORIAL_PARAM_ST {
      * Specifies the tutorial image ID to display (default: 0). Specify 0 if you
      * do not want to display the image
      */
-    unsigned short imageId{ 0 };
+    unsigned short imageId{0};
 
     unsigned char pad2[2];
 
@@ -66,7 +69,7 @@ struct TUTORIAL_PARAM_ST {
      * Event flag ID for display permission (default: 0). It will not be
      * displayed until this flag is set. Specify 0 if you always want to allow
      */
-    unsigned int unlockEventFlagId{ 0 };
+    unsigned int unlockEventFlagId{0};
 
     /**
      * @brief Text ID
@@ -74,7 +77,7 @@ struct TUTORIAL_PARAM_ST {
      * ID of the text to be displayed in the tutorial [TutorialText.xlsm]. This
      * text ID is used for both "Title" and "Body"
      */
-    int textId{ -1 };
+    int textId{-1};
 
     /**
      * @brief at the earliest
@@ -83,7 +86,7 @@ struct TUTORIAL_PARAM_ST {
      * an event etc., it will be closed after displaying at least this time.
      * It's only for toast, so it's ignored in modals
      */
-    float displayMinTime{ 1.f };
+    float displayMinTime{1.f};
 
     /**
      * @brief Longest
@@ -92,13 +95,13 @@ struct TUTORIAL_PARAM_ST {
      * passed since the toast was displayed. It's only for toast, so it's
      * ignored in modals
      */
-    float displayTime{ 3.f };
+    float displayTime{3.f};
 
     unsigned char pad3[4];
 };
 
 }; // namespace paramdef
-}; // namespace from
+}; // namespace er
 
-static_assert(sizeof(from::paramdef::TUTORIAL_PARAM_ST) == 32,
-    "TUTORIAL_PARAM_ST paramdef size does not match detected size");
+static_assert(sizeof(er::paramdef::TUTORIAL_PARAM_ST) == 32,
+              "TUTORIAL_PARAM_ST paramdef size does not match detected size");

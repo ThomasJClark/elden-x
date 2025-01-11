@@ -1,19 +1,22 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace from {
-namespace paramdef {
+namespace er
+{
+namespace paramdef
+{
 /**
  * @brief This struct was automatically generated from XML paramdefs.
- * 
+ *
  */
-struct WWISE_VALUE_TO_STR_CONVERT_PARAM_ST {
+struct WWISE_VALUE_TO_STR_CONVERT_PARAM_ST
+{
     /**
      * @brief Do you remove it from the NT version output?
      *
      * Parameters marked with ○ are excluded in the NT version package.
      */
-    bool disableParam_NT : 1 { false };
+    bool disableParam_NT : 1 {false};
 
     /**
      * @brief Reserve for package output 1
@@ -32,8 +35,8 @@ struct WWISE_VALUE_TO_STR_CONVERT_PARAM_ST {
 };
 
 }; // namespace paramdef
-}; // namespace from
+}; // namespace er
 
-static_assert(sizeof(from::paramdef::WWISE_VALUE_TO_STR_CONVERT_PARAM_ST) == 36,
-    "WWISE_VALUE_TO_STR_CONVERT_PARAM_ST paramdef size does not match detected "
-    "size");
+static_assert(sizeof(er::paramdef::WWISE_VALUE_TO_STR_CONVERT_PARAM_ST) == 36,
+              "WWISE_VALUE_TO_STR_CONVERT_PARAM_ST paramdef size does not match detected "
+              "size");

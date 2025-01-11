@@ -2,7 +2,7 @@
 
 #include <array>
 
-namespace from
+namespace er
 {
 
 // There are many other options, I only care about the sort by type option

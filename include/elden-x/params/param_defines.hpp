@@ -10,7 +10,7 @@
 #include <cstddef>
 #include <cstdint>
 
-namespace from
+namespace er
 {
 namespace param
 {
@@ -255,4 +255,4 @@ enum class param_index : int
 inline constexpr size_t param_count = size_t(param_index::PARAM_COUNT);
 
 } // namespace param
-} // namespace from
+} // namespace er

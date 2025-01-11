@@ -6,7 +6,7 @@
  * DL2 allocator adapted from https://github.com/garyttierney/me3
  */
 
-namespace from
+namespace er
 {
 namespace DLKR
 {

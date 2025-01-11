@@ -5,7 +5,7 @@
 
 #include <array>
 
-namespace from
+namespace er
 {
 
 namespace CS
@@ -185,7 +185,7 @@ class CSChrModelParamModifierModule : public CSChrModuleBase
     static_assert(0xd4 == __builtin_offsetof(modifier, unkd4));
     static_assert(0xd8 == sizeof(modifier));
 
-    from::vector<modifier> modifiers;
+    er::vector<modifier> modifiers;
 };
 
 class CSChrVfxModule : public CSChrModuleBase

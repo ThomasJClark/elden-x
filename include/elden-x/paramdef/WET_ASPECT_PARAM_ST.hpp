@@ -1,33 +1,36 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace from {
-namespace paramdef {
+namespace er
+{
+namespace paramdef
+{
 /**
  * @brief This struct was automatically generated from XML paramdefs.
- * 
+ *
  */
-struct WET_ASPECT_PARAM_ST {
+struct WET_ASPECT_PARAM_ST
+{
     /**
      * @brief Base color value R
      *
      * Base color color R.
      */
-    unsigned char baseColorR{ 0 };
+    unsigned char baseColorR{0};
 
     /**
      * @brief Base color value G
      *
      * Base color color G.
      */
-    unsigned char baseColorG{ 0 };
+    unsigned char baseColorG{0};
 
     /**
      * @brief Base color value B
      *
      * Base color color B.
      */
-    unsigned char baseColorB{ 0 };
+    unsigned char baseColorB{0};
 
     unsigned char reserve_0[1];
 
@@ -36,14 +39,14 @@ struct WET_ASPECT_PARAM_ST {
      *
      * Base color override rate.
      */
-    float baseColorA{ 0.f };
+    float baseColorA{0.f};
 
     /**
      * @brief Metallic value
      *
      * It's metallic.
      */
-    unsigned char metallic{ 0 };
+    unsigned char metallic{0};
 
     unsigned char reserve_1[1];
 
@@ -56,27 +59,27 @@ struct WET_ASPECT_PARAM_ST {
      *
      * Metallic override rate.
      */
-    float metallicRate{ 0.f };
+    float metallicRate{0.f};
 
     /**
      * @brief Shininess%
      *
      * Shininess override rate.
      */
-    float shininessRate{ 0.f };
+    float shininessRate{0.f};
 
     /**
      * @brief Shininess value
      *
      * Shininess.
      */
-    unsigned char shininess{ 0 };
+    unsigned char shininess{0};
 
     unsigned char reserve_4[11];
 };
 
 }; // namespace paramdef
-}; // namespace from
+}; // namespace er
 
-static_assert(sizeof(from::paramdef::WET_ASPECT_PARAM_ST) == 32,
-    "WET_ASPECT_PARAM_ST paramdef size does not match detected size");
+static_assert(sizeof(er::paramdef::WET_ASPECT_PARAM_ST) == 32,
+              "WET_ASPECT_PARAM_ST paramdef size does not match detected size");

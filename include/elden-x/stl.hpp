@@ -5,7 +5,7 @@
 
 #include "dl_allocator.hpp"
 
-namespace from
+namespace er
 {
 
 template <typename T> using vector = std::vector<T, DLKR::DLAllocatorAdapter<T>>;

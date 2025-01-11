@@ -1,22 +1,25 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace from {
-namespace paramdef {
+namespace er
+{
+namespace paramdef
+{
 /**
  * @brief This struct was automatically generated from XML paramdefs.
- * 
+ *
  */
-struct CS_SHADER_QUALITY_DETAIL {
+struct CS_SHADER_QUALITY_DETAIL
+{
     /**
      * @brief SSS enabled
      */
-    bool sssEnabled{ true };
+    bool sssEnabled{true};
 
     /**
      * @brief Tessellation enabled
      */
-    bool tessellationEnabled{ false };
+    bool tessellationEnabled{false};
 
     /**
      * @brief High precision normal effective
@@ -24,7 +27,7 @@ struct CS_SHADER_QUALITY_DETAIL {
      * High precision normal valid (setting the accuracy of the normal stored in
      * G-Buffer)
      */
-    bool highPrecisionNormalEnabled{ false };
+    bool highPrecisionNormalEnabled{false};
 
     /**
      * @brief dmy
@@ -33,4 +36,4 @@ struct CS_SHADER_QUALITY_DETAIL {
 };
 
 }; // namespace paramdef
-}; // namespace from
+}; // namespace er

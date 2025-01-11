@@ -1,20 +1,23 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace from {
-namespace paramdef {
+namespace er
+{
+namespace paramdef
+{
 /**
  * @brief This struct was automatically generated from XML paramdefs.
- * 
+ *
  */
-struct ASSET_MATERIAL_SFX_PARAM_ST {
+struct ASSET_MATERIAL_SFX_PARAM_ST
+{
     /**
      * @brief SFX identifier: 00
      *
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_00{ 0 };
+    unsigned int sfxId_00{0};
 
     /**
      * @brief SFX identifier: 01
@@ -22,7 +25,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_01{ 0 };
+    unsigned int sfxId_01{0};
 
     /**
      * @brief SFX identifier: 02
@@ -30,7 +33,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_02{ 0 };
+    unsigned int sfxId_02{0};
 
     /**
      * @brief SFX identifier: 03
@@ -38,7 +41,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_03{ 0 };
+    unsigned int sfxId_03{0};
 
     /**
      * @brief SFX identifier: 04
@@ -46,7 +49,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_04{ 0 };
+    unsigned int sfxId_04{0};
 
     /**
      * @brief SFX identifier: 05
@@ -54,7 +57,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_05{ 0 };
+    unsigned int sfxId_05{0};
 
     /**
      * @brief SFX identifier: 06
@@ -62,7 +65,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_06{ 0 };
+    unsigned int sfxId_06{0};
 
     /**
      * @brief SFX identifier: 07
@@ -70,7 +73,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_07{ 0 };
+    unsigned int sfxId_07{0};
 
     /**
      * @brief SFX identifier: 08
@@ -78,7 +81,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_08{ 0 };
+    unsigned int sfxId_08{0};
 
     /**
      * @brief SFX identifier: 09
@@ -86,7 +89,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_09{ 0 };
+    unsigned int sfxId_09{0};
 
     /**
      * @brief SFX identifier: 10
@@ -94,7 +97,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_10{ 0 };
+    unsigned int sfxId_10{0};
 
     /**
      * @brief SFX identifier: 11
@@ -102,7 +105,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_11{ 0 };
+    unsigned int sfxId_11{0};
 
     /**
      * @brief SFX identifier: 12
@@ -110,7 +113,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_12{ 0 };
+    unsigned int sfxId_12{0};
 
     /**
      * @brief SFX identifier: 13
@@ -118,7 +121,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_13{ 0 };
+    unsigned int sfxId_13{0};
 
     /**
      * @brief SFX identifier: 14
@@ -126,7 +129,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_14{ 0 };
+    unsigned int sfxId_14{0};
 
     /**
      * @brief SFX identifier: 15
@@ -134,7 +137,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_15{ 0 };
+    unsigned int sfxId_15{0};
 
     /**
      * @brief SFX identifier: 16
@@ -142,7 +145,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_16{ 0 };
+    unsigned int sfxId_16{0};
 
     /**
      * @brief SFX identifier: 17
@@ -150,7 +153,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_17{ 0 };
+    unsigned int sfxId_17{0};
 
     /**
      * @brief SFX identifier: 18
@@ -158,7 +161,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_18{ 0 };
+    unsigned int sfxId_18{0};
 
     /**
      * @brief SFX identifier: 19
@@ -166,7 +169,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_19{ 0 };
+    unsigned int sfxId_19{0};
 
     /**
      * @brief SFX identifier: 20
@@ -174,7 +177,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_20{ 0 };
+    unsigned int sfxId_20{0};
 
     /**
      * @brief SFX identifier: 21
@@ -182,7 +185,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_21{ 0 };
+    unsigned int sfxId_21{0};
 
     /**
      * @brief SFX identifier: 22
@@ -190,7 +193,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_22{ 0 };
+    unsigned int sfxId_22{0};
 
     /**
      * @brief SFX identifier: 23
@@ -198,7 +201,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_23{ 0 };
+    unsigned int sfxId_23{0};
 
     /**
      * @brief SFX identifier: 24
@@ -206,7 +209,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_24{ 0 };
+    unsigned int sfxId_24{0};
 
     /**
      * @brief SFX identifier: 25
@@ -214,7 +217,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_25{ 0 };
+    unsigned int sfxId_25{0};
 
     /**
      * @brief SFX identifier: 26
@@ -222,7 +225,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_26{ 0 };
+    unsigned int sfxId_26{0};
 
     /**
      * @brief SFX identifier: 27
@@ -230,7 +233,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_27{ 0 };
+    unsigned int sfxId_27{0};
 
     /**
      * @brief SFX identifier: 28
@@ -238,7 +241,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_28{ 0 };
+    unsigned int sfxId_28{0};
 
     /**
      * @brief SFX identifier: 29
@@ -246,7 +249,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_29{ 0 };
+    unsigned int sfxId_29{0};
 
     /**
      * @brief SFX identifier: 30
@@ -254,7 +257,7 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_30{ 0 };
+    unsigned int sfxId_30{0};
 
     /**
      * @brief SFX identifier: 31
@@ -262,11 +265,11 @@ struct ASSET_MATERIAL_SFX_PARAM_ST {
      * SFX identifier corresponding to the asset parameter "SFX identifier after
      * destruction"
      */
-    unsigned int sfxId_31{ 0 };
+    unsigned int sfxId_31{0};
 };
 
 }; // namespace paramdef
-}; // namespace from
+}; // namespace er
 
-static_assert(sizeof(from::paramdef::ASSET_MATERIAL_SFX_PARAM_ST) == 128,
-    "ASSET_MATERIAL_SFX_PARAM_ST paramdef size does not match detected size");
+static_assert(sizeof(er::paramdef::ASSET_MATERIAL_SFX_PARAM_ST) == 128,
+              "ASSET_MATERIAL_SFX_PARAM_ST paramdef size does not match detected size");

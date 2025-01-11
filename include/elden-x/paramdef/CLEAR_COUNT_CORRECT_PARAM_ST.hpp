@@ -1,235 +1,238 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace from {
-namespace paramdef {
+namespace er
+{
+namespace paramdef
+{
 /**
  * @brief This struct was automatically generated from XML paramdefs.
- * 
+ *
  */
-struct CLEAR_COUNT_CORRECT_PARAM_ST {
+struct CLEAR_COUNT_CORRECT_PARAM_ST
+{
     /**
      * @brief 《Maximum HP magnification [%]》
      *
      * Maximum HP magnification [%]
      */
-    float MaxHpRate{ 1.f };
+    float MaxHpRate{1.f};
 
     /**
      * @brief 《Maximum MP magnification [%]》
      *
      * Maximum MP magnification [%]
      */
-    float MaxMpRate{ 1.f };
+    float MaxMpRate{1.f};
 
     /**
      * @brief 《Maximum stamina magnification [%]》
      *
      * Maximum stamina magnification [%]
      */
-    float MaxStaminaRate{ 1.f };
+    float MaxStaminaRate{1.f};
 
     /**
      * @brief 《Physical attack power multiplier》
      *
      * Physical attack power multiplier
      */
-    float PhysicsAttackRate{ 1.f };
+    float PhysicsAttackRate{1.f};
 
     /**
      * @brief 《Slashing attack power multiplier》
      *
      * Slash attack power multiplier
      */
-    float SlashAttackRate{ 1.f };
+    float SlashAttackRate{1.f};
 
     /**
      * @brief 《Batter attack power multiplier》
      *
      * Batter attack power multiplier
      */
-    float BlowAttackRate{ 1.f };
+    float BlowAttackRate{1.f};
 
     /**
      * @brief 《Puncture attack power multiplier》
      *
      * Puncture attack power multiplier
      */
-    float ThrustAttackRate{ 1.f };
+    float ThrustAttackRate{1.f};
 
     /**
      * @brief 《Non-attribute attack power multiplier》
      *
      * Non-attribute attack power multiplier
      */
-    float NeturalAttackRate{ 1.f };
+    float NeturalAttackRate{1.f};
 
     /**
      * @brief 《Magic attack power multiplier》
      *
      * Magic attack power multiplier
      */
-    float MagicAttackRate{ 1.f };
+    float MagicAttackRate{1.f};
 
     /**
      * @brief 《Flame attack power multiplier》
      *
      * Fire attack power multiplier
      */
-    float FireAttackRate{ 1.f };
+    float FireAttackRate{1.f};
 
     /**
      * @brief 《Electric shock attack power multiplier》
      *
      * Electric shock attack power multiplier
      */
-    float ThunderAttackRate{ 1.f };
+    float ThunderAttackRate{1.f};
 
     /**
      * @brief 《Dark attack power multiplier》
      *
      * Dark attack power multiplier
      */
-    float DarkAttackRate{ 1.f };
+    float DarkAttackRate{1.f};
 
     /**
      * @brief 《Physical defense multiplier》
      *
      * Physical defense power multiplier
      */
-    float PhysicsDefenseRate{ 1.f };
+    float PhysicsDefenseRate{1.f};
 
     /**
      * @brief 《Magic Defense Multiplier》
      *
      * Magic defense multiplier
      */
-    float MagicDefenseRate{ 1.f };
+    float MagicDefenseRate{1.f};
 
     /**
      * @brief 《Flame defense multiplier》
      *
      * Fire defense multiplier
      */
-    float FireDefenseRate{ 1.f };
+    float FireDefenseRate{1.f};
 
     /**
      * @brief 《Dengeki Defense Magnification》
      *
      * Electric shock defense power multiplier
      */
-    float ThunderDefenseRate{ 1.f };
+    float ThunderDefenseRate{1.f};
 
     /**
      * @brief 《Darkness Defense Multiplier》
      *
      * Dark defense multiplier
      */
-    float DarkDefenseRate{ 1.f };
+    float DarkDefenseRate{1.f};
 
     /**
      * @brief 《Stamina attack power multiplier》
      *
      * Stamina attack power multiplier
      */
-    float StaminaAttackRate{ 1.f };
+    float StaminaAttackRate{1.f};
 
     /**
      * @brief 《Soul possession rate》
      *
      * Possession soul rate
      */
-    float SoulRate{ 1.f };
+    float SoulRate{1.f};
 
     /**
      * @brief 《Poison resistance change rate》
      *
      * Poison resistance change rate
      */
-    float PoisionResistRate{ 1.f };
+    float PoisionResistRate{1.f};
 
     /**
      * @brief 《Pesticide resistance change rate》
      *
      * Epidemic resistance change rate
      */
-    float DiseaseResistRate{ 1.f };
+    float DiseaseResistRate{1.f};
 
     /**
      * @brief 《Bleeding resistance change rate》
      *
      * Bleeding resistance change rate
      */
-    float BloodResistRate{ 1.f };
+    float BloodResistRate{1.f};
 
     /**
      * @brief 《Curse resistance change rate》
      *
      * Curse resistance change rate
      */
-    float CurseResistRate{ 1.f };
+    float CurseResistRate{1.f};
 
     /**
      * @brief 《Cold air resistance change rate》
      *
      * Cold resistance change rate
      */
-    float FreezeResistRate{ 1.f };
+    float FreezeResistRate{1.f};
 
     /**
      * @brief 《Bleeding damage correction factor》
      *
      * Bleeding damage correction factor
      */
-    float BloodDamageRate{ 1.f };
+    float BloodDamageRate{1.f};
 
     /**
      * @brief 《SA damage correction factor》
      *
      * SA damage correction factor
      */
-    float SuperArmorDamageRate{ 1.f };
+    float SuperArmorDamageRate{1.f};
 
     /**
      * @brief 《Cold air damage correction factor》
      *
      * Cold damage correction factor
      */
-    float FreezeDamageRate{ 1.f };
+    float FreezeDamageRate{1.f};
 
     /**
      * @brief 《Sleep tolerance change rate》
      *
      * Sleep tolerance change rate
      */
-    float SleepResistRate{ 1.f };
+    float SleepResistRate{1.f};
 
     /**
      * @brief 《Madness resistance change rate》
      *
      * Madness resistance change rate
      */
-    float MadnessResistRate{ 1.f };
+    float MadnessResistRate{1.f};
 
     /**
      * @brief 《Sleep damage correction factor》
      *
      * Sleep damage correction factor
      */
-    float SleepDamageRate{ 1.f };
+    float SleepDamageRate{1.f};
 
     /**
      * @brief 《Crazy damage correction factor》
      *
      * Mad damage correction factor
      */
-    float MadnessDamageRate{ 1.f };
+    float MadnessDamageRate{1.f};
 
     unsigned char pad1[4];
 };
 
 }; // namespace paramdef
-}; // namespace from
+}; // namespace er
 
-static_assert(sizeof(from::paramdef::CLEAR_COUNT_CORRECT_PARAM_ST) == 128,
-    "CLEAR_COUNT_CORRECT_PARAM_ST paramdef size does not match detected size");
+static_assert(sizeof(er::paramdef::CLEAR_COUNT_CORRECT_PARAM_ST) == 128,
+              "CLEAR_COUNT_CORRECT_PARAM_ST paramdef size does not match detected size");

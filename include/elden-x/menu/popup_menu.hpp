@@ -2,7 +2,7 @@
 
 #include "menu_window.hpp"
 
-namespace from
+namespace er
 {
 namespace CS
 {

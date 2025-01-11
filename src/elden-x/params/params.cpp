@@ -5,11 +5,11 @@
 #include <elden-x/params/params.hpp>
 #include <elden-x/utils/modutils.hpp>
 
-static from::CS::SoloParamRepository **address = nullptr;
+static er::CS::SoloParamRepository **address = nullptr;
 
-bool from::CS::SoloParamRepository::are_params_ready()
+bool er::CS::SoloParamRepository::are_params_ready()
 {
-    auto solo_param_repository = from::CS::SoloParamRepository::instance();
+    auto solo_param_repository = er::CS::SoloParamRepository::instance();
     if (!solo_param_repository)
     {
         return false;
@@ -26,7 +26,7 @@ bool from::CS::SoloParamRepository::are_params_ready()
     return true;
 }
 
-void from::CS::SoloParamRepository::wait_for_params()
+void er::CS::SoloParamRepository::wait_for_params()
 {
     SPDLOG_INFO("Waiting for params...");
 

@@ -1,22 +1,25 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace from {
-namespace paramdef {
+namespace er
+{
+namespace paramdef
+{
 /**
  * @brief This struct was automatically generated from XML paramdefs.
- * 
+ *
  */
-struct RUNTIME_BONE_CONTROL_PARAM_ST {
+struct RUNTIME_BONE_CONTROL_PARAM_ST
+{
     /**
      * @brief Character ID
      */
-    unsigned int chrId{ 0 };
+    unsigned int chrId{0};
 
     /**
      * @brief Control type
      */
-    unsigned char ctrlType{ 0 };
+    unsigned char ctrlType{0};
 
     unsigned char pad[11];
 
@@ -37,7 +40,7 @@ struct RUNTIME_BONE_CONTROL_PARAM_ST {
 };
 
 }; // namespace paramdef
-}; // namespace from
+}; // namespace er
 
-static_assert(sizeof(from::paramdef::RUNTIME_BONE_CONTROL_PARAM_ST) == 112,
-    "RUNTIME_BONE_CONTROL_PARAM_ST paramdef size does not match detected size");
+static_assert(sizeof(er::paramdef::RUNTIME_BONE_CONTROL_PARAM_ST) == 112,
+              "RUNTIME_BONE_CONTROL_PARAM_ST paramdef size does not match detected size");

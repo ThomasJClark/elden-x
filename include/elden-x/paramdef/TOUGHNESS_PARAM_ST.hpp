@@ -1,20 +1,23 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace from {
-namespace paramdef {
+namespace er
+{
+namespace paramdef
+{
 /**
  * @brief This struct was automatically generated from XML paramdefs.
- * 
+ *
  */
-struct TOUGHNESS_PARAM_ST {
+struct TOUGHNESS_PARAM_ST
+{
     /**
      * @brief Weapon toughness correction factor
      *
      * It is a correction magnification applied to the "toughness correction
      * magnification" of the weapon when calculating the toughness.
      */
-    float correctionRate{ 1.f };
+    float correctionRate{1.f};
 
     /**
      * @brief Minimum toughness
@@ -23,7 +26,7 @@ struct TOUGHNESS_PARAM_ST {
      * toughness period. If the toughness falls below this value at the start of
      * toughness, it will recover to this value.
      */
-    unsigned short minToughness{ 0 };
+    unsigned short minToughness{0};
 
     /**
      * @brief Minimum toughness value is not affected by toughness multiplier
@@ -31,7 +34,7 @@ struct TOUGHNESS_PARAM_ST {
      * The toughness correction factor will no longer be applied to the minimum
      * toughness.
      */
-    bool isNonEffectiveCorrectionForMin{ false };
+    bool isNonEffectiveCorrectionForMin{false};
 
     unsigned char pad2[1];
 
@@ -42,7 +45,7 @@ struct TOUGHNESS_PARAM_ST {
      * period. If -1, the normal replacement rule applies. Only used by player
      * characters
      */
-    int spEffectId{ -1 };
+    int spEffectId{-1};
 
     /**
      * @brief Armor toughness correction factor
@@ -50,13 +53,13 @@ struct TOUGHNESS_PARAM_ST {
      * This is the correction factor applied to the "toughness correction
      * factor" of the armor when determining the toughness.
      */
-    float proCorrectionRate{ 1.f };
+    float proCorrectionRate{1.f};
 
     unsigned char pad1[16];
 };
 
 }; // namespace paramdef
-}; // namespace from
+}; // namespace er
 
-static_assert(sizeof(from::paramdef::TOUGHNESS_PARAM_ST) == 32,
-    "TOUGHNESS_PARAM_ST paramdef size does not match detected size");
+static_assert(sizeof(er::paramdef::TOUGHNESS_PARAM_ST) == 32,
+              "TOUGHNESS_PARAM_ST paramdef size does not match detected size");

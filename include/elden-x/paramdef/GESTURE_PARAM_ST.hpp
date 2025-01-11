@@ -1,19 +1,22 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace from {
-namespace paramdef {
+namespace er
+{
+namespace paramdef
+{
 /**
  * @brief This struct was automatically generated from XML paramdefs.
- * 
+ *
  */
-struct GESTURE_PARAM_ST {
+struct GESTURE_PARAM_ST
+{
     /**
      * @brief Do you remove it from the NT version output?
      *
      * Parameters marked with ○ are excluded in the NT version package.
      */
-    bool disableParam_NT : 1 { false };
+    bool disableParam_NT : 1 {false};
 
     /**
      * @brief Reserve for package output 1
@@ -31,7 +34,7 @@ struct GESTURE_PARAM_ST {
      * Reference item ID. Used to bring in the gesture text ID, icon ID, and
      * sort ID for each menu. Register the tool ID of the equipment parameter
      */
-    int itemId{ 0 };
+    int itemId{0};
 
     /**
      * @brief Anime ID for message attachment
@@ -39,7 +42,7 @@ struct GESTURE_PARAM_ST {
      * Anime ID for attaching messages. Specify the animation ID when attaching
      * a message
      */
-    int msgAnimId{ 0 };
+    int msgAnimId{0};
 
     /**
      * @brief Is it prohibited to use while riding?
@@ -47,7 +50,7 @@ struct GESTURE_PARAM_ST {
      * Is it prohibited to use while riding (default: ×)? If ○, it cannot be
      * used while riding
      */
-    bool cannotUseRiding : 1 { false };
+    bool cannotUseRiding : 1 {false};
 
     unsigned char pad2 : 7;
 
@@ -55,7 +58,7 @@ struct GESTURE_PARAM_ST {
 };
 
 }; // namespace paramdef
-}; // namespace from
+}; // namespace er
 
-static_assert(sizeof(from::paramdef::GESTURE_PARAM_ST) == 16,
-    "GESTURE_PARAM_ST paramdef size does not match detected size");
+static_assert(sizeof(er::paramdef::GESTURE_PARAM_ST) == 16,
+              "GESTURE_PARAM_ST paramdef size does not match detected size");

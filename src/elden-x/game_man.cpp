@@ -3,13 +3,13 @@
 
 #include <spdlog/spdlog.h>
 
-static from::CS::GameMan **address = nullptr;
+static er::CS::GameMan **address = nullptr;
 
-from::CS::GameMan *from::CS::GameMan::instance()
+er::CS::GameMan *er::CS::GameMan::instance()
 {
     if (!address)
     {
-        address = modutils::scan<from::CS::GameMan *>({
+        address = modutils::scan<er::CS::GameMan *>({
             .aob = "48 8B 05 ?? ?? ?? ??" // mov rax, qword ptr [GameMan]
                    "80 B8 ?? ?? ?? ?? 0D" // cmp byte ptr rax->???, 13
                    "0F 94 C0"             // sete al

@@ -1,17 +1,20 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace from {
-namespace paramdef {
+namespace er
+{
+namespace paramdef
+{
 /**
  * @brief This struct was automatically generated from XML paramdefs.
- * 
+ *
  */
-struct CS_TEXTURE_FILTER_QUALITY_DETAIL {
+struct CS_TEXTURE_FILTER_QUALITY_DETAIL
+{
     /**
      * @brief filter
      */
-    unsigned char filter{ 3 };
+    unsigned char filter{3};
 
     /**
      * @brief dmy
@@ -21,8 +24,8 @@ struct CS_TEXTURE_FILTER_QUALITY_DETAIL {
     /**
      * @brief Aniso level
      */
-    unsigned int maxAnisoLevel{ 4 };
+    unsigned int maxAnisoLevel{4};
 };
 
 }; // namespace paramdef
-}; // namespace from
+}; // namespace er

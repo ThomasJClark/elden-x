@@ -1,19 +1,22 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace from {
-namespace paramdef {
+namespace er
+{
+namespace paramdef
+{
 /**
  * @brief This struct was automatically generated from XML paramdefs.
- * 
+ *
  */
-struct MAP_GD_REGION_DRAW_PARAM {
+struct MAP_GD_REGION_DRAW_PARAM
+{
     /**
      * @brief Do you remove it from the NT version output?
      *
      * Parameters marked with ○ are excluded in the NT version package.
      */
-    bool disableParam_NT : 1 { false };
+    bool disableParam_NT : 1 {false};
 
     /**
      * @brief Reserve for package output 1
@@ -32,11 +35,11 @@ struct MAP_GD_REGION_DRAW_PARAM {
      * overwrite) [GR] SEQ13338 [Irradiance volume] I want to change the
      * indirect scale of the SFX light source uniformly.
      */
-    float overrideIVLocalLightScale{ -1.f };
+    float overrideIVLocalLightScale{-1.f};
 };
 
 }; // namespace paramdef
-}; // namespace from
+}; // namespace er
 
-static_assert(sizeof(from::paramdef::MAP_GD_REGION_DRAW_PARAM) == 8,
-    "MAP_GD_REGION_DRAW_PARAM paramdef size does not match detected size");
+static_assert(sizeof(er::paramdef::MAP_GD_REGION_DRAW_PARAM) == 8,
+              "MAP_GD_REGION_DRAW_PARAM paramdef size does not match detected size");

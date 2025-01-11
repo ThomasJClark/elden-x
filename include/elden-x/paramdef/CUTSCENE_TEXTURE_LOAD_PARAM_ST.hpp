@@ -1,19 +1,22 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace from {
-namespace paramdef {
+namespace er
+{
+namespace paramdef
+{
 /**
  * @brief This struct was automatically generated from XML paramdefs.
- * 
+ *
  */
-struct CUTSCENE_TEXTURE_LOAD_PARAM_ST {
+struct CUTSCENE_TEXTURE_LOAD_PARAM_ST
+{
     /**
      * @brief Do you remove it from the NT version output?
      *
      * Parameters marked with ○ are excluded in the NT version package.
      */
-    bool disableParam_NT : 1 { false };
+    bool disableParam_NT : 1 {false};
 
     /**
      * @brief Is it a debug parameter?
@@ -21,7 +24,7 @@ struct CUTSCENE_TEXTURE_LOAD_PARAM_ST {
      * Parameters marked with a circle are excluded from all packages (because
      * they are for debugging).
      */
-    bool disableParam_Debug : 1 { false };
+    bool disableParam_Debug : 1 {false};
 
     /**
      * @brief Reserve for package output 1
@@ -115,8 +118,8 @@ struct CUTSCENE_TEXTURE_LOAD_PARAM_ST {
 };
 
 }; // namespace paramdef
-}; // namespace from
+}; // namespace er
 
-static_assert(sizeof(from::paramdef::CUTSCENE_TEXTURE_LOAD_PARAM_ST) == 260,
-    "CUTSCENE_TEXTURE_LOAD_PARAM_ST paramdef size does not match detected "
-    "size");
+static_assert(sizeof(er::paramdef::CUTSCENE_TEXTURE_LOAD_PARAM_ST) == 260,
+              "CUTSCENE_TEXTURE_LOAD_PARAM_ST paramdef size does not match detected "
+              "size");

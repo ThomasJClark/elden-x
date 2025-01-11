@@ -3,13 +3,13 @@
 
 #include <spdlog/spdlog.h>
 
-static from::CS::GameDataMan **address = nullptr;
+static er::CS::GameDataMan **address = nullptr;
 
-from::CS::GameDataMan *from::CS::GameDataMan::instance()
+er::CS::GameDataMan *er::CS::GameDataMan::instance()
 {
     if (!address)
     {
-        address = modutils::scan<from::CS::GameDataMan *>({
+        address = modutils::scan<er::CS::GameDataMan *>({
             .aob = "48 8B 05 ?? ?? ?? ??" // mov rax, [GameDataMan]
                    "48 85 C0"             // test rax, rax
                    "74 05"                // je 10

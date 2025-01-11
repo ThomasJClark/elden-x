@@ -1,13 +1,16 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace from {
-namespace paramdef {
+namespace er
+{
+namespace paramdef
+{
 /**
  * @brief This struct was automatically generated from XML paramdefs.
- * 
+ *
  */
-struct REVERB_AUX_SEND_BUS_PARAM_ST {
+struct REVERB_AUX_SEND_BUS_PARAM_ST
+{
     /**
      * @brief ReverbAuxSendBus name
      */
@@ -15,4 +18,4 @@ struct REVERB_AUX_SEND_BUS_PARAM_ST {
 };
 
 }; // namespace paramdef
-}; // namespace from
+}; // namespace er

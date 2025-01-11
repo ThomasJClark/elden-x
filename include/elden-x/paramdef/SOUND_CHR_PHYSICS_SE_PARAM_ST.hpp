@@ -1,19 +1,22 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace from {
-namespace paramdef {
+namespace er
+{
+namespace paramdef
+{
 /**
  * @brief This struct was automatically generated from XML paramdefs.
- * 
+ *
  */
-struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
+struct SOUND_CHR_PHYSICS_SE_PARAM_ST
+{
     /**
      * @brief Do you remove it from the NT version output?
      *
      * Parameters marked with ○ are excluded in the NT version package.
      */
-    bool disableParam_NT : 1 { false };
+    bool disableParam_NT : 1 {false};
 
     /**
      * @brief Reserve for package output 1
@@ -31,7 +34,7 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * SEID pronounced when contacting the ground after death. (-1: Invalid).
      * SEID category is fixed to c
      */
-    int ContactLandSeId{ -1 };
+    int ContactLandSeId{-1};
 
     /**
      * @brief Ground contact additional SEID (for material)
@@ -39,14 +42,14 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * Additional SEID (for material) that sounds when it comes into contact
      * with the ground after death. (-1: Invalid). SEID category is fixed to c
      */
-    int ContactLandAddSeId{ -1 };
+    int ContactLandAddSeId{-1};
 
     /**
      * @brief Number of ground contact pronunciations
      *
      * Number of pronunciations when touching the ground after death
      */
-    int ContactLandPlayNum{ 1 };
+    int ContactLandPlayNum{1};
 
     /**
      * @brief Do you count the number of ground contact sounds in rigid body
@@ -55,7 +58,7 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * Do you count the number of pronunciations of surface contact after death
      * in rigid body units? (○: Rigid body unit, ×: Character unit)
      */
-    bool IsEnablePlayCountPerRigid{ false };
+    bool IsEnablePlayCountPerRigid{false};
 
     unsigned char pad[3];
 
@@ -65,14 +68,14 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * Minimum impulse value required for ground contact determination after
      * death
      */
-    float ContactLandMinImpuse{ 20.f };
+    float ContactLandMinImpuse{20.f};
 
     /**
      * @brief Ground contact minimum velocity value
      *
      * Minimum speed value required for ground contact determination after death
      */
-    float ContactLandMinSpeed{ 0.f };
+    float ContactLandMinSpeed{0.f};
 
     /**
      * @brief Player contact SEID
@@ -80,21 +83,21 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * SEID that sounds when you come into contact with Player after death. (-1:
      * Invalid). SEID category is fixed to c
      */
-    int ContactPlayerSeId{ -1 };
+    int ContactPlayerSeId{-1};
 
     /**
      * @brief Player minimum contact impulse value
      *
      * Minimum impulse value required for Player contact judgment after death
      */
-    float ContactPlayerMinImpuse{ 20.f };
+    float ContactPlayerMinImpuse{20.f};
 
     /**
      * @brief Player minimum contact speed value
      *
      * Minimum speed value required for Player contact judgment after death
      */
-    float ContactPlayerMinSpeed{ 0.f };
+    float ContactPlayerMinSpeed{0.f};
 
     /**
      * @brief Contact judgment rigid body IDX0
@@ -102,7 +105,7 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * Specify the INDEX of the rigid body for contact judgment. Specify only
      * the rigid body to which you want to attach SE
      */
-    signed char ContactCheckRigidIdx0{ -1 };
+    signed char ContactCheckRigidIdx0{-1};
 
     /**
      * @brief Contact judgment rigid body IDX1
@@ -110,7 +113,7 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * Specify the INDEX of the rigid body for contact judgment. Specify only
      * the rigid body to which you want to attach SE
      */
-    signed char ContactCheckRigidIdx1{ -1 };
+    signed char ContactCheckRigidIdx1{-1};
 
     /**
      * @brief Contact judgment rigid body IDX2
@@ -118,7 +121,7 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * Specify the INDEX of the rigid body for contact judgment. Specify only
      * the rigid body to which you want to attach SE
      */
-    signed char ContactCheckRigidIdx2{ -1 };
+    signed char ContactCheckRigidIdx2{-1};
 
     /**
      * @brief Contact judgment rigid body IDX3
@@ -126,7 +129,7 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * Specify the INDEX of the rigid body for contact judgment. Specify only
      * the rigid body to which you want to attach SE
      */
-    signed char ContactCheckRigidIdx3{ -1 };
+    signed char ContactCheckRigidIdx3{-1};
 
     /**
      * @brief Contact judgment rigid body IDX4
@@ -134,7 +137,7 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * Specify the INDEX of the rigid body for contact judgment. Specify only
      * the rigid body to which you want to attach SE
      */
-    signed char ContactCheckRigidIdx4{ -1 };
+    signed char ContactCheckRigidIdx4{-1};
 
     /**
      * @brief Contact judgment rigid body IDX5
@@ -142,7 +145,7 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * Specify the INDEX of the rigid body for contact judgment. Specify only
      * the rigid body to which you want to attach SE
      */
-    signed char ContactCheckRigidIdx5{ -1 };
+    signed char ContactCheckRigidIdx5{-1};
 
     /**
      * @brief Contact judgment rigid body IDX6
@@ -150,7 +153,7 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * Specify the INDEX of the rigid body for contact judgment. Specify only
      * the rigid body to which you want to attach SE
      */
-    signed char ContactCheckRigidIdx6{ -1 };
+    signed char ContactCheckRigidIdx6{-1};
 
     /**
      * @brief Contact judgment rigid body IDX7
@@ -158,7 +161,7 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * Specify the INDEX of the rigid body for contact judgment. Specify only
      * the rigid body to which you want to attach SE
      */
-    signed char ContactCheckRigidIdx7{ -1 };
+    signed char ContactCheckRigidIdx7{-1};
 
     /**
      * @brief Contact judgment rigid body IDX8
@@ -166,7 +169,7 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * Specify the INDEX of the rigid body for contact judgment. Specify only
      * the rigid body to which you want to attach SE
      */
-    signed char ContactCheckRigidIdx8{ -1 };
+    signed char ContactCheckRigidIdx8{-1};
 
     /**
      * @brief Contact judgment rigid body IDX9
@@ -174,7 +177,7 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * Specify the INDEX of the rigid body for contact judgment. Specify only
      * the rigid body to which you want to attach SE
      */
-    signed char ContactCheckRigidIdx9{ -1 };
+    signed char ContactCheckRigidIdx9{-1};
 
     /**
      * @brief Contact judgment rigid body IDX10
@@ -182,7 +185,7 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * Specify the INDEX of the rigid body for contact judgment. Specify only
      * the rigid body to which you want to attach SE
      */
-    signed char ContactCheckRigidIdx10{ -1 };
+    signed char ContactCheckRigidIdx10{-1};
 
     /**
      * @brief Contact judgment rigid body IDX11
@@ -190,7 +193,7 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * Specify the INDEX of the rigid body for contact judgment. Specify only
      * the rigid body to which you want to attach SE
      */
-    signed char ContactCheckRigidIdx11{ -1 };
+    signed char ContactCheckRigidIdx11{-1};
 
     /**
      * @brief Contact judgment rigid body IDX12
@@ -198,7 +201,7 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * Specify the INDEX of the rigid body for contact judgment. Specify only
      * the rigid body to which you want to attach SE
      */
-    signed char ContactCheckRigidIdx12{ -1 };
+    signed char ContactCheckRigidIdx12{-1};
 
     /**
      * @brief Contact judgment rigid body IDX13
@@ -206,7 +209,7 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * Specify the INDEX of the rigid body for contact judgment. Specify only
      * the rigid body to which you want to attach SE
      */
-    signed char ContactCheckRigidIdx13{ -1 };
+    signed char ContactCheckRigidIdx13{-1};
 
     /**
      * @brief Contact judgment rigid body IDX14
@@ -214,7 +217,7 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * Specify the INDEX of the rigid body for contact judgment. Specify only
      * the rigid body to which you want to attach SE
      */
-    signed char ContactCheckRigidIdx14{ -1 };
+    signed char ContactCheckRigidIdx14{-1};
 
     /**
      * @brief Contact judgment rigid body IDX15
@@ -222,11 +225,11 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST {
      * Specify the INDEX of the rigid body for contact judgment. Specify only
      * the rigid body to which you want to attach SE
      */
-    signed char ContactCheckRigidIdx15{ -1 };
+    signed char ContactCheckRigidIdx15{-1};
 };
 
 }; // namespace paramdef
-}; // namespace from
+}; // namespace er
 
-static_assert(sizeof(from::paramdef::SOUND_CHR_PHYSICS_SE_PARAM_ST) == 56,
-    "SOUND_CHR_PHYSICS_SE_PARAM_ST paramdef size does not match detected size");
+static_assert(sizeof(er::paramdef::SOUND_CHR_PHYSICS_SE_PARAM_ST) == 56,
+              "SOUND_CHR_PHYSICS_SE_PARAM_ST paramdef size does not match detected size");
