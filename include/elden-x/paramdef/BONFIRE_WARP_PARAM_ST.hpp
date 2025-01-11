@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct BONFIRE_WARP_PARAM_ST
+struct bonfire_warp_param_st
 {
     /**
      * @brief Do you remove it from the NT version output?
@@ -540,5 +540,5 @@ struct BONFIRE_WARP_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::BONFIRE_WARP_PARAM_ST) == 236,
+static_assert(sizeof(er::paramdef::bonfire_warp_param_st) == 236,
               "BONFIRE_WARP_PARAM_ST paramdef size does not match detected size");

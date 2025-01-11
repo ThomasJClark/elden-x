@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct ESTUS_FLASK_RECOVERY_PARAM_ST
+struct estus_flask_recovery_param_st
 {
     /**
      * @brief host
@@ -161,5 +161,5 @@ struct ESTUS_FLASK_RECOVERY_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::ESTUS_FLASK_RECOVERY_PARAM_ST) == 32,
+static_assert(sizeof(er::paramdef::estus_flask_recovery_param_st) == 32,
               "ESTUS_FLASK_RECOVERY_PARAM_ST paramdef size does not match detected size");

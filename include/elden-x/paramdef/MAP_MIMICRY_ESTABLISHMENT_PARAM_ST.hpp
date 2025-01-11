@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct MAP_MIMICRY_ESTABLISHMENT_PARAM_ST
+struct map_mimicry_establishment_param_st
 {
     /**
      * @brief Mimicry weight 0
@@ -77,6 +77,6 @@ struct MAP_MIMICRY_ESTABLISHMENT_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::MAP_MIMICRY_ESTABLISHMENT_PARAM_ST) == 64,
+static_assert(sizeof(er::paramdef::map_mimicry_establishment_param_st) == 64,
               "MAP_MIMICRY_ESTABLISHMENT_PARAM_ST paramdef size does not match detected "
               "size");

@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct SHOP_LINEUP_PARAM
+struct shop_lineup_param
 {
     /**
      * @brief Equipment ID
@@ -128,5 +128,5 @@ struct SHOP_LINEUP_PARAM
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::SHOP_LINEUP_PARAM) == 52,
+static_assert(sizeof(er::paramdef::shop_lineup_param) == 52,
               "SHOP_LINEUP_PARAM paramdef size does not match detected size");

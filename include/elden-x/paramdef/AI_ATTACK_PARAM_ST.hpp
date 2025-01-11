@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct AI_ATTACK_PARAM_ST
+struct ai_attack_param_st
 {
     /**
      * @brief Reference ID

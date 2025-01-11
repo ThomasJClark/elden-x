@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct MENU_OFFSCR_REND_PARAM_ST
+struct menu_offscr_rend_param_st
 {
     /**
      * @brief Camera gaze point X
@@ -95,5 +95,5 @@ struct MENU_OFFSCR_REND_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::MENU_OFFSCR_REND_PARAM_ST) == 64,
+static_assert(sizeof(er::paramdef::menu_offscr_rend_param_st) == 64,
               "MENU_OFFSCR_REND_PARAM_ST paramdef size does not match detected size");

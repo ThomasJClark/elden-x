@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct OBJECT_MATERIAL_SFX_PARAM_ST
+struct object_material_sfx_param_st
 {
     /**
      * @brief SFX identifier: 00

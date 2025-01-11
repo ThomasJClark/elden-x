@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct GAME_INFO_PARAM
+struct game_info_param
 {
     /**
      * @brief Title MsgID

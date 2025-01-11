@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct ASSET_GEOMETORY_PARAM_ST
+struct asset_geometory_param_st
 {
     /**
      * @brief Sound bank ID
@@ -918,5 +918,5 @@ struct ASSET_GEOMETORY_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::ASSET_GEOMETORY_PARAM_ST) == 320,
+static_assert(sizeof(er::paramdef::asset_geometory_param_st) == 320,
               "ASSET_GEOMETORY_PARAM_ST paramdef size does not match detected size");

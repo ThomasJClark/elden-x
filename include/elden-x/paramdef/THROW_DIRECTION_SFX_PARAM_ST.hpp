@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct THROW_DIRECTION_SFX_PARAM_ST
+struct throw_direction_sfx_param_st
 {
     /**
      * @brief 0
@@ -234,5 +234,5 @@ struct THROW_DIRECTION_SFX_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::THROW_DIRECTION_SFX_PARAM_ST) == 144,
+static_assert(sizeof(er::paramdef::throw_direction_sfx_param_st) == 144,
               "THROW_DIRECTION_SFX_PARAM_ST paramdef size does not match detected size");

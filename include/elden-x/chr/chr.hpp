@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../paramdef/SP_EFFECT_PARAM_ST.hpp"
+#include "../paramdef/sp_effect_param_st.hpp"
 #include "../stl.hpp"
 
 #include <array>
@@ -40,7 +40,7 @@ class SpecialEffect
     struct sp_effect_entry;
     struct sp_effect_entry
     {
-        paramdef::SP_EFFECT_PARAM_ST *param;
+        paramdef::sp_effect_param_st *param;
         unsigned int param_id;
         unsigned int unkc;
         CS::SpecialEffectEntryAccumulatorInfo accumulator_info;

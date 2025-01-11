@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct LOAD_BALANCER_NEW_DRAW_DIST_SCALE_PARAM_ST
+struct load_balancer_new_draw_dist_scale_param_st
 {
     /**
      * @brief Activation level (start)
@@ -77,6 +77,6 @@ struct LOAD_BALANCER_NEW_DRAW_DIST_SCALE_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::LOAD_BALANCER_NEW_DRAW_DIST_SCALE_PARAM_ST) == 48,
+static_assert(sizeof(er::paramdef::load_balancer_new_draw_dist_scale_param_st) == 48,
               "LOAD_BALANCER_NEW_DRAW_DIST_SCALE_PARAM_ST paramdef size does not match "
               "detected size");

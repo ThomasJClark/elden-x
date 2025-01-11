@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct POSTURE_CONTROL_PARAM_WEP_RIGHT_ST
+struct posture_control_param_wep_right_st
 {
     /**
      * @brief Right arm_front and back
@@ -306,6 +306,6 @@ struct POSTURE_CONTROL_PARAM_WEP_RIGHT_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::POSTURE_CONTROL_PARAM_WEP_RIGHT_ST) == 144,
+static_assert(sizeof(er::paramdef::posture_control_param_wep_right_st) == 144,
               "POSTURE_CONTROL_PARAM_WEP_RIGHT_ST paramdef size does not match detected "
               "size");

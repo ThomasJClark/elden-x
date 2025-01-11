@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct FE_TEXT_EFFECT_PARAM_ST
+struct fe_text_effect_param_st
 {
     /**
      * @brief Resource ID
@@ -47,5 +47,5 @@ struct FE_TEXT_EFFECT_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::FE_TEXT_EFFECT_PARAM_ST) == 32,
+static_assert(sizeof(er::paramdef::fe_text_effect_param_st) == 32,
               "FE_TEXT_EFFECT_PARAM_ST paramdef size does not match detected size");

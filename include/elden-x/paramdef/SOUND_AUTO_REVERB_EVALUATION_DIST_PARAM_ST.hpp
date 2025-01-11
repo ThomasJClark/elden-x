@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct SOUND_AUTO_REVERB_EVALUATION_DIST_PARAM_ST
+struct sound_auto_reverb_evaluation_dist_param_st
 {
     /**
      * @brief Distance to No Hit [m]
@@ -67,6 +67,6 @@ struct SOUND_AUTO_REVERB_EVALUATION_DIST_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::SOUND_AUTO_REVERB_EVALUATION_DIST_PARAM_ST) == 20,
+static_assert(sizeof(er::paramdef::sound_auto_reverb_evaluation_dist_param_st) == 20,
               "SOUND_AUTO_REVERB_EVALUATION_DIST_PARAM_ST paramdef size does not match "
               "detected size");

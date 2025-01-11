@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CEREMONY_PARAM_ST
+struct ceremony_param_st
 {
     /**
      * @brief Event layer ID
@@ -55,5 +55,5 @@ struct CEREMONY_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::CEREMONY_PARAM_ST) == 36,
+static_assert(sizeof(er::paramdef::ceremony_param_st) == 36,
               "CEREMONY_PARAM_ST paramdef size does not match detected size");

@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct WWISE_VALUE_TO_STR_CONVERT_PARAM_ST
+struct wwise_value_to_str_convert_param_st
 {
     /**
      * @brief Do you remove it from the NT version output?
@@ -37,6 +37,6 @@ struct WWISE_VALUE_TO_STR_CONVERT_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::WWISE_VALUE_TO_STR_CONVERT_PARAM_ST) == 36,
+static_assert(sizeof(er::paramdef::wwise_value_to_str_convert_param_st) == 36,
               "WWISE_VALUE_TO_STR_CONVERT_PARAM_ST paramdef size does not match detected "
               "size");

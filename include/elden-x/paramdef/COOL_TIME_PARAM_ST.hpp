@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct COOL_TIME_PARAM_ST
+struct cool_time_param_st
 {
     /**
      * @brief Time limit (0 cooperating spirits)
@@ -71,5 +71,5 @@ struct COOL_TIME_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::COOL_TIME_PARAM_ST) == 32,
+static_assert(sizeof(er::paramdef::cool_time_param_st) == 32,
               "COOL_TIME_PARAM_ST paramdef size does not match detected size");

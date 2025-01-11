@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct RIDE_PARAM_ST
+struct ride_param_st
 {
     /**
      * @brief Riding side character ID
@@ -123,5 +123,5 @@ struct RIDE_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::RIDE_PARAM_ST) == 64,
+static_assert(sizeof(er::paramdef::ride_param_st) == 64,
               "RIDE_PARAM_ST paramdef size does not match detected size");

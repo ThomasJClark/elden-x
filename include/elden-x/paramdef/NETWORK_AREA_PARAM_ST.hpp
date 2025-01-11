@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct NETWORK_AREA_PARAM_ST
+struct network_area_param_st
 {
     /**
      * @brief Cell size X
@@ -85,5 +85,5 @@ struct NETWORK_AREA_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::NETWORK_AREA_PARAM_ST) == 28,
+static_assert(sizeof(er::paramdef::network_area_param_st) == 28,
               "NETWORK_AREA_PARAM_ST paramdef size does not match detected size");

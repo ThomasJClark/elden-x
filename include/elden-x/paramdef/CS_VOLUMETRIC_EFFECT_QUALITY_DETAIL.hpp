@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CS_VOLUMETRIC_EFFECT_QUALITY_DETAIL
+struct cs_volumetric_effect_quality_detail
 {
     /**
      * @brief Fog enabled

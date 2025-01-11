@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct AI_SOUND_PARAM_ST
+struct ai_sound_param_st
 {
     /**
      * @brief Sound radius [m]
@@ -101,5 +101,5 @@ struct AI_SOUND_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::AI_SOUND_PARAM_ST) == 32,
+static_assert(sizeof(er::paramdef::ai_sound_param_st) == 32,
               "AI_SOUND_PARAM_ST paramdef size does not match detected size");

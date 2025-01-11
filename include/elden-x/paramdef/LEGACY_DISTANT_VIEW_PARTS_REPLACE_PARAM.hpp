@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct LEGACY_DISTANT_VIEW_PARTS_REPLACE_PARAM
+struct legacy_distant_view_parts_replace_param
 {
     /**
      * @brief Map ID
@@ -146,6 +146,6 @@ struct LEGACY_DISTANT_VIEW_PARTS_REPLACE_PARAM
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::LEGACY_DISTANT_VIEW_PARTS_REPLACE_PARAM) == 64,
+static_assert(sizeof(er::paramdef::legacy_distant_view_parts_replace_param) == 64,
               "LEGACY_DISTANT_VIEW_PARTS_REPLACE_PARAM paramdef size does not match "
               "detected size");

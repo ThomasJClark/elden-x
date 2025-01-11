@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct GPARAM_GRID_REGION_INFO_PARAM_ST
+struct gparam_grid_region_info_param_st
 {
     /**
      * @brief Open local ID for MapGparam

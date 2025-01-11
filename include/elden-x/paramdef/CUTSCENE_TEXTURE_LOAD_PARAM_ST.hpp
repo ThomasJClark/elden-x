@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CUTSCENE_TEXTURE_LOAD_PARAM_ST
+struct cutscene_texture_load_param_st
 {
     /**
      * @brief Do you remove it from the NT version output?
@@ -120,6 +120,6 @@ struct CUTSCENE_TEXTURE_LOAD_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::CUTSCENE_TEXTURE_LOAD_PARAM_ST) == 260,
+static_assert(sizeof(er::paramdef::cutscene_texture_load_param_st) == 260,
               "CUTSCENE_TEXTURE_LOAD_PARAM_ST paramdef size does not match detected "
               "size");

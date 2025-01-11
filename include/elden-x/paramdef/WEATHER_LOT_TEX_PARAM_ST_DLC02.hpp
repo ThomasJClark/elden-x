@@ -6,7 +6,7 @@ namespace er
 namespace paramdef
 {
 
-struct WEATHER_LOT_TEX_PARAM_ST_DLC02
+struct weather_lot_tex_param_st_dlc02
 {
     /**
      * @brief NT版出力から外すか

@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CHARMAKEMENU_LISTITEM_PARAM_ST
+struct charmakemenu_listitem_param_st
 {
     /**
      * @brief value
@@ -38,6 +38,6 @@ struct CHARMAKEMENU_LISTITEM_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::CHARMAKEMENU_LISTITEM_PARAM_ST) == 16,
+static_assert(sizeof(er::paramdef::charmakemenu_listitem_param_st) == 16,
               "CHARMAKEMENU_LISTITEM_PARAM_ST paramdef size does not match detected "
               "size");

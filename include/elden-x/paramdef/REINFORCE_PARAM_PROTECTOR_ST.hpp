@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct REINFORCE_PARAM_PROTECTOR_ST
+struct reinforce_param_protector_st
 {
     /**
      * @brief Physical defense
@@ -148,5 +148,5 @@ struct REINFORCE_PARAM_PROTECTOR_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::REINFORCE_PARAM_PROTECTOR_ST) == 64,
+static_assert(sizeof(er::paramdef::reinforce_param_protector_st) == 64,
               "REINFORCE_PARAM_PROTECTOR_ST paramdef size does not match detected size");

@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct MENU_COMMON_PARAM_ST
+struct menu_common_param_st
 {
     /**
      * @brief Solo play Fade out start time at death [seconds]
@@ -490,5 +490,5 @@ struct MENU_COMMON_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::MENU_COMMON_PARAM_ST) == 256,
+static_assert(sizeof(er::paramdef::menu_common_param_st) == 256,
               "MENU_COMMON_PARAM_ST paramdef size does not match detected size");

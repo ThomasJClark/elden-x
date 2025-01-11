@@ -6,7 +6,7 @@ namespace er
 namespace paramdef
 {
 
-struct CHR_EQUIP_MODEL_PARAM_ST
+struct chr_equip_model_param_st
 {
     int unknown_0x0{0};
 

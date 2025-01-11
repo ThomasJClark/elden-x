@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct BEHAVIOR_PARAM_ST
+struct behavior_param_st
 {
     /**
      * @brief Behavior variation ID
@@ -97,5 +97,5 @@ struct BEHAVIOR_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::BEHAVIOR_PARAM_ST) == 32,
+static_assert(sizeof(er::paramdef::behavior_param_st) == 32,
               "BEHAVIOR_PARAM_ST paramdef size does not match detected size");

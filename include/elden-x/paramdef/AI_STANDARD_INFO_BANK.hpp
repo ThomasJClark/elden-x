@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct AI_STANDARD_INFO_BANK
+struct ai_standard_info_bank
 {
     /**
      * @brief Recognition distance [m]

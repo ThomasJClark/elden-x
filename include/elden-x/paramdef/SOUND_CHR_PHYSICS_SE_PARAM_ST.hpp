@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct SOUND_CHR_PHYSICS_SE_PARAM_ST
+struct sound_chr_physics_se_param_st
 {
     /**
      * @brief Do you remove it from the NT version output?
@@ -231,5 +231,5 @@ struct SOUND_CHR_PHYSICS_SE_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::SOUND_CHR_PHYSICS_SE_PARAM_ST) == 56,
+static_assert(sizeof(er::paramdef::sound_chr_physics_se_param_st) == 56,
               "SOUND_CHR_PHYSICS_SE_PARAM_ST paramdef size does not match detected size");

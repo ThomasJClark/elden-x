@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct ASSET_MODEL_SFX_PARAM_ST
+struct asset_model_sfx_param_st
 {
     /**
      * @brief 0: SfxID
@@ -118,5 +118,5 @@ struct ASSET_MODEL_SFX_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::ASSET_MODEL_SFX_PARAM_ST) == 128,
+static_assert(sizeof(er::paramdef::asset_model_sfx_param_st) == 128,
               "ASSET_MODEL_SFX_PARAM_ST paramdef size does not match detected size");

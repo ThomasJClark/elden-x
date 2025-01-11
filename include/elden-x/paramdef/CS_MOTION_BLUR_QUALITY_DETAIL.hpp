@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CS_MOTION_BLUR_QUALITY_DETAIL
+struct cs_motion_blur_quality_detail
 {
     /**
      * @brief Motion blur enabled

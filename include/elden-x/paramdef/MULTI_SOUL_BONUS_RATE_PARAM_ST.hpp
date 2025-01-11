@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct MULTI_SOUL_BONUS_RATE_PARAM_ST
+struct multi_soul_bonus_rate_param_st
 {
     /**
      * @brief host
@@ -129,6 +129,6 @@ struct MULTI_SOUL_BONUS_RATE_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::MULTI_SOUL_BONUS_RATE_PARAM_ST) == 128,
+static_assert(sizeof(er::paramdef::multi_soul_bonus_rate_param_st) == 128,
               "MULTI_SOUL_BONUS_RATE_PARAM_ST paramdef size does not match detected "
               "size");

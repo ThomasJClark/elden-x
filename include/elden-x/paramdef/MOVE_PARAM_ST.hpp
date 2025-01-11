@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct MOVE_PARAM_ST
+struct move_param_st
 {
     /**
      * @brief stand-by
@@ -242,5 +242,5 @@ struct MOVE_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::MOVE_PARAM_ST) == 144,
+static_assert(sizeof(er::paramdef::move_param_st) == 144,
               "MOVE_PARAM_ST paramdef size does not match detected size");

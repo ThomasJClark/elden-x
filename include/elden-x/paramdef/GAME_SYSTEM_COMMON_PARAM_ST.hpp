@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct GAME_SYSTEM_COMMON_PARAM_ST
+struct game_system_common_param_st
 {
     /**
      * @brief Basic toughness durability recovery time
@@ -2059,5 +2059,5 @@ struct GAME_SYSTEM_COMMON_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::GAME_SYSTEM_COMMON_PARAM_ST) == 1024,
+static_assert(sizeof(er::paramdef::game_system_common_param_st) == 1024,
               "GAME_SYSTEM_COMMON_PARAM_ST paramdef size does not match detected size");

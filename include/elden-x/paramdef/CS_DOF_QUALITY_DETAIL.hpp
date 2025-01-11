@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CS_DOF_QUALITY_DETAIL
+struct cs_dof_quality_detail
 {
     /**
      * @brief DOF permission

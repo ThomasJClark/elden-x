@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct OBJECT_PARAM_ST
+struct object_param_st
 {
     /**
      * @brief HP

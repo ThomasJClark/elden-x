@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct TOUGHNESS_PARAM_ST
+struct toughness_param_st
 {
     /**
      * @brief Weapon toughness correction factor
@@ -61,5 +61,5 @@ struct TOUGHNESS_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::TOUGHNESS_PARAM_ST) == 32,
+static_assert(sizeof(er::paramdef::toughness_param_st) == 32,
               "TOUGHNESS_PARAM_ST paramdef size does not match detected size");

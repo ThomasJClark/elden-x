@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct SP_EFFECT_VFX_PARAM_ST
+struct sp_effect_vfx_param_st
 {
     /**
      * @brief In effect SfxID
@@ -469,5 +469,5 @@ struct SP_EFFECT_VFX_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::SP_EFFECT_VFX_PARAM_ST) == 164,
+static_assert(sizeof(er::paramdef::sp_effect_vfx_param_st) == 164,
               "SP_EFFECT_VFX_PARAM_ST paramdef size does not match detected size");

@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CUTSCENE_GPARAM_TIME_PARAM_ST
+struct cutscene_gparam_time_param_st
 {
     /**
      * @brief Do you remove it from the NT version output?
@@ -106,5 +106,5 @@ struct CUTSCENE_GPARAM_TIME_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::CUTSCENE_GPARAM_TIME_PARAM_ST) == 16,
+static_assert(sizeof(er::paramdef::cutscene_gparam_time_param_st) == 16,
               "CUTSCENE_GPARAM_TIME_PARAM_ST paramdef size does not match detected size");

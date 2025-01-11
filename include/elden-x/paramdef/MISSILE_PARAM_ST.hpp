@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct MISSILE_PARAM_ST
+struct missile_param_st
 {
     /**
      * @brief FFXID

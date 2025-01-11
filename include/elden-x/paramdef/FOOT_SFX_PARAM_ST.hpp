@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct FOOT_SFX_PARAM_ST
+struct foot_sfx_param_st
 {
     /**
      * @brief SFX identifier: 00
@@ -2015,5 +2015,5 @@ struct FOOT_SFX_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::FOOT_SFX_PARAM_ST) == 800,
+static_assert(sizeof(er::paramdef::foot_sfx_param_st) == 800,
               "FOOT_SFX_PARAM_ST paramdef size does not match detected size");

@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct ATK_PARAM_ST
+struct atk_param_st
 {
     /**
      * @brief 0 radius per
@@ -1486,5 +1486,5 @@ struct ATK_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::ATK_PARAM_ST) == 456,
+static_assert(sizeof(er::paramdef::atk_param_st) == 456,
               "ATK_PARAM_ST paramdef size does not match detected size");

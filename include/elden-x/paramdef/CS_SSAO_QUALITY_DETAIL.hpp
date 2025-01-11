@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CS_SSAO_QUALITY_DETAIL
+struct cs_ssao_quality_detail
 {
     /**
      * @brief SSAO enabled

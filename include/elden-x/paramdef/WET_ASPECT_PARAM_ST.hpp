@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct WET_ASPECT_PARAM_ST
+struct wet_aspect_param_st
 {
     /**
      * @brief Base color value R
@@ -81,5 +81,5 @@ struct WET_ASPECT_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::WET_ASPECT_PARAM_ST) == 32,
+static_assert(sizeof(er::paramdef::wet_aspect_param_st) == 32,
               "WET_ASPECT_PARAM_ST paramdef size does not match detected size");

@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct ENEMY_COMMON_PARAM_ST
+struct enemy_common_param_st
 {
     unsigned char reserved0[8];
 
@@ -62,5 +62,5 @@ struct ENEMY_COMMON_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::ENEMY_COMMON_PARAM_ST) == 256,
+static_assert(sizeof(er::paramdef::enemy_common_param_st) == 256,
               "ENEMY_COMMON_PARAM_ST paramdef size does not match detected size");

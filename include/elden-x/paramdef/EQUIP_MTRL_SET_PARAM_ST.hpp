@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct EQUIP_MTRL_SET_PARAM_ST
+struct equip_mtrl_set_param_st
 {
     /**
      * @brief Required Material Item ID 01
@@ -191,5 +191,5 @@ struct EQUIP_MTRL_SET_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::EQUIP_MTRL_SET_PARAM_ST) == 52,
+static_assert(sizeof(er::paramdef::equip_mtrl_set_param_st) == 52,
               "EQUIP_MTRL_SET_PARAM_ST paramdef size does not match detected size");

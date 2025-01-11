@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct WEATHER_ASSET_REPLACE_PARAM_ST
+struct weather_asset_replace_param_st
 {
     /**
      * @brief Map number
@@ -139,6 +139,6 @@ struct WEATHER_ASSET_REPLACE_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::WEATHER_ASSET_REPLACE_PARAM_ST) == 64,
+static_assert(sizeof(er::paramdef::weather_asset_replace_param_st) == 64,
               "WEATHER_ASSET_REPLACE_PARAM_ST paramdef size does not match detected "
               "size");

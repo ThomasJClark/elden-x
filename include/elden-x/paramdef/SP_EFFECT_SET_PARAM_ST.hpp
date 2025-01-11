@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct SP_EFFECT_SET_PARAM_ST
+struct sp_effect_set_param_st
 {
     /**
      * @brief Special effect ID1
@@ -35,5 +35,5 @@ struct SP_EFFECT_SET_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::SP_EFFECT_SET_PARAM_ST) == 16,
+static_assert(sizeof(er::paramdef::sp_effect_set_param_st) == 16,
               "SP_EFFECT_SET_PARAM_ST paramdef size does not match detected size");

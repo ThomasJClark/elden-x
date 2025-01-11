@@ -6,7 +6,7 @@ namespace er
 namespace paramdef
 {
 
-struct SIGN_PUDDLE_TAB_PARAM_ST
+struct sign_puddle_tab_param_st
 {
     /**
      * @brief isDlcTab

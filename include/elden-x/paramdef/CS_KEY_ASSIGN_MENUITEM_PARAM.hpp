@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CS_KEY_ASSIGN_MENUITEM_PARAM
+struct cs_key_assign_menuitem_param
 {
     /**
      * @brief text
@@ -87,5 +87,5 @@ struct CS_KEY_ASSIGN_MENUITEM_PARAM
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::CS_KEY_ASSIGN_MENUITEM_PARAM) == 24,
+static_assert(sizeof(er::paramdef::cs_key_assign_menuitem_param) == 24,
               "CS_KEY_ASSIGN_MENUITEM_PARAM paramdef size does not match detected size");

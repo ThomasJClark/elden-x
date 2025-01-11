@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct HIT_EFFECT_SE_PARAM_ST
+struct hit_effect_se_param_st
 {
     /**
      * @brief Iron: Slash: Small
@@ -692,5 +692,5 @@ struct HIT_EFFECT_SE_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::HIT_EFFECT_SE_PARAM_ST) == 640,
+static_assert(sizeof(er::paramdef::hit_effect_se_param_st) == 640,
               "HIT_EFFECT_SE_PARAM_ST paramdef size does not match detected size");

@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct EVENT_FLAG_USAGE_PARAM_ST
+struct event_flag_usage_param_st
 {
     /**
      * @brief Use

@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct MENU_VALUE_TABLE_SPEC
+struct menu_value_table_spec
 {
     /**
      * @brief Value to compare
@@ -32,5 +32,5 @@ struct MENU_VALUE_TABLE_SPEC
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::MENU_VALUE_TABLE_SPEC) == 12,
+static_assert(sizeof(er::paramdef::menu_value_table_spec) == 12,
               "MENU_VALUE_TABLE_SPEC paramdef size does not match detected size");

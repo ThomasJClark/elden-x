@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct THROW_PARAM_ST
+struct throw_param_st
 {
     /**
      * @brief Throwing side character ID
@@ -319,5 +319,5 @@ struct THROW_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::THROW_PARAM_ST) == 128,
+static_assert(sizeof(er::paramdef::throw_param_st) == 128,
               "THROW_PARAM_ST paramdef size does not match detected size");

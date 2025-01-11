@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CACL_CORRECT_GRAPH_ST
+struct cacl_correct_graph_st
 {
     /**
      * @brief Threshold point 0
@@ -142,5 +142,5 @@ struct CACL_CORRECT_GRAPH_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::CACL_CORRECT_GRAPH_ST) == 80,
+static_assert(sizeof(er::paramdef::cacl_correct_graph_st) == 80,
               "CACL_CORRECT_GRAPH_ST paramdef size does not match detected size");

@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct AI_ANIM_TBL_PARAM
+struct ai_anim_tbl_param
 {
     /**
      * @brief Attack 1 EzState Anime Number

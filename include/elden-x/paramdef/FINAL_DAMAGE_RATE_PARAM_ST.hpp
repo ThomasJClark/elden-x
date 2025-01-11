@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct FINAL_DAMAGE_RATE_PARAM_ST
+struct final_damage_rate_param_st
 {
     /**
      * @brief The physical damage rate multiplier.
@@ -57,5 +57,5 @@ struct FINAL_DAMAGE_RATE_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::FINAL_DAMAGE_RATE_PARAM_ST) == 28,
+static_assert(sizeof(er::paramdef::final_damage_rate_param_st) == 28,
               "FINAL_DAMAGE_RATE_PARAM_ST paramdef size does not match detected size");

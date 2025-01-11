@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CS_RAYTRACING_QUALITY_DETAIL
+struct cs_raytracing_quality_detail
 {
     /**
      * @brief Enable ray traced ambient occlusion.

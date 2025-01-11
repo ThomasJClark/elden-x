@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct DIRECTION_CAMERA_PARAM_ST
+struct direction_camera_param_st
 {
     /**
      * @brief Affected by options
@@ -26,5 +26,5 @@ struct DIRECTION_CAMERA_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::DIRECTION_CAMERA_PARAM_ST) == 16,
+static_assert(sizeof(er::paramdef::direction_camera_param_st) == 16,
               "DIRECTION_CAMERA_PARAM_ST paramdef size does not match detected size");

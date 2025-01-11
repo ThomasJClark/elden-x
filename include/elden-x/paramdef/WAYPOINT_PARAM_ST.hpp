@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct WAYPOINT_PARAM_ST
+struct waypoint_param_st
 {
     /**
      * @brief Attribute 1
@@ -37,5 +37,5 @@ struct WAYPOINT_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::WAYPOINT_PARAM_ST) == 16,
+static_assert(sizeof(er::paramdef::waypoint_param_st) == 16,
               "WAYPOINT_PARAM_ST paramdef size does not match detected size");

@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct BULLET_PARAM_ST
+struct bullet_param_st
 {
     /**
      * @brief Attack ID
@@ -844,5 +844,5 @@ struct BULLET_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::BULLET_PARAM_ST) == 272,
+static_assert(sizeof(er::paramdef::bullet_param_st) == 272,
               "BULLET_PARAM_ST paramdef size does not match detected size");

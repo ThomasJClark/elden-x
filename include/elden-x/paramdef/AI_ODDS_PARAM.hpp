@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct AI_ODDS_PARAM
+struct ai_odds_param
 {
     /**
      * @brief Action 0

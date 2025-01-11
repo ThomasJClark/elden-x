@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct NPC_AI_ACTION_PARAM_ST
+struct npc_ai_action_param_st
 {
     /**
      * @brief Move direction input
@@ -88,5 +88,5 @@ struct NPC_AI_ACTION_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::NPC_AI_ACTION_PARAM_ST) == 16,
+static_assert(sizeof(er::paramdef::npc_ai_action_param_st) == 16,
               "NPC_AI_ACTION_PARAM_ST paramdef size does not match detected size");

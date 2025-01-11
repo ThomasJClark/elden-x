@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct ENV_OBJ_LOT_PARAM_ST
+struct env_obj_lot_param_st
 {
     /**
      * @brief AssetId_0
@@ -129,5 +129,5 @@ struct ENV_OBJ_LOT_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::ENV_OBJ_LOT_PARAM_ST) == 64,
+static_assert(sizeof(er::paramdef::env_obj_lot_param_st) == 64,
               "ENV_OBJ_LOT_PARAM_ST paramdef size does not match detected size");

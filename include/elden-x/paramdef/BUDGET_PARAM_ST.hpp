@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct BUDGET_PARAM_ST
+struct budget_param_st
 {
     /**
      * @brief VRAM: ALL
@@ -201,5 +201,5 @@ struct BUDGET_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::BUDGET_PARAM_ST) == 132,
+static_assert(sizeof(er::paramdef::budget_param_st) == 132,
               "BUDGET_PARAM_ST paramdef size does not match detected size");

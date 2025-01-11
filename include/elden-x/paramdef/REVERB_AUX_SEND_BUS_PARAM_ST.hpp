@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct REVERB_AUX_SEND_BUS_PARAM_ST
+struct reverb_aux_send_bus_param_st
 {
     /**
      * @brief ReverbAuxSendBus name

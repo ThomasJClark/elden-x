@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct WEATHER_PARAM_ST
+struct weather_param_st
 {
     /**
      * @brief Weather SfxId (common)
@@ -141,5 +141,5 @@ struct WEATHER_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::WEATHER_PARAM_ST) == 68,
+static_assert(sizeof(er::paramdef::weather_param_st) == 68,
               "WEATHER_PARAM_ST paramdef size does not match detected size");

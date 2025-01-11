@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct KNOCKBACK_PARAM_ST
+struct knockback_param_st
 {
     /**
      * @brief Minimal damage_speed maintenance time [s]
@@ -230,5 +230,5 @@ struct KNOCKBACK_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::KNOCKBACK_PARAM_ST) == 128,
+static_assert(sizeof(er::paramdef::knockback_param_st) == 128,
               "KNOCKBACK_PARAM_ST paramdef size does not match detected size");

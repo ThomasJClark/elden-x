@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct PLAYER_COMMON_PARAM_ST
+struct player_common_param_st
 {
     /**
      * @brief Player's automatic foot effect SFX identifier [3 digits]
@@ -395,5 +395,5 @@ struct PLAYER_COMMON_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::PLAYER_COMMON_PARAM_ST) == 256,
+static_assert(sizeof(er::paramdef::player_common_param_st) == 256,
               "PLAYER_COMMON_PARAM_ST paramdef size does not match detected size");

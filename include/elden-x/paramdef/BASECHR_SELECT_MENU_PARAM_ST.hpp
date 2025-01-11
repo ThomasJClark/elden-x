@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct BASECHR_SELECT_MENU_PARAM_ST
+struct basechr_select_menu_param_st
 {
     /**
      * @brief Do you remove it from the NT version output?
@@ -64,5 +64,5 @@ struct BASECHR_SELECT_MENU_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::BASECHR_SELECT_MENU_PARAM_ST) == 32,
+static_assert(sizeof(er::paramdef::basechr_select_menu_param_st) == 32,
               "BASECHR_SELECT_MENU_PARAM_ST paramdef size does not match detected size");

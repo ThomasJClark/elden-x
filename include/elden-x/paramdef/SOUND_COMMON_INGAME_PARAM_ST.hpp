@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct SOUND_COMMON_INGAME_PARAM_ST
+struct sound_common_ingame_param_st
 {
     /**
      * @brief Parameter Key string
@@ -29,5 +29,5 @@ struct SOUND_COMMON_INGAME_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::SOUND_COMMON_INGAME_PARAM_ST) == 64,
+static_assert(sizeof(er::paramdef::sound_common_ingame_param_st) == 64,
               "SOUND_COMMON_INGAME_PARAM_ST paramdef size does not match detected size");

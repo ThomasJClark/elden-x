@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CUTSCENE_TIMEZONE_CONVERT_PARAM_ST
+struct cutscene_timezone_convert_param_st
 {
     /**
      * @brief Pre-conversion time zone start time [hour]
@@ -29,6 +29,6 @@ struct CUTSCENE_TIMEZONE_CONVERT_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::CUTSCENE_TIMEZONE_CONVERT_PARAM_ST) == 8,
+static_assert(sizeof(er::paramdef::cutscene_timezone_convert_param_st) == 8,
               "CUTSCENE_TIMEZONE_CONVERT_PARAM_ST paramdef size does not match detected "
               "size");

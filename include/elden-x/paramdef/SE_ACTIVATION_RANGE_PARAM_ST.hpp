@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct SE_ACTIVATION_RANGE_PARAM_ST
+struct se_activation_range_param_st
 {
     /**
      * @brief Activate distance
@@ -22,5 +22,5 @@ struct SE_ACTIVATION_RANGE_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::SE_ACTIVATION_RANGE_PARAM_ST) == 4,
+static_assert(sizeof(er::paramdef::se_activation_range_param_st) == 4,
               "SE_ACTIVATION_RANGE_PARAM_ST paramdef size does not match detected size");

@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct SP_EFFECT_PARAM_ST
+struct sp_effect_param_st
 {
     /**
      * @brief Icon ID
@@ -2538,5 +2538,5 @@ struct SP_EFFECT_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::SP_EFFECT_PARAM_ST) == 912,
+static_assert(sizeof(er::paramdef::sp_effect_param_st) == 912,
               "SP_EFFECT_PARAM_ST paramdef size does not match detected size");

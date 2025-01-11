@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct GRAPHICS_COMMON_PARAM_ST
+struct graphics_common_param_st
 {
     /**
      * @brief Decal generation position offset when a bullet hits HIT INS
@@ -34,5 +34,5 @@ struct GRAPHICS_COMMON_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::GRAPHICS_COMMON_PARAM_ST) == 256,
+static_assert(sizeof(er::paramdef::graphics_common_param_st) == 256,
               "GRAPHICS_COMMON_PARAM_ST paramdef size does not match detected size");

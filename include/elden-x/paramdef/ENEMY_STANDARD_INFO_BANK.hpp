@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct ENEMY_STANDARD_INFO_BANK
+struct enemy_standard_info_bank
 {
     /**
      * @brief Behavior id

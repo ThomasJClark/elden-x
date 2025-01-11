@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CUTSCENE_WEATHER_OVERRIDE_GPARAM_ID_CONVERT_PARAM_ST
+struct cutscene_weather_override_gparam_id_convert_param_st
 {
     /**
      * @brief Cutscene Weather Overwrite Gparam Suffix ID
@@ -22,6 +22,6 @@ struct CUTSCENE_WEATHER_OVERRIDE_GPARAM_ID_CONVERT_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::CUTSCENE_WEATHER_OVERRIDE_GPARAM_ID_CONVERT_PARAM_ST) == 4,
+static_assert(sizeof(er::paramdef::cutscene_weather_override_gparam_id_convert_param_st) == 4,
               "CUTSCENE_WEATHER_OVERRIDE_GPARAM_ID_CONVERT_PARAM_ST paramdef size does "
               "not match detected size");

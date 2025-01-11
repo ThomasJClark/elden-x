@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CHARACTER_INIT_PARAM
+struct character_init_param
 {
     /**
      * @brief MP recovery speed basic value [s]
@@ -762,5 +762,5 @@ struct CHARACTER_INIT_PARAM
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::CHARACTER_INIT_PARAM) == 320,
+static_assert(sizeof(er::paramdef::character_init_param) == 320,
               "CHARACTER_INIT_PARAM paramdef size does not match detected size");

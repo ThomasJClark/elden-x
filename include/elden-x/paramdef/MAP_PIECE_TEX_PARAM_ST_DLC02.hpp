@@ -6,7 +6,7 @@ namespace er
 namespace paramdef
 {
 
-struct MAP_PIECE_TEX_PARAM_ST_DLC02
+struct map_piece_tex_param_st_dlc02
 {
     /**
      * @brief NT版出力から外すか

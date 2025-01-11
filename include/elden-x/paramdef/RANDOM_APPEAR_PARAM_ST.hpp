@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct RANDOM_APPEAR_PARAM_ST
+struct random_appear_param_st
 {
     /**
      * @brief Lottery slot ID 0
@@ -717,5 +717,5 @@ struct RANDOM_APPEAR_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::RANDOM_APPEAR_PARAM_ST) == 13,
+static_assert(sizeof(er::paramdef::random_appear_param_st) == 13,
               "RANDOM_APPEAR_PARAM_ST paramdef size does not match detected size");

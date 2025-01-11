@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CLEAR_COUNT_CORRECT_PARAM_ST
+struct clear_count_correct_param_st
 {
     /**
      * @brief 《Maximum HP magnification [%]》
@@ -234,5 +234,5 @@ struct CLEAR_COUNT_CORRECT_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::CLEAR_COUNT_CORRECT_PARAM_ST) == 128,
+static_assert(sizeof(er::paramdef::clear_count_correct_param_st) == 128,
               "CLEAR_COUNT_CORRECT_PARAM_ST paramdef size does not match detected size");

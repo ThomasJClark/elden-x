@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct SPEEDTREE_MODEL_PARAM_ST
+struct speedtree_model_param_st
 {
     /**
      * @brief Leaf minimum fade value
@@ -65,5 +65,5 @@ struct SPEEDTREE_MODEL_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::SPEEDTREE_MODEL_PARAM_ST) == 40,
+static_assert(sizeof(er::paramdef::speedtree_model_param_st) == 40,
               "SPEEDTREE_MODEL_PARAM_ST paramdef size does not match detected size");

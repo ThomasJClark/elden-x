@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct DEFAULT_KEY_ASSIGN
+struct default_key_assign
 {
     /**
      * @brief Pad 0

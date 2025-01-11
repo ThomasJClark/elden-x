@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct LOCK_CAM_PARAM_ST
+struct lock_cam_param_st
 {
     /**
      * @brief Camera distance target [m]
@@ -164,5 +164,5 @@ struct LOCK_CAM_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::LOCK_CAM_PARAM_ST) == 128,
+static_assert(sizeof(er::paramdef::lock_cam_param_st) == 128,
               "LOCK_CAM_PARAM_ST paramdef size does not match detected size");

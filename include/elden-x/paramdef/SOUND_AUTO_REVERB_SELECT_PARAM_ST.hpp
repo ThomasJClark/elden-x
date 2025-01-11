@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct SOUND_AUTO_REVERB_SELECT_PARAM_ST
+struct sound_auto_reverb_select_param_st
 {
     /**
      * @brief Reverb type
@@ -90,6 +90,6 @@ struct SOUND_AUTO_REVERB_SELECT_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::SOUND_AUTO_REVERB_SELECT_PARAM_ST) == 32,
+static_assert(sizeof(er::paramdef::sound_auto_reverb_select_param_st) == 32,
               "SOUND_AUTO_REVERB_SELECT_PARAM_ST paramdef size does not match detected "
               "size");

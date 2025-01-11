@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct ROLLING_OBJ_LOT_PARAM_ST
+struct rolling_obj_lot_param_st
 {
     /**
      * @brief Do you remove it from the NT version output?
@@ -146,5 +146,5 @@ struct ROLLING_OBJ_LOT_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::ROLLING_OBJ_LOT_PARAM_ST) == 64,
+static_assert(sizeof(er::paramdef::rolling_obj_lot_param_st) == 64,
               "ROLLING_OBJ_LOT_PARAM_ST paramdef size does not match detected size");

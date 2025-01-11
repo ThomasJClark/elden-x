@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct PARTS_DRAW_PARAM_ST
+struct parts_draw_param_st
 {
     /**
      * @brief LOD level 0-1 boundary distance [m]
@@ -276,5 +276,5 @@ struct PARTS_DRAW_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::PARTS_DRAW_PARAM_ST) == 144,
+static_assert(sizeof(er::paramdef::parts_draw_param_st) == 144,
               "PARTS_DRAW_PARAM_ST paramdef size does not match detected size");

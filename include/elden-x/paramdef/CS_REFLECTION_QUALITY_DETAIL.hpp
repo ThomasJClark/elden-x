@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CS_REFLECTION_QUALITY_DETAIL
+struct cs_reflection_quality_detail
 {
     /**
      * @brief Reflective effective

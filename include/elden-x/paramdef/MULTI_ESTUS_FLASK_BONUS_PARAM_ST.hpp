@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct MULTI_ESTUS_FLASK_BONUS_PARAM_ST
+struct multi_estus_flask_bonus_param_st
 {
     /**
      * @brief host
@@ -129,6 +129,6 @@ struct MULTI_ESTUS_FLASK_BONUS_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::MULTI_ESTUS_FLASK_BONUS_PARAM_ST) == 64,
+static_assert(sizeof(er::paramdef::multi_estus_flask_bonus_param_st) == 64,
               "MULTI_ESTUS_FLASK_BONUS_PARAM_ST paramdef size does not match detected "
               "size");

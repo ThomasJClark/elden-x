@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct GRASS_MAP_SETTINGS_PARAM_ST
+struct grass_map_settings_param_st
 {
     /**
      * @brief Grass type 0

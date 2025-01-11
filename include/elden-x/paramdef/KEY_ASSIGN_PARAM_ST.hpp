@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct KEY_ASSIGN_PARAM_ST
+struct key_assign_param_st
 {
     int padKeyId{-1};
 
@@ -47,5 +47,5 @@ struct KEY_ASSIGN_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::KEY_ASSIGN_PARAM_ST) == 32,
+static_assert(sizeof(er::paramdef::key_assign_param_st) == 32,
               "KEY_ASSIGN_PARAM_ST paramdef size does not match detected size");

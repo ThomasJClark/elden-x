@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct MATERIAL_EX_PARAM_ST
+struct material_ex_param_st
 {
     /**
      * @brief Material parameter name
@@ -67,5 +67,5 @@ struct MATERIAL_EX_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::MATERIAL_EX_PARAM_ST) == 96,
+static_assert(sizeof(er::paramdef::material_ex_param_st) == 96,
               "MATERIAL_EX_PARAM_ST paramdef size does not match detected size");

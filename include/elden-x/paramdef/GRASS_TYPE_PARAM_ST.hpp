@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct GRASS_TYPE_PARAM_ST
+struct grass_type_param_st
 {
     /**
      * @brief LOD distance
@@ -198,5 +198,5 @@ struct GRASS_TYPE_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::GRASS_TYPE_PARAM_ST) == 276,
+static_assert(sizeof(er::paramdef::grass_type_param_st) == 276,
               "GRASS_TYPE_PARAM_ST paramdef size does not match detected size");

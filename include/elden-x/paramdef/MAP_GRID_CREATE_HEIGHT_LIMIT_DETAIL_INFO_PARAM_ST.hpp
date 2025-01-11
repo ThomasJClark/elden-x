@@ -6,7 +6,7 @@ namespace er
 namespace paramdef
 {
 
-struct MAP_GRID_CREATE_HEIGHT_LIMIT_DETAIL_INFO_PARAM_ST
+struct map_grid_create_height_limit_detail_info_param_st
 {
     /**
      * @brief mapId

@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct AUTO_CREATE_ENV_SOUND_PARAM_ST
+struct auto_create_env_sound_param_st
 {
     /**
      * @brief Appearance distance Min [m]
@@ -63,6 +63,6 @@ struct AUTO_CREATE_ENV_SOUND_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::AUTO_CREATE_ENV_SOUND_PARAM_ST) == 32,
+static_assert(sizeof(er::paramdef::auto_create_env_sound_param_st) == 32,
               "AUTO_CREATE_ENV_SOUND_PARAM_ST paramdef size does not match detected "
               "size");

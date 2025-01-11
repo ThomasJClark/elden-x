@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CS_TEXTURE_FILTER_QUALITY_DETAIL
+struct cs_texture_filter_quality_detail
 {
     /**
      * @brief filter

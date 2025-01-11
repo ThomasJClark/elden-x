@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CAMERA_FADE_PARAM_ST
+struct camera_fade_param_st
 {
     /**
      * @brief Distance to be transparent (m)

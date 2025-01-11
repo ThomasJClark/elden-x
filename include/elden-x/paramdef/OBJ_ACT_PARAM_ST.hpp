@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct OBJ_ACT_PARAM_ST
+struct obj_act_param_st
 {
     /**
      * @brief MsgID when action is enabled
@@ -182,5 +182,5 @@ struct OBJ_ACT_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::OBJ_ACT_PARAM_ST) == 96,
+static_assert(sizeof(er::paramdef::obj_act_param_st) == 96,
               "OBJ_ACT_PARAM_ST paramdef size does not match detected size");

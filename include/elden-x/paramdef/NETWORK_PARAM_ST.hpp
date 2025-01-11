@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct NETWORK_PARAM_ST
+struct network_param_st
 {
     /**
      * @brief Sign height offset [m]
@@ -881,5 +881,5 @@ struct NETWORK_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::NETWORK_PARAM_ST) == 632,
+static_assert(sizeof(er::paramdef::network_param_st) == 632,
               "NETWORK_PARAM_ST paramdef size does not match detected size");

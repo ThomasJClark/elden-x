@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct SFX_BLOCK_RES_SHARE_PARAM
+struct sfx_block_res_share_param
 {
     /**
      * @brief Block Sfx resource reference map number
@@ -23,5 +23,5 @@ struct SFX_BLOCK_RES_SHARE_PARAM
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::SFX_BLOCK_RES_SHARE_PARAM) == 4,
+static_assert(sizeof(er::paramdef::sfx_block_res_share_param) == 4,
               "SFX_BLOCK_RES_SHARE_PARAM paramdef size does not match detected size");

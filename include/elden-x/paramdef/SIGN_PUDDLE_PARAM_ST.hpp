@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct SIGN_PUDDLE_PARAM_ST
+struct sign_puddle_param_st
 {
     /**
      * @brief Do you remove it from the NT version output?
@@ -95,5 +95,5 @@ struct SIGN_PUDDLE_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::SIGN_PUDDLE_PARAM_ST) == 48,
+static_assert(sizeof(er::paramdef::sign_puddle_param_st) == 48,
               "SIGN_PUDDLE_PARAM_ST paramdef size does not match detected size");

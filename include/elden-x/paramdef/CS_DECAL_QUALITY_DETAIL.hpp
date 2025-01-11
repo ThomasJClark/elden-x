@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CS_DECAL_QUALITY_DETAIL
+struct cs_decal_quality_detail
 {
     /**
      * @brief Decal valid

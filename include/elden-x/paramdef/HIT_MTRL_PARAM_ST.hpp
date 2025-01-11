@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct HIT_MTRL_PARAM_ST
+struct hit_mtrl_param_st
 {
     /**
      * @brief Sound radius magnification
@@ -202,5 +202,5 @@ struct HIT_MTRL_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::HIT_MTRL_PARAM_ST) == 100,
+static_assert(sizeof(er::paramdef::hit_mtrl_param_st) == 100,
               "HIT_MTRL_PARAM_ST paramdef size does not match detected size");

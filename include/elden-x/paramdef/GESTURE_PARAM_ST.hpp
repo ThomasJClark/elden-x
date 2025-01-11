@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct GESTURE_PARAM_ST
+struct gesture_param_st
 {
     /**
      * @brief Do you remove it from the NT version output?
@@ -60,5 +60,5 @@ struct GESTURE_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::GESTURE_PARAM_ST) == 16,
+static_assert(sizeof(er::paramdef::gesture_param_st) == 16,
               "GESTURE_PARAM_ST paramdef size does not match detected size");

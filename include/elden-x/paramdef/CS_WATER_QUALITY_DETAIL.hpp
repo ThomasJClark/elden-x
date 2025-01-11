@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CS_WATER_QUALITY_DETAIL
+struct cs_water_quality_detail
 {
     /**
      * @brief Interaction enabled

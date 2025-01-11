@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CS_SHADER_QUALITY_DETAIL
+struct cs_shader_quality_detail
 {
     /**
      * @brief SSS enabled

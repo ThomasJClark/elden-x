@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct BULLET_CREATE_LIMIT_PARAM_ST
+struct bullet_create_limit_param_st
 {
     /**
      * @brief Maximum number of bullets in the group
@@ -31,5 +31,5 @@ struct BULLET_CREATE_LIMIT_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::BULLET_CREATE_LIMIT_PARAM_ST) == 32,
+static_assert(sizeof(er::paramdef::bullet_create_limit_param_st) == 32,
               "BULLET_CREATE_LIMIT_PARAM_ST paramdef size does not match detected size");

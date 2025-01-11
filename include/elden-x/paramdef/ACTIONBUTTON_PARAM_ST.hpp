@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct ACTIONBUTTON_PARAM_ST
+struct actionbutton_param_st
 {
     /**
      * @brief Range type
@@ -201,5 +201,5 @@ struct ACTIONBUTTON_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::ACTIONBUTTON_PARAM_ST) == 100,
+static_assert(sizeof(er::paramdef::actionbutton_param_st) == 100,
               "ACTIONBUTTON_PARAM_ST paramdef size does not match detected size");

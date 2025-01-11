@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct ROLE_PARAM_ST
+struct role_param_st
 {
     /**
      * @brief Team type
@@ -197,5 +197,5 @@ struct ROLE_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::ROLE_PARAM_ST) == 128,
+static_assert(sizeof(er::paramdef::role_param_st) == 128,
               "ROLE_PARAM_ST paramdef size does not match detected size");

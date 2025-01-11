@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct MODEL_SFX_PARAM_ST
+struct model_sfx_param_st
 {
     /**
      * @brief 0: SfxID

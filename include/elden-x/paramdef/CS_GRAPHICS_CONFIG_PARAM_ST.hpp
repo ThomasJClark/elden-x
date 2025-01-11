@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct CS_GRAPHICS_CONFIG_PARAM_ST
+struct cs_graphics_config_param_st
 {
     /**
      * @brief Texture filter quality
@@ -116,5 +116,5 @@ struct CS_GRAPHICS_CONFIG_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::CS_GRAPHICS_CONFIG_PARAM_ST) == 16,
+static_assert(sizeof(er::paramdef::cs_graphics_config_param_st) == 16,
               "CS_GRAPHICS_CONFIG_PARAM_ST paramdef size does not match detected size");

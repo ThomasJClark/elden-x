@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct RANDOM_APPEAR_EDIT_PARAM_ST
+struct random_appear_edit_param_st
 {
     /**
      * @brief Number of simultaneous appearances

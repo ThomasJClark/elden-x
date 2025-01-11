@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct SOUND_COMMON_SYSTEM_PARAM_ST
+struct sound_common_system_param_st
 {
     /**
      * @brief Parameter Key string

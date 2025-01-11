@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct MENUPROPERTY_SPEC
+struct menuproperty_spec
 {
     /**
      * @brief Item name Text ID
@@ -44,5 +44,5 @@ struct MENUPROPERTY_SPEC
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::MENUPROPERTY_SPEC) == 32,
+static_assert(sizeof(er::paramdef::menuproperty_spec) == 32,
               "MENUPROPERTY_SPEC paramdef size does not match detected size");

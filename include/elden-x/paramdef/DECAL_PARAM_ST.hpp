@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct DECAL_PARAM_ST
+struct decal_param_st
 {
     /**
      * @brief Texture ID
@@ -548,5 +548,5 @@ struct DECAL_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::DECAL_PARAM_ST) == 248,
+static_assert(sizeof(er::paramdef::decal_param_st) == 248,
               "DECAL_PARAM_ST paramdef size does not match detected size");

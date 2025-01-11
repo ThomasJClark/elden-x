@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct POSTURE_CONTROL_PARAM_GENDER_ST
+struct posture_control_param_gender_st
 {
     /**
      * @brief Right elbow _ inside and outside
@@ -152,6 +152,6 @@ struct POSTURE_CONTROL_PARAM_GENDER_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::POSTURE_CONTROL_PARAM_GENDER_ST) == 64,
+static_assert(sizeof(er::paramdef::posture_control_param_gender_st) == 64,
               "POSTURE_CONTROL_PARAM_GENDER_ST paramdef size does not match detected "
               "size");

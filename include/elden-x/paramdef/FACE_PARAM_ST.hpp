@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct FACE_PARAM_ST
+struct face_param_st
 {
     /**
      * @brief Face part ID
@@ -1297,5 +1297,5 @@ struct FACE_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::FACE_PARAM_ST) == 240,
+static_assert(sizeof(er::paramdef::face_param_st) == 240,
               "FACE_PARAM_ST paramdef size does not match detected size");

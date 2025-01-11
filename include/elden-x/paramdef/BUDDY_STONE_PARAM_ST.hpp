@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct BUDDY_STONE_PARAM_ST
+struct buddy_stone_param_st
 {
     /**
      * @brief Do you remove it from the NT version output?
@@ -114,5 +114,5 @@ struct BUDDY_STONE_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::BUDDY_STONE_PARAM_ST) == 64,
+static_assert(sizeof(er::paramdef::buddy_stone_param_st) == 64,
               "BUDDY_STONE_PARAM_ST paramdef size does not match detected size");

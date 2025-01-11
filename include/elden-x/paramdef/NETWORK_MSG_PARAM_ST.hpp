@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct NETWORK_MSG_PARAM_ST
+struct network_msg_param_st
 {
     /**
      * @brief priority
@@ -239,5 +239,5 @@ struct NETWORK_MSG_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::NETWORK_MSG_PARAM_ST) == 192,
+static_assert(sizeof(er::paramdef::network_msg_param_st) == 192,
               "NETWORK_MSG_PARAM_ST paramdef size does not match detected size");

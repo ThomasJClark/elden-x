@@ -9,7 +9,7 @@ namespace paramdef
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct ATTACK_ELEMENT_CORRECT_PARAM_ST
+struct attack_element_correct_param_st
 {
     /**
      * @brief Whether to correct muscle strength (physical)
@@ -444,6 +444,6 @@ struct ATTACK_ELEMENT_CORRECT_PARAM_ST
 }; // namespace paramdef
 }; // namespace er
 
-static_assert(sizeof(er::paramdef::ATTACK_ELEMENT_CORRECT_PARAM_ST) == 128,
+static_assert(sizeof(er::paramdef::attack_element_correct_param_st) == 128,
               "ATTACK_ELEMENT_CORRECT_PARAM_ST paramdef size does not match detected "
               "size");

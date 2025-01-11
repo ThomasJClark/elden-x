@@ -6,7 +6,7 @@ namespace er
 namespace paramdef
 {
 
-struct SIGN_PUDDLE_SUB_CATEGORY_PARAM_ST
+struct sign_puddle_sub_category_param_st
 {
     /**
      * @brief startPad
