@@ -1,6 +1,6 @@
 #pragma once
 
-#include "./utils/modutils.hpp"
+#include "singletons.hpp"
 
 #include <utility>
 
@@ -16,15 +16,10 @@ namespace CS
 class CSWindow;
 class CSScreenModeCtrl;
 
-class CSWindow
+class CSWindow : public FD4::FD4Singleton<CSWindow, FD4::singleton_index::CSWindow>
 {
   public:
     virtual ~CSWindow() = 0;
-
-    static CSWindow *instance()
-    {
-        return modutils::get_singleton<CSWindow>("CSWindow");
-    }
 
     enum class screen_mode : int
     {

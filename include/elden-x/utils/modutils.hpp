@@ -1,5 +1,4 @@
 #pragma once
-#define WIN32_LEAN_AND_MEAN
 
 #include <stdexcept>
 #include <vector>
@@ -23,14 +22,10 @@ struct scanopts
 
 namespace impl
 {
-void *scan(const scanopts &opts);
+uintptr_t scan_memory(uintptr_t, const std::string &);
+uintptr_t apply_offsets(uintptr_t, ptrdiff_t offset, const scanopts::relative_offsets_type &);
+uintptr_t scan(const scanopts &opts);
 void hook(void *function, void *detour, void **trampoline);
-void *get_singleton_address(const std::string &singleton_name);
-}
-
-template <typename T> inline T *get_singleton(const std::string &singleton_name)
-{
-    return reinterpret_cast<T *>(impl::get_singleton_address(singleton_name));
 }
 
 template <typename T> inline T *scan(const scanopts &opts)

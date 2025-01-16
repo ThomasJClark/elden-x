@@ -2,21 +2,16 @@
 
 #include "popup_menu.hpp"
 
-#include "../utils/modutils.hpp"
+#include "../singletons.hpp"
 
 namespace er
 {
 namespace CS
 {
 
-class CSMenuManImp
+class CSMenuManImp : public FD4::FD4Singleton<CSMenuManImp, FD4::singleton_index::CSMenuMan>
 {
   public:
-    static CSMenuManImp *instance()
-    {
-        return modutils::get_singleton<er::CS::CSMenuManImp>("CSMenuMan");
-    }
-
     virtual ~CSMenuManImp() = default;
 
     unsigned char unk8[0x78];

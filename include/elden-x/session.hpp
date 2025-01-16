@@ -2,7 +2,7 @@
 
 #include <span>
 
-#include "./utils/modutils.hpp"
+#include "singletons.hpp"
 
 namespace er
 {
@@ -10,13 +10,9 @@ namespace CS
 {
 
 class CSSessionManagerImp
+    : public FD4::FD4Singleton<CSSessionManagerImp, FD4::singleton_index::CSSessionManager>
 {
   public:
-    static CSSessionManagerImp *instance()
-    {
-        return modutils::get_singleton<CSSessionManagerImp>("CSSessionManager");
-    }
-
     struct player_entry
     {
         void *unk0;

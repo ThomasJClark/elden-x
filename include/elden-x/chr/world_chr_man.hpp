@@ -3,21 +3,16 @@
 #include "chrset.hpp"
 #include "player.hpp"
 
-#include "../utils/modutils.hpp"
+#include "../singletons.hpp"
 
 namespace er
 {
 namespace CS
 {
 
-class WorldChrManImp
+class WorldChrManImp : public FD4::FD4Singleton<WorldChrManImp, FD4::singleton_index::WorldChrMan>
 {
   public:
-    static WorldChrManImp *instance()
-    {
-        return modutils::get_singleton<er::CS::WorldChrManImp>("WorldChrMan");
-    }
-
     virtual ~WorldChrManImp() = default;
 
     unsigned char unk8[0x10ed8];
