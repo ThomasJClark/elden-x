@@ -3,6 +3,7 @@
 #include <span>
 
 #include "singletons.hpp"
+#include "steam_id.hpp"
 
 namespace er
 {
@@ -84,7 +85,7 @@ class CSSessionManager
     {
         void *unk0;
         void *unk8;
-        unsigned long long steam_id;
+        steam_id_type steam_id;
         unsigned char unk18[0xe8];
     };
 

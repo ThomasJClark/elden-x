@@ -1,5 +1,6 @@
 #pragma once
 
+#include "../steam_id.hpp"
 #include "chr.hpp"
 
 namespace er
@@ -179,7 +180,7 @@ class PlayerNetworkSession
   public:
     virtual ~PlayerNetworkSession() = default;
 
-    unsigned long long steam_id;
+    steam_id_type steam_id;
 };
 
 class PlayerSessionHolder
