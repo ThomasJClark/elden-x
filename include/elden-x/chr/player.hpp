@@ -128,6 +128,12 @@ class PlayerGameData
         int arcane;
     };
 
+    enum class body_type_en : unsigned char
+    {
+        type_b = 0, // Female
+        type_a = 1, // Male
+    };
+
     virtual ~PlayerGameData() = default;
 
     std::wstring_view name()
@@ -148,7 +154,9 @@ class PlayerGameData
     int rune_level;
     unsigned char unk6c[0x30];
     wchar_t name_c_str[16];
-    unsigned char unkbc[0x26];
+    unsigned char unkbc[0x2];
+    body_type_en body_type;
+    unsigned char unkbf[0x23];
     unsigned char max_reinforce_level;
     unsigned char unke3[0x1cd];
     CS::EquipGameData equip_game_data;
@@ -169,6 +177,8 @@ static_assert(0x68 == __builtin_offsetof(PlayerGameData, rune_level));
 static_assert(0x6c == __builtin_offsetof(PlayerGameData, unk6c));
 static_assert(0x9c == __builtin_offsetof(PlayerGameData, name_c_str));
 static_assert(0xbc == __builtin_offsetof(PlayerGameData, unkbc));
+static_assert(0xbe == __builtin_offsetof(PlayerGameData, body_type));
+static_assert(0xbf == __builtin_offsetof(PlayerGameData, unkbf));
 static_assert(0xe2 == __builtin_offsetof(PlayerGameData, max_reinforce_level));
 static_assert(0xe3 == __builtin_offsetof(PlayerGameData, unke3));
 static_assert(0x2b0 == __builtin_offsetof(PlayerGameData, equip_game_data));
