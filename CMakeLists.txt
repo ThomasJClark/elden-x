@@ -39,6 +39,7 @@ add_library(elden-x STATIC
   src/elden-x/messages.cpp
   src/elden-x/gamedata/game_data_man.cpp
   src/elden-x/game_man.cpp
+  src/elden-x/task.cpp
   src/elden-x/utils/modutils.cpp
   src/elden-x/params/params.cpp
   src/elden-x/singletons.cpp)
