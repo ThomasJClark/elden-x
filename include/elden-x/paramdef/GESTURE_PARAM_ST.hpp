@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct gesture_param_st
-{
+struct gesture_param_st {
     /**
      * @brief Do you remove it from the NT version output?
      *
@@ -57,8 +54,8 @@ struct gesture_param_st
     unsigned char pad1[3];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::gesture_param_st) == 16,
               "GESTURE_PARAM_ST paramdef size does not match detected size");

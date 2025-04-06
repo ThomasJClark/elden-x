@@ -1,13 +1,10 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 
-struct sign_puddle_sub_category_param_st
-{
+struct sign_puddle_sub_category_param_st {
     /**
      * @brief startPad
      */
@@ -31,5 +28,5 @@ struct sign_puddle_sub_category_param_st
     unsigned char endPad[4];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

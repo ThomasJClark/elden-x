@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct resist_correct_param_st
-{
+struct resist_correct_param_st {
     /**
      * @brief Addition after the first activation pt
      *
@@ -92,8 +89,8 @@ struct resist_correct_param_st
     float addRate5{1.f};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::resist_correct_param_st) == 40,
               "RESIST_CORRECT_PARAM_ST paramdef size does not match detected size");

@@ -1,16 +1,13 @@
 #pragma once
 
-namespace er
-{
-namespace CS
-{
+namespace er {
+namespace CS {
 
 /**
  * Stores the state of any grid or list selection dialog (talk lists, main menu, etc.)
  */
-class GridControl
-{
-  public:
+class GridControl {
+public:
     virtual ~GridControl() = default;
 
     unsigned char unk8[0xc8];

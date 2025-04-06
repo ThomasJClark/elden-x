@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct weather_asset_create_param_st
-{
+struct weather_asset_create_param_st {
     /**
      * @brief Asset Id
      *
@@ -189,8 +186,8 @@ struct weather_asset_create_param_st
     unsigned char Reserved2[4];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::weather_asset_create_param_st) == 64,
               "WEATHER_ASSET_CREATE_PARAM_ST paramdef size does not match detected size");

@@ -2,23 +2,17 @@
 
 #include <array>
 
-namespace er
-{
+namespace er {
 
 // There are many other options, I only care about the sort by type option
-enum class menu_sort : unsigned int
-{
-    item_type_ascending = 0x80005141
-};
+enum class menu_sort : unsigned int { item_type_ascending = 0x80005141 };
 
 static constexpr size_t sort_index_all_items = 12;
 
-namespace CS
-{
+namespace CS {
 
-class CSMenuSystemSaveLoad
-{
-  public:
+class CSMenuSystemSaveLoad {
+public:
     virtual ~CSMenuSystemSaveLoad() = default;
 
     unsigned char unk8[0x1438];
@@ -26,9 +20,8 @@ class CSMenuSystemSaveLoad
     std::array<menu_sort, 20> sorts;
 };
 
-class GameDataMan
-{
-  public:
+class GameDataMan {
+public:
     static GameDataMan *instance();
 
     virtual ~GameDataMan() = default;

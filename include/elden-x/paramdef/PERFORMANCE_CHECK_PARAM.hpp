@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct performance_check_param
-{
+struct performance_check_param {
     /**
      * @brief Report destination_Job type tag
      */
@@ -49,5 +46,5 @@ struct performance_check_param
     wchar_t userTag[16];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

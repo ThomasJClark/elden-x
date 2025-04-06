@@ -1,13 +1,10 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 
-struct map_grid_create_height_limit_detail_info_param_st
-{
+struct map_grid_create_height_limit_detail_info_param_st {
     /**
      * @brief mapId
      */
@@ -54,5 +51,5 @@ struct map_grid_create_height_limit_detail_info_param_st
     int unknown_0x3c{0};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

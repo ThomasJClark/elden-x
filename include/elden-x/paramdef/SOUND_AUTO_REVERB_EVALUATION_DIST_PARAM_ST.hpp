@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct sound_auto_reverb_evaluation_dist_param_st
-{
+struct sound_auto_reverb_evaluation_dist_param_st {
     /**
      * @brief Distance to No Hit [m]
      *
@@ -64,8 +61,8 @@ struct sound_auto_reverb_evaluation_dist_param_st
     unsigned int ignoreDistNumForMax{0};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::sound_auto_reverb_evaluation_dist_param_st) == 20,
               "SOUND_AUTO_REVERB_EVALUATION_DIST_PARAM_ST paramdef size does not match "

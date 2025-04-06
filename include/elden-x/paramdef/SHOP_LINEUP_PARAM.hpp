@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct shop_lineup_param
-{
+struct shop_lineup_param {
     /**
      * @brief Equipment ID
      *
@@ -125,8 +122,8 @@ struct shop_lineup_param
     unsigned char pad2[2];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::shop_lineup_param) == 52,
               "SHOP_LINEUP_PARAM paramdef size does not match detected size");

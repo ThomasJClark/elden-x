@@ -21,19 +21,17 @@
 #include <type_traits>
 #include <utility>
 
-namespace er
-{
-namespace param
-{
+namespace er {
+namespace param {
 
 /**
  * @brief An interface to a param table of one of the predefined types.
  *
  * @tparam ParamType one of the predefined param types
  */
-template <typename ParamType> class param_table
-{
-  public:
+template <typename ParamType>
+class param_table {
+public:
     /**
      * @brief The paramdefs this param type uses.
      *
@@ -88,16 +86,13 @@ template <typename ParamType> class param_table
      * @param row The row id.
      * @return std::pair<paramdef_type&, bool>
      */
-    std::pair<paramdef_type &, bool> operator[](row_index_type row) const noexcept
-    {
+    std::pair<paramdef_type &, bool> operator[](row_index_type row) const noexcept {
         iterator first = this->begin();
         iterator last = this->end();
         iterator found = std::lower_bound(
             first, last, row, [](const auto &cmp, const auto &row) { return cmp.first < row; });
-        if (found == last || (*found).first != row)
-        {
-            if (!this->dummy_param)
-            {
+        if (found == last || (*found).first != row) {
+            if (!this->dummy_param) {
                 auto swap = std::make_unique<paramdef_type>();
                 std::atomic_thread_fence(std::memory_order_seq_cst);
                 this->dummy_param.swap(swap);
@@ -117,15 +112,12 @@ template <typename ParamType> class param_table
      * @return iterator an iterator to the first param row or a
      * default constructed iterator
      */
-    iterator begin() noexcept
-    {
+    iterator begin() noexcept {
         auto solo_param_repository = CS::SoloParamRepository::instance();
-        if (!solo_param_repository)
-            return iterator{};
+        if (!solo_param_repository) return iterator{};
 
         auto file = solo_param_repository->get_param_file(index);
-        if (!file)
-            return iterator{};
+        if (!file) return iterator{};
 
         return iterator(*file, 0);
     }
@@ -139,15 +131,12 @@ template <typename ParamType> class param_table
      * @return iterator an iterator past the end of the param table or a
      * default constructed iterator
      */
-    iterator end() noexcept
-    {
+    iterator end() noexcept {
         auto solo_param_repository = CS::SoloParamRepository::instance();
-        if (!solo_param_repository)
-            return iterator{};
+        if (!solo_param_repository) return iterator{};
 
         auto file = solo_param_repository->get_param_file(index);
-        if (!file)
-            return iterator{};
+        if (!file) return iterator{};
 
         return iterator(*file, file->row_count);
     }
@@ -161,10 +150,7 @@ template <typename ParamType> class param_table
      * @return const_iterator an iterator to the first param row or a
      * default constructed iterator
      */
-    const_iterator begin() const noexcept
-    {
-        return const_cast<param_table *>(this)->begin();
-    }
+    const_iterator begin() const noexcept { return const_cast<param_table *>(this)->begin(); }
 
     /**
      * @brief Get the iterator after the last param row in the table.
@@ -175,10 +161,7 @@ template <typename ParamType> class param_table
      * @return const_iterator an iterator past the end of the param table or a
      * default constructed iterator
      */
-    const_iterator end() const noexcept
-    {
-        return const_cast<param_table *>(this)->end();
-    }
+    const_iterator end() const noexcept { return const_cast<param_table *>(this)->end(); }
 
     /**
      * @brief Get the const iterator to the first param row in the table.
@@ -189,10 +172,7 @@ template <typename ParamType> class param_table
      * @return const_iterator an iterator to the first param row or a
      * default constructed iterator
      */
-    const_iterator cbegin() const noexcept
-    {
-        return this->begin();
-    }
+    const_iterator cbegin() const noexcept { return this->begin(); }
 
     /**
      * @brief Get the const iterator after the last param row in the table.
@@ -203,10 +183,7 @@ template <typename ParamType> class param_table
      * @return const iterator an iterator past the end of the param table or a
      * default constructed iterator
      */
-    const_iterator cend() const noexcept
-    {
-        return this->end();
-    }
+    const_iterator cend() const noexcept { return this->end(); }
 
     /**
      * @brief Get the reverse iterator to the last param row in the table.
@@ -217,10 +194,7 @@ template <typename ParamType> class param_table
      * @return reverse_iterator an iterator to the last param row or a
      * default constructed iterator
      */
-    reverse_iterator rbegin() noexcept
-    {
-        return this->end();
-    }
+    reverse_iterator rbegin() noexcept { return this->end(); }
 
     /**
      * @brief Get the reverse iterator before the first param row in the table.
@@ -231,10 +205,7 @@ template <typename ParamType> class param_table
      * @return reverse_iterator an iterator before the start of the param table
      * or a default constructed iterator
      */
-    reverse_iterator rend() noexcept
-    {
-        return this->begin();
-    }
+    reverse_iterator rend() noexcept { return this->begin(); }
 
     /**
      * @brief Get the reverse iterator to the last param row in the table.
@@ -245,10 +216,7 @@ template <typename ParamType> class param_table
      * @return const_reverse_iterator an iterator to the last param row or a
      * default constructed iterator
      */
-    const_reverse_iterator rbegin() const noexcept
-    {
-        return this->end();
-    }
+    const_reverse_iterator rbegin() const noexcept { return this->end(); }
 
     /**
      * @brief Get the reverse iterator before the first param row in the table.
@@ -259,10 +227,7 @@ template <typename ParamType> class param_table
      * @return const_reverse_iterator an iterator before the start of the param
      * table or a default constructed iterator
      */
-    const_reverse_iterator rend() const noexcept
-    {
-        return this->begin();
-    }
+    const_reverse_iterator rend() const noexcept { return this->begin(); }
 
     /**
      * @brief Get the reverse iterator to the last param row in the table.
@@ -273,10 +238,7 @@ template <typename ParamType> class param_table
      * @return const_reverse_iterator an iterator to the last param row or a
      * default constructed iterator
      */
-    const_reverse_iterator crbegin() const noexcept
-    {
-        return this->end();
-    }
+    const_reverse_iterator crbegin() const noexcept { return this->end(); }
 
     /**
      * @brief Get the reverse iterator before the first param row in the table.
@@ -287,12 +249,9 @@ template <typename ParamType> class param_table
      * @return const_reverse_iterator an iterator before the start of the param
      * table or a default constructed iterator
      */
-    const_reverse_iterator crend() const noexcept
-    {
-        return this->begin();
-    }
+    const_reverse_iterator crend() const noexcept { return this->begin(); }
 
-  private:
+private:
     mutable std::unique_ptr<paramdef_type> dummy_param;
 };
 
@@ -300,8 +259,8 @@ template <typename ParamType> class param_table
  * @brief A helper structure with param type data.
  *
  */
-template <param_index Index, typename Def> struct param_type
-{
+template <param_index Index, typename Def>
+struct param_type {
     /**
      * @brief The paramdefs this param uses.
      *
@@ -512,5 +471,5 @@ inline param_table<param_type<param_index::SignPuddleTabParam, paramdef::sign_pu
 inline param_table<param_type<param_index::WeatherLotTexParam_m61, paramdef::weather_lot_tex_param_st_dlc02>> WeatherLotTexParam_m61;
 // clang-format on
 
-} // namespace param
-} // namespace er
+}
+}

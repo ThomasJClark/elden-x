@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct world_map_place_name_param_st
-{
+struct world_map_place_name_param_st {
     /**
      * @brief Do you remove it from the NT version output?
      *
@@ -85,8 +82,8 @@ struct world_map_place_name_param_st
     float posZ{0.f};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::world_map_place_name_param_st) == 32,
               "WORLD_MAP_PLACE_NAME_PARAM_ST paramdef size does not match detected size");

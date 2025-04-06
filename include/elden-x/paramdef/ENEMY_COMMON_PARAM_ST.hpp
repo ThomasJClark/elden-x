@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct enemy_common_param_st
-{
+struct enemy_common_param_st {
     unsigned char reserved0[8];
 
     /**
@@ -59,8 +56,8 @@ struct enemy_common_param_st
     unsigned char reserved18[184];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::enemy_common_param_st) == 256,
               "ENEMY_COMMON_PARAM_ST paramdef size does not match detected size");

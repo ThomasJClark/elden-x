@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct common_system_param_st
-{
+struct common_system_param_st {
     /**
      * @brief At the start of the game Map name ID_for save data
      *
@@ -21,5 +18,5 @@ struct common_system_param_st
     unsigned char reserve0[60];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

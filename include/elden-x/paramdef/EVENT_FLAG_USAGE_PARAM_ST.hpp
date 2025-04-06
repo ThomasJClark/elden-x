@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct event_flag_usage_param_st
-{
+struct event_flag_usage_param_st {
     /**
      * @brief Use
      *
@@ -40,5 +37,5 @@ struct event_flag_usage_param_st
     unsigned char padding2[24];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

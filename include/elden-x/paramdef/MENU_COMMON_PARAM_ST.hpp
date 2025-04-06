@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct menu_common_param_st
-{
+struct menu_common_param_st {
     /**
      * @brief Solo play Fade out start time at death [seconds]
      *
@@ -487,8 +484,8 @@ struct menu_common_param_st
     unsigned char reserved33[32];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::menu_common_param_st) == 256,
               "MENU_COMMON_PARAM_ST paramdef size does not match detected size");

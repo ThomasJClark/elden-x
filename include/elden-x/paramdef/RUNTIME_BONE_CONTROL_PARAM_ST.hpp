@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct runtime_bone_control_param_st
-{
+struct runtime_bone_control_param_st {
     /**
      * @brief Character ID
      */
@@ -39,8 +36,8 @@ struct runtime_bone_control_param_st
     char targetBone2[32];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::runtime_bone_control_param_st) == 112,
               "RUNTIME_BONE_CONTROL_PARAM_ST paramdef size does not match detected size");

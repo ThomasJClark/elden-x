@@ -17,21 +17,19 @@
 #include <type_traits>
 #include <utility>
 
-namespace er
-{
-namespace param
-{
+namespace er {
+namespace param {
 /**
  * @brief The bidirectional param table iterator.
  *
  * @tparam Def paramdef type being iterated
  */
-template <typename Def> class param_iterator
-{
+template <typename Def>
+class param_iterator {
     uintptr_t file_start;
     param_file::param_row_locator *ptr;
 
-  public:
+public:
     /**
      * @brief Bidirectional iterator concept tag.
      *
@@ -74,9 +72,9 @@ template <typename Def> class param_iterator
      * All default constructed param iterators are equal.
      *
      */
-    param_iterator() noexcept : file_start(0), ptr(nullptr)
-    {
-    }
+    param_iterator() noexcept
+        : file_start(0),
+          ptr(nullptr) {}
 
     /**
      * @brief Construct a param iterator at a given row entry position.
@@ -85,18 +83,16 @@ template <typename Def> class param_iterator
      * @param pos the entry index in the range [0, file.row_count)
      */
     param_iterator(const param_file &file, difference_type pos) noexcept
-        : file_start(file.get_file_start()), ptr(&*file.get_param_row_locators().begin() + pos)
-    {
-    }
+        : file_start(file.get_file_start()),
+          ptr(&*file.get_param_row_locators().begin() + pos) {}
 
     /**
      * @brief Construct a new param iterator (copy constructor).
      *
      */
     param_iterator(const param_iterator &other) noexcept
-        : file_start(other.file_start), ptr(other.ptr)
-    {
-    }
+        : file_start(other.file_start),
+          ptr(other.ptr) {}
 
     /**
      * @brief Construct a new param iterator (const iterator promotion).
@@ -104,9 +100,8 @@ template <typename Def> class param_iterator
      */
     param_iterator(const param_iterator<std::remove_const_t<Def>> &other) noexcept
         requires(std::is_const_v<Def>)
-        : file_start(other.file_start), ptr(other.ptr)
-    {
-    }
+        : file_start(other.file_start),
+          ptr(other.ptr) {}
 
     /**
      * @brief Dereference the iterator at the current position to get a row
@@ -115,8 +110,7 @@ template <typename Def> class param_iterator
      * @return value_type the row index/row pair at the current iterator
      * position
      */
-    value_type operator*() const noexcept
-    {
+    value_type operator*() const noexcept {
         return {this->ptr->row,
                 *reinterpret_cast<Def *>(this->file_start + this->ptr->file_offset)};
     }
@@ -126,8 +120,7 @@ template <typename Def> class param_iterator
      *
      * @return param_iterator& the new iterator position
      */
-    param_iterator &operator++() noexcept
-    {
+    param_iterator &operator++() noexcept {
         ++this->ptr;
         return *this;
     }
@@ -137,8 +130,7 @@ template <typename Def> class param_iterator
      *
      * @return param_iterator the old iterator position
      */
-    param_iterator operator++(int) noexcept
-    {
+    param_iterator operator++(int) noexcept {
         param_iterator tmp = *this;
         ++this->ptr;
         return tmp;
@@ -149,8 +141,7 @@ template <typename Def> class param_iterator
      *
      * @return param_iterator& the new iterator position
      */
-    param_iterator &operator--() noexcept
-    {
+    param_iterator &operator--() noexcept {
         --this->ptr;
         return *this;
     }
@@ -160,8 +151,7 @@ template <typename Def> class param_iterator
      *
      * @return param_iterator the old iterator position
      */
-    param_iterator operator--(int) noexcept
-    {
+    param_iterator operator--(int) noexcept {
         param_iterator tmp = *this;
         --this->ptr;
         return tmp;
@@ -173,8 +163,7 @@ template <typename Def> class param_iterator
      * @param offset signed offset to advance by
      * @return param_iterator& the new iterator position
      */
-    param_iterator &operator+=(difference_type offset) noexcept
-    {
+    param_iterator &operator+=(difference_type offset) noexcept {
         this->ptr += offset;
         return *this;
     }
@@ -185,8 +174,7 @@ template <typename Def> class param_iterator
      * @param offset signed offset to add
      * @return param_iterator the new iterator
      */
-    param_iterator operator+(difference_type offset) const noexcept
-    {
+    param_iterator operator+(difference_type offset) const noexcept {
         param_iterator tmp = *this;
         tmp += offset;
         return tmp;
@@ -198,8 +186,7 @@ template <typename Def> class param_iterator
      * @param offset signed offset to advance by
      * @return param_iterator& the new iterator position
      */
-    param_iterator &operator-=(difference_type offset) noexcept
-    {
+    param_iterator &operator-=(difference_type offset) noexcept {
         this->ptr -= offset;
         return *this;
     }
@@ -210,8 +197,7 @@ template <typename Def> class param_iterator
      * @param offset signed offset to subtract
      * @return param_iterator the new iterator
      */
-    param_iterator operator-(difference_type offset) const noexcept
-    {
+    param_iterator operator-(difference_type offset) const noexcept {
         param_iterator tmp = *this;
         tmp -= offset;
         return tmp;
@@ -241,10 +227,7 @@ template <typename Def> class param_iterator
      * @param offset the param entry offset from the current iterator position
      * @return value_type the row index/row pair
      */
-    value_type operator[](difference_type offset) const noexcept
-    {
-        return *(*this + offset);
-    }
+    value_type operator[](difference_type offset) const noexcept { return *(*this + offset); }
 
     /**
      * @brief The iterator equality comparison operator.
@@ -280,16 +263,17 @@ template <typename Def> class param_iterator
         return this->ptr <=> rhs.ptr;
     }
 
-  private:
-    template <typename> friend class param_iterator;
+private:
+    template <typename>
+    friend class param_iterator;
 
-    template <typename> friend class param_table;
+    template <typename>
+    friend class param_table;
 
     param_iterator(const param_iterator<const Def> &other) noexcept
         requires(!std::is_const_v<Def>)
-        : file_start(other.file_start), ptr(other.ptr)
-    {
-    }
+        : file_start(other.file_start),
+          ptr(other.ptr) {}
 };
 
 /**
@@ -297,6 +281,7 @@ template <typename Def> class param_iterator
  *
  * @tparam Def paramdef type being iterated
  */
-template <typename Def> using param_const_iterator = param_iterator<const Def>;
-} // namespace param
-} // namespace er
+template <typename Def>
+using param_const_iterator = param_iterator<const Def>;
+}
+}

@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct budget_param_st
-{
+struct budget_param_st {
     /**
      * @brief VRAM: ALL
      *
@@ -198,8 +195,8 @@ struct budget_param_st
     unsigned char reserve_1[24];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::budget_param_st) == 132,
               "BUDGET_PARAM_ST paramdef size does not match detected size");

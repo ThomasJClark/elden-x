@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct missile_param_st
-{
+struct missile_param_st {
     /**
      * @brief FFXID
      *
@@ -105,5 +102,5 @@ struct missile_param_st
     unsigned char reserve_last[56];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

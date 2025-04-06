@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct map_piece_tex_param_st
-{
+struct map_piece_tex_param_st {
     /**
      * @brief Do you remove it from the NT version output?
      *
@@ -69,8 +66,8 @@ struct map_piece_tex_param_st
     int multiPlayAreaId{-1};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::map_piece_tex_param_st) == 16,
               "MAP_PIECE_TEX_PARAM_ST paramdef size does not match detected size");

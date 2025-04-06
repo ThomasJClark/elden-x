@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct cutscene_gparam_time_param_st
-{
+struct cutscene_gparam_time_param_st {
     /**
      * @brief Do you remove it from the NT version output?
      *
@@ -103,8 +100,8 @@ struct cutscene_gparam_time_param_st
     float PostPlayIngameTime{-1.f};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::cutscene_gparam_time_param_st) == 16,
               "CUTSCENE_GPARAM_TIME_PARAM_ST paramdef size does not match detected size");

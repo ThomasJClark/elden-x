@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct knockback_param_st
-{
+struct knockback_param_st {
     /**
      * @brief Minimal damage_speed maintenance time [s]
      *
@@ -227,8 +224,8 @@ struct knockback_param_st
     unsigned char pad[8];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::knockback_param_st) == 128,
               "KNOCKBACK_PARAM_ST paramdef size does not match detected size");

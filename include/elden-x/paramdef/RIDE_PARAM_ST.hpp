@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct ride_param_st
-{
+struct ride_param_st {
     /**
      * @brief Riding side character ID
      *
@@ -120,8 +117,8 @@ struct ride_param_st
     unsigned char pad[12];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::ride_param_st) == 64,
               "RIDE_PARAM_ST paramdef size does not match detected size");

@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct cs_ssao_quality_detail
-{
+struct cs_ssao_quality_detail {
     /**
      * @brief SSAO enabled
      */
@@ -39,5 +36,5 @@ struct cs_ssao_quality_detail
     unsigned char dmy[1];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

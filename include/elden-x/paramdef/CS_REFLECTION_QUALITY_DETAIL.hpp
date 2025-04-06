@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct cs_reflection_quality_detail
-{
+struct cs_reflection_quality_detail {
     /**
      * @brief Reflective effective
      */
@@ -72,5 +69,5 @@ struct cs_reflection_quality_detail
     float ssrFresnelRejectBias{0.f};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

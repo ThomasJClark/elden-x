@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct throw_param_st
-{
+struct throw_param_st {
     /**
      * @brief Throwing side character ID
      */
@@ -316,8 +313,8 @@ struct throw_param_st
     unsigned char pad1[24];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::throw_param_st) == 128,
               "THROW_PARAM_ST paramdef size does not match detected size");

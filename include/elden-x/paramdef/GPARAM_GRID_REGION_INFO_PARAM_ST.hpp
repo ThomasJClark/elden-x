@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct gparam_grid_region_info_param_st
-{
+struct gparam_grid_region_info_param_st {
     /**
      * @brief Open local ID for MapGparam
      *
@@ -22,5 +19,5 @@ struct gparam_grid_region_info_param_st
     unsigned char Reserve[28];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

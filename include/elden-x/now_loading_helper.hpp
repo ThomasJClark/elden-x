@@ -2,15 +2,12 @@
 
 #include "singletons.hpp"
 
-namespace er
-{
-namespace CS
-{
+namespace er {
+namespace CS {
 
 class CSNowLoadingHelper
-    : public FD4::FD4Singleton<CSNowLoadingHelper, FD4::singleton_index::CSNowLoadingHelper>
-{
-  public:
+    : public FD4::FD4Singleton<CSNowLoadingHelper, FD4::singleton_index::CSNowLoadingHelper> {
+public:
     virtual ~CSNowLoadingHelper() = default;
 
     unsigned char unk8[0xe0];

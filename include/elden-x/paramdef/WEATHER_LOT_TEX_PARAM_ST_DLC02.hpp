@@ -1,13 +1,10 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 
-struct weather_lot_tex_param_st_dlc02
-{
+struct weather_lot_tex_param_st_dlc02 {
     /**
      * @brief NT版出力から外すか
      *
@@ -64,5 +61,5 @@ struct weather_lot_tex_param_st_dlc02
     int unknown_0x18{0};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

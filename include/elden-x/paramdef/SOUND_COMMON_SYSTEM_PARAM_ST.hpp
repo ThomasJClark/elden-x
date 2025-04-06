@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct sound_common_system_param_st
-{
+struct sound_common_system_param_st {
     /**
      * @brief Parameter Key string
      *
@@ -26,5 +23,5 @@ struct sound_common_system_param_st
     char ParamValueStr[32];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

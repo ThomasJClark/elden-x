@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct asset_geometory_param_st
-{
+struct asset_geometory_param_st {
     /**
      * @brief Sound bank ID
      *
@@ -915,8 +912,8 @@ struct asset_geometory_param_st
     unsigned char Reserve_0[26];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::asset_geometory_param_st) == 320,
               "ASSET_GEOMETORY_PARAM_ST paramdef size does not match detected size");

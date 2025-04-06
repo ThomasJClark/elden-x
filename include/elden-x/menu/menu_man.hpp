@@ -4,14 +4,11 @@
 
 #include "../singletons.hpp"
 
-namespace er
-{
-namespace CS
-{
+namespace er {
+namespace CS {
 
-class CSMenuManImp : public FD4::FD4Singleton<CSMenuManImp, FD4::singleton_index::CSMenuMan>
-{
-  public:
+class CSMenuManImp : public FD4::FD4Singleton<CSMenuManImp, FD4::singleton_index::CSMenuMan> {
+public:
     virtual ~CSMenuManImp() = default;
 
     unsigned char unk8[0x78];

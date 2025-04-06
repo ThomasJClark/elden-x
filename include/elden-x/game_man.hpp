@@ -1,18 +1,12 @@
 #pragma once
 
-namespace er
-{
-namespace CS
-{
+namespace er {
+namespace CS {
 
-enum class ceremony_type : unsigned char
-{
-    none = 0
-};
+enum class ceremony_type : unsigned char { none = 0 };
 
-class GameMan
-{
-  public:
+class GameMan {
+public:
     static GameMan *instance();
 
     unsigned char unk0[0xbc8];

@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct cs_volumetric_effect_quality_detail
-{
+struct cs_volumetric_effect_quality_detail {
     /**
      * @brief Fog enabled
      */
@@ -109,5 +106,5 @@ struct cs_volumetric_effect_quality_detail
     unsigned char pad2[1];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

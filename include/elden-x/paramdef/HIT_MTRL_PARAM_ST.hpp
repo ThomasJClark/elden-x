@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct hit_mtrl_param_st
-{
+struct hit_mtrl_param_st {
     /**
      * @brief Sound radius magnification
      *
@@ -199,8 +196,8 @@ struct hit_mtrl_param_st
     int spEffectId_forWet04{-1};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::hit_mtrl_param_st) == 100,
               "HIT_MTRL_PARAM_ST paramdef size does not match detected size");

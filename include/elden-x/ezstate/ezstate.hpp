@@ -2,10 +2,8 @@
 
 #include <span>
 
-namespace er
-{
-namespace ezstate
-{
+namespace er {
+namespace ezstate {
 
 struct event;
 struct state_group;
@@ -21,9 +19,8 @@ typedef std::span<expression> args;
 /**
  * Base class extended by EzState::detail::EzStateMachineImpl
  */
-class machine
-{
-  public:
+class machine {
+public:
     virtual ~machine() = default;
 
     unsigned char unk1[0x20];
@@ -34,8 +31,7 @@ class machine
 /**
  * The possible states in a state machine. This is usually represented by a function in ESDLang.
  */
-struct state_group
-{
+struct state_group {
     int id;
     states states;
     state *initial_state;
@@ -45,46 +41,38 @@ struct state_group
  * A transition from one EzState state to another. The state machine will transition to the first
  * target state whose evaluator bytecode evaluates to true.
  */
-struct transition
-{
+struct transition {
     state *target_state;
     events pass_events;
     transitions sub_transitions;
     expression evaluator;
 
     inline transition(state *target_state, expression evaluator)
-        : target_state(target_state), evaluator(evaluator)
-    {
-    }
+        : target_state(target_state),
+          evaluator(evaluator) {}
 };
 
 /**
  * A command (AKA built-in function called in an EzState state). Most of the known command
  * IDs are available in talk_commands.hpp
  */
-struct command
-{
+struct command {
     int bank;
     int id;
 
-    bool operator==(command const &other)
-    {
-        return bank == other.bank && id == other.id;
-    }
+    bool operator==(command const &other) { return bank == other.bank && id == other.id; }
 };
 
 /**
  * An event in a talkscript. This is what's typically represented as a built-in function call in
  * ESDLang, such as "AddTalkListData(1, 12345, -1)"
  */
-struct event
-{
+struct event {
     command command;
     args args;
 };
 
-struct state
-{
+struct state {
     /**
      * I think this is only used when reading talkscripts from disk, but I'm not sure
      */

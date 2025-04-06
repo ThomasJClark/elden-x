@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct cutscene_gparam_weather_param_st
-{
+struct cutscene_gparam_weather_param_st {
     /**
      * @brief Do you remove it from the NT version output?
      *
@@ -331,8 +328,8 @@ struct cutscene_gparam_weather_param_st
     unsigned char reserved1[12];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::cutscene_gparam_weather_param_st) == 96,
               "CUTSCENE_GPARAM_WEATHER_PARAM_ST paramdef size does not match detected "

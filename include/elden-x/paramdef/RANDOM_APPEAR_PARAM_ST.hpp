@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct random_appear_param_st
-{
+struct random_appear_param_st {
     /**
      * @brief Lottery slot ID 0
      *
@@ -714,8 +711,8 @@ struct random_appear_param_st
     unsigned char pad : 4;
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::random_appear_param_st) == 13,
               "RANDOM_APPEAR_PARAM_ST paramdef size does not match detected size");

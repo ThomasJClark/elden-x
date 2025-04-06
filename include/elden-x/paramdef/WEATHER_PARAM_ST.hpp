@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct weather_param_st
-{
+struct weather_param_st {
     /**
      * @brief Weather SfxId (common)
      *
@@ -138,8 +135,8 @@ struct weather_param_st
     float DistViewWeatherGparamOverrideWeight{-1.f};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::weather_param_st) == 68,
               "WEATHER_PARAM_ST paramdef size does not match detected size");

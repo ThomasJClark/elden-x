@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct game_area_param_st
-{
+struct game_area_param_st {
     /**
      * @brief Do you remove it from the NT version output?
      *
@@ -247,8 +244,8 @@ struct game_area_param_st
     unsigned char reserve[9];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::game_area_param_st) == 96,
               "GAME_AREA_PARAM_ST paramdef size does not match detected size");

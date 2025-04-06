@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct menu_value_table_spec
-{
+struct menu_value_table_spec {
     /**
      * @brief Value to compare
      */
@@ -29,8 +26,8 @@ struct menu_value_table_spec
     unsigned char padding[3];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::menu_value_table_spec) == 12,
               "MENU_VALUE_TABLE_SPEC paramdef size does not match detected size");

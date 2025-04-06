@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct cacl_correct_graph_st
-{
+struct cacl_correct_graph_st {
     /**
      * @brief Threshold point 0
      *
@@ -139,8 +136,8 @@ struct cacl_correct_graph_st
     unsigned char pad[4];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::cacl_correct_graph_st) == 80,
               "CACL_CORRECT_GRAPH_ST paramdef size does not match detected size");

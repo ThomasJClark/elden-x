@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct network_msg_param_st
-{
+struct network_msg_param_st {
     /**
      * @brief priority
      */
@@ -236,8 +233,8 @@ struct network_msg_param_st
     unsigned char pad2_new[8];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::network_msg_param_st) == 192,
               "NETWORK_MSG_PARAM_ST paramdef size does not match detected size");

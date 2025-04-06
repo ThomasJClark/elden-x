@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct camera_fade_param_st
-{
+struct camera_fade_param_st {
     /**
      * @brief Distance to be transparent (m)
      *
@@ -53,5 +50,5 @@ struct camera_fade_param_st
     unsigned char dummy[12];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct charmakemenutop_param_st
-{
+struct charmakemenutop_param_st {
     /**
      * @brief Command type
      */
@@ -95,8 +92,8 @@ struct charmakemenutop_param_st
     unsigned char reserved[4];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::charmakemenutop_param_st) == 48,
               "CHARMAKEMENUTOP_PARAM_ST paramdef size does not match detected size");

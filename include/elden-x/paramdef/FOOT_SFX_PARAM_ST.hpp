@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct foot_sfx_param_st
-{
+struct foot_sfx_param_st {
     /**
      * @brief SFX identifier: 00
      *
@@ -2012,8 +2009,8 @@ struct foot_sfx_param_st
     unsigned int sfxId_199{0};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::foot_sfx_param_st) == 800,
               "FOOT_SFX_PARAM_ST paramdef size does not match detected size");

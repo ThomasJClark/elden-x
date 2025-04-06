@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct grass_map_settings_param_st
-{
+struct grass_map_settings_param_st {
     /**
      * @brief Grass type 0
      */
@@ -27,5 +24,5 @@ struct grass_map_settings_param_st
     unsigned int grassType2{0};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

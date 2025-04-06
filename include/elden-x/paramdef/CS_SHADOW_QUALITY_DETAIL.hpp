@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct cs_shadow_quality_detail
-{
+struct cs_shadow_quality_detail {
     /**
      * @brief Shadow is enabled
      */
@@ -58,5 +55,5 @@ struct cs_shadow_quality_detail
     int blurCountBias{-1};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

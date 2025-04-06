@@ -8,28 +8,23 @@
 #include <windows.h>
 #undef WIN32_LEAN_AND_MEAN
 
-namespace er
-{
-namespace CS
-{
+namespace er {
+namespace CS {
 
 class CSWindow;
 class CSScreenModeCtrl;
 
-class CSWindow : public FD4::FD4Singleton<CSWindow, FD4::singleton_index::CSWindow>
-{
-  public:
+class CSWindow : public FD4::FD4Singleton<CSWindow, FD4::singleton_index::CSWindow> {
+public:
     virtual ~CSWindow() = 0;
 
-    enum class screen_mode : int
-    {
+    enum class screen_mode : int {
         window = 0,
         fullscreen = 1,
         borderless_window = 2,
     };
 
-    enum class quality_level : int
-    {
+    enum class quality_level : int {
         off = 0,
         low = 1,
         medium = 2,
@@ -37,8 +32,7 @@ class CSWindow : public FD4::FD4Singleton<CSWindow, FD4::singleton_index::CSWind
         max = 4,
     };
 
-    struct graphics_settings
-    {
+    struct graphics_settings {
         screen_mode screen_mode;
         bool auto_detect_best_rendering_settings;
         quality_level graphics_quality;

@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct character_init_param
-{
+struct character_init_param {
     /**
      * @brief MP recovery speed basic value [s]
      *
@@ -759,8 +756,8 @@ struct character_init_param
     unsigned char reserve[6];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::character_init_param) == 320,
               "CHARACTER_INIT_PARAM paramdef size does not match detected size");

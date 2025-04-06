@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct enemy_standard_info_bank
-{
+struct enemy_standard_info_bank {
     /**
      * @brief Behavior id
      *
@@ -139,5 +136,5 @@ struct enemy_standard_info_bank
     unsigned char reserve_last2[48];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

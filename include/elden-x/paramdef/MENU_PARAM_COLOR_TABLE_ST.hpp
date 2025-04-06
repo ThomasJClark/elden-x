@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct menu_param_color_table_st
-{
+struct menu_param_color_table_st {
     /**
      * @brief Interpolation method
      */
@@ -70,8 +67,8 @@ struct menu_param_color_table_st
     float v3{1.f};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::menu_param_color_table_st) == 32,
               "MENU_PARAM_COLOR_TABLE_ST paramdef size does not match detected size");

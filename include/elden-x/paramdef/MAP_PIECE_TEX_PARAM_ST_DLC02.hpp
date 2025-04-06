@@ -1,13 +1,10 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 
-struct map_piece_tex_param_st_dlc02
-{
+struct map_piece_tex_param_st_dlc02 {
     /**
      * @brief NT版出力から外すか
      *
@@ -75,5 +72,5 @@ struct map_piece_tex_param_st_dlc02
     int unknownPlayRegion_2{0};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

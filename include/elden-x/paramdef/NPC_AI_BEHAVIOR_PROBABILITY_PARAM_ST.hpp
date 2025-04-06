@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct npc_ai_behavior_probability_param_st
-{
+struct npc_ai_behavior_probability_param_st {
     /**
      * @brief Right hand proximity_R1 combo
      *
@@ -1259,8 +1256,8 @@ struct npc_ai_behavior_probability_param_st
     short param199{0};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::npc_ai_behavior_probability_param_st) == 400,
               "NPC_AI_BEHAVIOR_PROBABILITY_PARAM_ST paramdef size does not match "

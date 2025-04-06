@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct ai_attack_param_st
-{
+struct ai_attack_param_st {
     /**
      * @brief Reference ID
      *
@@ -328,5 +325,5 @@ struct ai_attack_param_st
     float comboExecRange{180.f};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

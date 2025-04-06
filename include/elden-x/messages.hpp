@@ -1,21 +1,17 @@
 #pragma once
 
-namespace er
-{
+namespace er {
 
-namespace CS
-{
+namespace CS {
 
-class MsgRepositoryImp
-{
-  public:
+class MsgRepositoryImp {
+public:
     static MsgRepositoryImp *instance();
 };
 
 }
 
-enum class msgbnd : unsigned int
-{
+enum class msgbnd : unsigned int {
     goods_name = 10,
     weapon_name = 11,
     protector_name = 12,

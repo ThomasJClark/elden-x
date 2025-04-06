@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct cutscene_weather_override_gparam_id_convert_param_st
-{
+struct cutscene_weather_override_gparam_id_convert_param_st {
     /**
      * @brief Cutscene Weather Overwrite Gparam Suffix ID
      *
@@ -19,8 +16,8 @@ struct cutscene_weather_override_gparam_id_convert_param_st
     unsigned int weatherOverrideGparamId{0};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::cutscene_weather_override_gparam_id_convert_param_st) == 4,
               "CUTSCENE_WEATHER_OVERRIDE_GPARAM_ID_CONVERT_PARAM_ST paramdef size does "

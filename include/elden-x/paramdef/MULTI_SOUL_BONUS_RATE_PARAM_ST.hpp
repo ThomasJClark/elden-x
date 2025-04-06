@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct multi_soul_bonus_rate_param_st
-{
+struct multi_soul_bonus_rate_param_st {
     /**
      * @brief host
      *
@@ -126,8 +123,8 @@ struct multi_soul_bonus_rate_param_st
     unsigned char pad1[64];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::multi_soul_bonus_rate_param_st) == 128,
               "MULTI_SOUL_BONUS_RATE_PARAM_ST paramdef size does not match detected "

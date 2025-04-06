@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct map_mimicry_establishment_param_st
-{
+struct map_mimicry_establishment_param_st {
     /**
      * @brief Mimicry weight 0
      */
@@ -74,8 +71,8 @@ struct map_mimicry_establishment_param_st
     unsigned char pad1[16];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::map_mimicry_establishment_param_st) == 64,
               "MAP_MIMICRY_ESTABLISHMENT_PARAM_ST paramdef size does not match detected "

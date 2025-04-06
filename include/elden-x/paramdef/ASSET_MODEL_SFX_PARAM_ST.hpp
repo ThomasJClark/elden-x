@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct asset_model_sfx_param_st
-{
+struct asset_model_sfx_param_st {
     /**
      * @brief 0: SfxID
      */
@@ -115,8 +112,8 @@ struct asset_model_sfx_param_st
     unsigned char reserve_7[7];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::asset_model_sfx_param_st) == 128,
               "ASSET_MODEL_SFX_PARAM_ST paramdef size does not match detected size");

@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct reinforce_param_protector_st
-{
+struct reinforce_param_protector_st {
     /**
      * @brief Physical defense
      *
@@ -145,8 +142,8 @@ struct reinforce_param_protector_st
     float resistMadnessRate{1.f};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::reinforce_param_protector_st) == 64,
               "REINFORCE_PARAM_PROTECTOR_ST paramdef size does not match detected size");

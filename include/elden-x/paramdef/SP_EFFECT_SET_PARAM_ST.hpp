@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct sp_effect_set_param_st
-{
+struct sp_effect_set_param_st {
     /**
      * @brief Special effect ID1
      */
@@ -32,8 +29,8 @@ struct sp_effect_set_param_st
     int spEffectId4{-1};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::sp_effect_set_param_st) == 16,
               "SP_EFFECT_SET_PARAM_ST paramdef size does not match detected size");

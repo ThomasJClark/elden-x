@@ -13,18 +13,15 @@
 #include <cstdint>
 #include <span>
 
-namespace er
-{
-namespace param
-{
+namespace er {
+namespace param {
 /**
  * @brief The layout of a .param file.
  *
  * .param files contain whole param tables of a given param type.
  *
  */
-struct param_file
-{
+struct param_file {
     /**
      * @brief The "end" offset, does not always point to valid data.
      *
@@ -80,8 +77,7 @@ struct param_file
      * the file.
      *
      */
-    struct param_row_locator
-    {
+    struct param_row_locator {
         /**
          * @brief The param row index.
          *
@@ -110,18 +106,14 @@ struct param_file
      *
      * @return uintptr_t the file start pointer
      */
-    uintptr_t get_file_start() const noexcept
-    {
-        return reinterpret_cast<uintptr_t>(&this->_end);
-    }
+    uintptr_t get_file_start() const noexcept { return reinterpret_cast<uintptr_t>(&this->_end); }
 
     /**
      * @brief Get a pointer to the null terminated param type char string.
      *
      * @return char* null terminated char param type string
      */
-    char *get_param_type() const noexcept
-    {
+    char *get_param_type() const noexcept {
         return reinterpret_cast<char *>(this->get_file_start() + this->param_type_offset);
     }
 
@@ -130,8 +122,7 @@ struct param_file
      *
      * @return std::span<param_row_locator> a span of all the locators
      */
-    std::span<param_row_locator> get_param_row_locators() const noexcept
-    {
+    std::span<param_row_locator> get_param_row_locators() const noexcept {
         auto first =
             reinterpret_cast<param_row_locator *>(this->get_file_start() + sizeof(param_file));
         return std::span<param_row_locator>(first, this->row_count);
@@ -142,8 +133,7 @@ struct param_file
  * @brief A wrapper for a raw param file in memory used by ELDEN RING.
  *
  */
-struct param_file_wrapper
-{
+struct param_file_wrapper {
     /**
      * @brief The offset (from the start of the file) to the rest of the
      * wrapper's data.
@@ -173,8 +163,7 @@ struct param_file_wrapper
      * @brief An instance of a structure describing a param entry in the file.
      *
      */
-    struct wrapper_row_locator
-    {
+    struct wrapper_row_locator {
         /**
          * @brief The param row index.
          *
@@ -199,13 +188,12 @@ struct param_file_wrapper
      *
      * @return std::span<wrapper_row_locator> a span of all the locators
      */
-    std::span<wrapper_row_locator> get_wrapper_row_locators() const noexcept
-    {
+    std::span<wrapper_row_locator> get_wrapper_row_locators() const noexcept {
         auto align = this->file.get_file_start() + this->wrapper_data_offset;
         align = (align + 0xF) & ~0xF;
         auto first = reinterpret_cast<wrapper_row_locator *>(align);
         return std::span<wrapper_row_locator>(first, this->row_count);
     }
 };
-} // namespace param
-} // namespace er
+}
+}

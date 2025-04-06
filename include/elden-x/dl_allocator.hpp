@@ -6,14 +6,11 @@
  * DL2 allocator adapted from https://github.com/garyttierney/me3
  */
 
-namespace er
-{
-namespace DLKR
-{
+namespace er {
+namespace DLKR {
 
-class DLAllocationInterface
-{
-  public:
+class DLAllocationInterface {
+public:
     virtual ~DLAllocationInterface() = default;
     virtual unsigned int GetAllocatorId() = 0;
     virtual int _unk0x10() = 0;
@@ -27,14 +24,15 @@ class DLAllocationInterface
     virtual void *AllocateAlignedMemory(unsigned long long sizeBytes,
                                         unsigned long long alignment) = 0;
     virtual void *ReallocateMemory(void *pAllocation, unsigned long long sizeBytes) = 0;
-    virtual void *ReallocateAlignedMemory(void *pAllocation, unsigned long long sizeBytes,
+    virtual void *ReallocateAlignedMemory(void *pAllocation,
+                                          unsigned long long sizeBytes,
                                           unsigned long long alignment) = 0;
     virtual void FreeMemory(void *pAllocation) = 0;
 };
 
-template <typename T> class DLAllocatorAdapter
-{
-  public:
+template <typename T>
+class DLAllocatorAdapter {
+public:
     using value_type = T;
     using size_type = unsigned long long;
     using difference_type = long long;
@@ -43,29 +41,25 @@ template <typename T> class DLAllocatorAdapter
     using is_always_equal = std::false_type;
 
     template <typename U>
-    DLAllocatorAdapter(const DLAllocatorAdapter<U> &other) noexcept : allocator(other.allocator)
-    {
-    }
+    DLAllocatorAdapter(const DLAllocatorAdapter<U> &other) noexcept
+        : allocator(other.allocator) {}
 
-    T *allocate(size_type count)
-    {
+    T *allocate(size_type count) {
         return reinterpret_cast<T *>(
             allocator.AllocateAlignedMemory(count * sizeof(T), alignof(T)));
     }
 
-    void deallocate(T *pAllocation, size_type count = 0)
-    {
+    void deallocate(T *pAllocation, size_type count = 0) {
         allocator.FreeMemory(reinterpret_cast<void *>(pAllocation));
     }
 
     template <typename T1, typename T2>
     friend bool operator==(const DLAllocatorAdapter<T1> &lhs,
-                           const DLAllocatorAdapter<T2> &rhs) noexcept
-    {
+                           const DLAllocatorAdapter<T2> &rhs) noexcept {
         return &lhs.allocator == &rhs.allocator;
     }
 
-  private:
+private:
     DLAllocationInterface &allocator;
 };
 

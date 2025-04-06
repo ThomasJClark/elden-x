@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct actionbutton_param_st
-{
+struct actionbutton_param_st {
     /**
      * @brief Range type
      *
@@ -198,8 +195,8 @@ struct actionbutton_param_st
     unsigned char padding6[28];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::actionbutton_param_st) == 100,
               "ACTIONBUTTON_PARAM_ST paramdef size does not match detected size");

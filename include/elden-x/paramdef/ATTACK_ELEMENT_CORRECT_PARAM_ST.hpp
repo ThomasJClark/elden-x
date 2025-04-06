@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct attack_element_correct_param_st
-{
+struct attack_element_correct_param_st {
     /**
      * @brief Whether to correct muscle strength (physical)
      */
@@ -441,8 +438,8 @@ struct attack_element_correct_param_st
     unsigned char pad2[24];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::attack_element_correct_param_st) == 128,
               "ATTACK_ELEMENT_CORRECT_PARAM_ST paramdef size does not match detected "

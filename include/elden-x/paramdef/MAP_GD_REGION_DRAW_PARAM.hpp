@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct map_gd_region_draw_param
-{
+struct map_gd_region_draw_param {
     /**
      * @brief Do you remove it from the NT version output?
      *
@@ -38,8 +35,8 @@ struct map_gd_region_draw_param
     float overrideIVLocalLightScale{-1.f};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::map_gd_region_draw_param) == 8,
               "MAP_GD_REGION_DRAW_PARAM paramdef size does not match detected size");

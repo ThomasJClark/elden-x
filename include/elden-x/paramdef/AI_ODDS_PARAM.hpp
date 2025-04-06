@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct ai_odds_param
-{
+struct ai_odds_param {
     /**
      * @brief Action 0
      *
@@ -714,5 +711,5 @@ struct ai_odds_param
     unsigned char pad0[12];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

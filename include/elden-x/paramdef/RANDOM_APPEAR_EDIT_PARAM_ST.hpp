@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct random_appear_edit_param_st
-{
+struct random_appear_edit_param_st {
     /**
      * @brief Number of simultaneous appearances
      */
@@ -257,5 +254,5 @@ struct random_appear_edit_param_st
     unsigned int rate24{0};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

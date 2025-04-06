@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct final_damage_rate_param_st
-{
+struct final_damage_rate_param_st {
     /**
      * @brief The physical damage rate multiplier.
      *
@@ -54,8 +51,8 @@ struct final_damage_rate_param_st
     float saRate{0.f};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::final_damage_rate_param_st) == 28,
               "FINAL_DAMAGE_RATE_PARAM_ST paramdef size does not match detected size");

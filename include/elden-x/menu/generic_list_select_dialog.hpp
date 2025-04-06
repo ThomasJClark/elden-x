@@ -3,17 +3,14 @@
 #include "grid_control.hpp"
 #include "menu_window.hpp"
 
-namespace er
-{
-namespace CS
-{
+namespace er {
+namespace CS {
 
 /**
  * Base class of all dialogs where the player can select an item from a grid or list
  */
-class GenericListSelectDialog : public CS::MenuWindow
-{
-  public:
+class GenericListSelectDialog : public CS::MenuWindow {
+public:
     virtual ~GenericListSelectDialog() = default;
 
     CS::GridControl grid_control;

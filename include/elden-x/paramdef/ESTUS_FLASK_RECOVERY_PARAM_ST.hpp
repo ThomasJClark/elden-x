@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct estus_flask_recovery_param_st
-{
+struct estus_flask_recovery_param_st {
     /**
      * @brief host
      *
@@ -158,8 +155,8 @@ struct estus_flask_recovery_param_st
     unsigned char pad[8];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::estus_flask_recovery_param_st) == 32,
               "ESTUS_FLASK_RECOVERY_PARAM_ST paramdef size does not match detected size");

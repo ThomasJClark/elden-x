@@ -1,13 +1,10 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 
-struct map_name_tex_param_st_dlc02
-{
+struct map_name_tex_param_st_dlc02 {
     /**
      * @brief NT版出力から外すか
      *
@@ -76,5 +73,5 @@ struct map_name_tex_param_st_dlc02
     int unknown_0x24{0};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

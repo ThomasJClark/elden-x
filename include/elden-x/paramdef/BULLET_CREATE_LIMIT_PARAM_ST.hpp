@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct bullet_create_limit_param_st
-{
+struct bullet_create_limit_param_st {
     /**
      * @brief Maximum number of bullets in the group
      *
@@ -28,8 +25,8 @@ struct bullet_create_limit_param_st
     unsigned char pad[30];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::bullet_create_limit_param_st) == 32,
               "BULLET_CREATE_LIMIT_PARAM_ST paramdef size does not match detected size");

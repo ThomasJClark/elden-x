@@ -1,13 +1,10 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 
-struct mimicry_establishment_tex_param_st_dlc02
-{
+struct mimicry_establishment_tex_param_st_dlc02 {
     /**
      * @brief NT版出力から外すか
      *
@@ -66,5 +63,5 @@ struct mimicry_establishment_tex_param_st_dlc02
     int unknown_0x1c{0};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

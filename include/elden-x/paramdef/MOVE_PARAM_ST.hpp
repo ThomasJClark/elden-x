@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct move_param_st
-{
+struct move_param_st {
     /**
      * @brief stand-by
      */
@@ -239,8 +236,8 @@ struct move_param_st
     unsigned char turnWaitNoAnimAngle{0};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::move_param_st) == 144,
               "MOVE_PARAM_ST paramdef size does not match detected size");

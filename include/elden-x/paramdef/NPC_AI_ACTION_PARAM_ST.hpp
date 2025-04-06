@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct npc_ai_action_param_st
-{
+struct npc_ai_action_param_st {
     /**
      * @brief Move direction input
      *
@@ -85,8 +82,8 @@ struct npc_ai_action_param_st
     unsigned char pad1[3];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::npc_ai_action_param_st) == 16,
               "NPC_AI_ACTION_PARAM_ST paramdef size does not match detected size");

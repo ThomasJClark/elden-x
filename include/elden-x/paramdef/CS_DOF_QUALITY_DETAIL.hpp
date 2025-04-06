@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct cs_dof_quality_detail
-{
+struct cs_dof_quality_detail {
     /**
      * @brief DOF permission
      */
@@ -38,5 +35,5 @@ struct cs_dof_quality_detail
     int maxBlurLevel{1};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

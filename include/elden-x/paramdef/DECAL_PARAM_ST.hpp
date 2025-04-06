@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct decal_param_st
-{
+struct decal_param_st {
     /**
      * @brief Texture ID
      */
@@ -545,8 +542,8 @@ struct decal_param_st
     unsigned char pad_02[40];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::decal_param_st) == 248,
               "DECAL_PARAM_ST paramdef size does not match detected size");

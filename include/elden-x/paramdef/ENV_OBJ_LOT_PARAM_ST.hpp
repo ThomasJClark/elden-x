@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct env_obj_lot_param_st
-{
+struct env_obj_lot_param_st {
     /**
      * @brief AssetId_0
      *
@@ -126,8 +123,8 @@ struct env_obj_lot_param_st
     unsigned char Reserve_0[24];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::env_obj_lot_param_st) == 64,
               "ENV_OBJ_LOT_PARAM_ST paramdef size does not match detected size");

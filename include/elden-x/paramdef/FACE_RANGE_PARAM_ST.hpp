@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct face_range_param_st
-{
+struct face_range_param_st {
     /**
      * @brief Face part ID
      */
@@ -1108,8 +1105,8 @@ struct face_range_param_st
     float burn_scar{0.f};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::face_range_param_st) == 824,
               "FACE_RANGE_PARAM_ST paramdef size does not match detected size");

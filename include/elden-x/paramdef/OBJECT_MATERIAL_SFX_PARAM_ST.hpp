@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct object_material_sfx_param_st
-{
+struct object_material_sfx_param_st {
     /**
      * @brief SFX identifier: 00
      *
@@ -268,5 +265,5 @@ struct object_material_sfx_param_st
     unsigned int sfxId_31{0};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

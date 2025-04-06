@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct auto_create_env_sound_param_st
-{
+struct auto_create_env_sound_param_st {
     /**
      * @brief Appearance distance Min [m]
      */
@@ -60,8 +57,8 @@ struct auto_create_env_sound_param_st
     float LimiteRotateMax{180.f};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::auto_create_env_sound_param_st) == 32,
               "AUTO_CREATE_ENV_SOUND_PARAM_ST paramdef size does not match detected "

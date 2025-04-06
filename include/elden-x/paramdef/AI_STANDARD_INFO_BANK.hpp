@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct ai_standard_info_bank
-{
+struct ai_standard_info_bank {
     /**
      * @brief Recognition distance [m]
      *
@@ -277,5 +274,5 @@ struct ai_standard_info_bank
     unsigned char reserve_last[32];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

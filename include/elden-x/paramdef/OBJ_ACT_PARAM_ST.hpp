@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct obj_act_param_st
-{
+struct obj_act_param_st {
     /**
      * @brief MsgID when action is enabled
      *
@@ -179,8 +176,8 @@ struct obj_act_param_st
     unsigned char pad2[34];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::obj_act_param_st) == 96,
               "OBJ_ACT_PARAM_ST paramdef size does not match detected size");

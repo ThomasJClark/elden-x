@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct cs_water_quality_detail
-{
+struct cs_water_quality_detail {
     /**
      * @brief Interaction enabled
      */
@@ -22,5 +19,5 @@ struct cs_water_quality_detail
     unsigned char dmy[3];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

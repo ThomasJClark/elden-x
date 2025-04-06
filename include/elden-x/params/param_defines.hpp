@@ -10,10 +10,8 @@
 #include <cstddef>
 #include <cstdint>
 
-namespace er
-{
-namespace param
-{
+namespace er {
+namespace param {
 /**
  * @brief Signed 32-bit integers are used to represent param row indices.
  *
@@ -49,8 +47,7 @@ inline constexpr row_index_type row_index_none = -1;
  * Contains every param type used.
  *
  */
-enum class param_index : int
-{
+enum class param_index : int {
     EquipParamWeapon,
     EquipParamProtector,
     EquipParamAccessory,
@@ -254,5 +251,5 @@ enum class param_index : int
  */
 inline constexpr size_t param_count = size_t(param_index::PARAM_COUNT);
 
-} // namespace param
-} // namespace er
+}
+}

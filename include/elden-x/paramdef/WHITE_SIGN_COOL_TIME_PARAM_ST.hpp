@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct white_sign_cool_time_param_st
-{
+struct white_sign_cool_time_param_st {
     /**
      * @brief Time limit (normal, no finger)
      *
@@ -40,8 +37,8 @@ struct white_sign_cool_time_param_st
     float limitationTime_GuardianDriedFinger{0.f};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::white_sign_cool_time_param_st) == 16,
               "WHITE_SIGN_COOL_TIME_PARAM_ST paramdef size does not match detected size");

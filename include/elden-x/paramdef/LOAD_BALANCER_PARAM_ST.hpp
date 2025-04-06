@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct load_balancer_param_st
-{
+struct load_balancer_param_st {
     /**
      * @brief lowerFpsThreshold
      *
@@ -219,8 +216,8 @@ struct load_balancer_param_st
     unsigned char reserve1[30];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::load_balancer_param_st) == 80,
               "LOAD_BALANCER_PARAM_ST paramdef size does not match detected size");

@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct default_key_assign
-{
+struct default_key_assign {
     /**
      * @brief Pad 0
      *
@@ -761,5 +758,5 @@ struct default_key_assign
     float a2dThreshold_7{0.5f};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

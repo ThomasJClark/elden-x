@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct posture_control_param_wep_left_st
-{
+struct posture_control_param_wep_left_st {
     /**
      * @brief Left arm_front and back
      */
@@ -59,8 +56,8 @@ struct posture_control_param_wep_left_st
     unsigned char pad[14];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::posture_control_param_wep_left_st) == 32,
               "POSTURE_CONTROL_PARAM_WEP_LEFT_ST paramdef size does not match detected "

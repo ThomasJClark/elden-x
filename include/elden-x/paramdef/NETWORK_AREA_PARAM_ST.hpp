@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct network_area_param_st
-{
+struct network_area_param_st {
     /**
      * @brief Cell size X
      */
@@ -82,8 +79,8 @@ struct network_area_param_st
     unsigned char dummy[3];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::network_area_param_st) == 28,
               "NETWORK_AREA_PARAM_ST paramdef size does not match detected size");

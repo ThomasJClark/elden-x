@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct waypoint_param_st
-{
+struct waypoint_param_st {
     /**
      * @brief Attribute 1
      */
@@ -34,8 +31,8 @@ struct waypoint_param_st
     unsigned char padding4[8];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::waypoint_param_st) == 16,
               "WAYPOINT_PARAM_ST paramdef size does not match detected size");

@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct knowledge_loadscreen_item_param_st
-{
+struct knowledge_loadscreen_item_param_st {
     /**
      * @brief Do you remove it from the NT version output?
      *
@@ -55,8 +52,8 @@ struct knowledge_loadscreen_item_param_st
     int msgId{0};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::knowledge_loadscreen_item_param_st) == 16,
               "KNOWLEDGE_LOADSCREEN_ITEM_PARAM_ST paramdef size does not match detected "

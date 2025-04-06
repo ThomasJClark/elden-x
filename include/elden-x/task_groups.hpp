@@ -1,15 +1,13 @@
 #pragma once
 
-namespace er
-{
+namespace er {
 
 /**
  * All groups of async events, as shared by Dasaav in a post on ?ServerName?
  *
  * https://discord.com/channels/529802828278005773/529805064467120138/1223019282775019680
  */
-enum class task_group : unsigned short
-{
+enum class task_group : unsigned short {
     FrameBegin,
     SteamThread0,
     SteamThread1,

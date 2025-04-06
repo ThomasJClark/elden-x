@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct graphics_common_param_st
-{
+struct graphics_common_param_st {
     /**
      * @brief Decal generation position offset when a bullet hits HIT INS
      *
@@ -31,8 +28,8 @@ struct graphics_common_param_st
     unsigned char reserved04[240];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::graphics_common_param_st) == 256,
               "GRAPHICS_COMMON_PARAM_ST paramdef size does not match detected size");

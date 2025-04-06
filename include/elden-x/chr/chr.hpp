@@ -5,24 +5,20 @@
 
 #include <array>
 
-namespace er
-{
+namespace er {
 
-namespace CS
-{
+namespace CS {
 
 class ChrIns;
 
-struct mapid_st
-{
+struct mapid {
     unsigned char subregion;
     unsigned char region;
     unsigned char block;
     unsigned char area;
 };
 
-struct SpecialEffectEntryAccumulatorInfo
-{
+struct SpecialEffectEntryAccumulatorInfo {
     void *unk0;
     int upper_trigger_count;
     int effect_on_upper_or_higher;
@@ -32,14 +28,12 @@ struct SpecialEffectEntryAccumulatorInfo
     unsigned int unk1c;
 };
 
-class SpecialEffect
-{
-  public:
+class SpecialEffect {
+public:
     virtual ~SpecialEffect() = default;
 
     struct sp_effect_entry;
-    struct sp_effect_entry
-    {
+    struct sp_effect_entry {
         paramdef::sp_effect_param_st *param;
         unsigned int param_id;
         unsigned int unkc;
@@ -64,17 +58,15 @@ static_assert(0x18 == __builtin_offsetof(SpecialEffect, unk18));
 static_assert(0x20 == __builtin_offsetof(SpecialEffect, unk20));
 static_assert(0x138 == sizeof(SpecialEffect));
 
-class CSChrModuleBase
-{
-  public:
+class CSChrModuleBase {
+public:
     virtual ~CSChrModuleBase() = default;
 
     CS::ChrIns *owner;
 };
 
-class CSChrDataModule : public CSChrModuleBase
-{
-  public:
+class CSChrDataModule : public CSChrModuleBase {
+public:
     unsigned char unk10[0x128];
     int hp;
     int hp_max;
@@ -112,22 +104,19 @@ static_assert(0x228 == __builtin_offsetof(CSChrDataModule, chr_name));
 static_assert(0x230 == __builtin_offsetof(CSChrDataModule, unk230));
 static_assert(0x280 == sizeof(CSChrDataModule));
 
-class CSChrModelParamModifierModule : public CSChrModuleBase
-{
-  public:
-    struct modifier_value
-    {
+class CSChrModelParamModifierModule : public CSChrModuleBase {
+public:
+    struct modifier_value {
         int material_id;
-        float value1; // Red
-        float value2; // Green
-        float value3; // Blue
-        float value4; // Alpha
-        float value5; // Intensity
+        float value1;  // Red
+        float value2;  // Green
+        float value3;  // Blue
+        float value4;  // Alpha
+        float value5;  // Intensity
     };
     static_assert(sizeof(modifier_value) == 0x18);
 
-    struct modifier
-    {
+    struct modifier {
         bool unk0{false};
         unsigned int unk4{0};
         int unk8{-1};
@@ -188,11 +177,9 @@ class CSChrModelParamModifierModule : public CSChrModuleBase
     er::vector<modifier> modifiers;
 };
 
-class CSChrVfxModule : public CSChrModuleBase
-{
-  public:
-    struct vfx_entry
-    {
+class CSChrVfxModule : public CSChrModuleBase {
+public:
+    struct vfx_entry {
         int material_ex_id;
         int sp_effect_vfx_id;
         int sp_effect_vfx_id2;
@@ -205,13 +192,11 @@ class CSChrVfxModule : public CSChrModuleBase
     int unk4c;
 };
 
-class ChrIns
-{
-  public:
+class ChrIns {
+public:
     virtual ~ChrIns() = default;
 
-    struct modules_st
-    {
+    struct modules {
         CS::CSChrDataModule *data_module;
         void *unk8[22];
         CS::CSChrVfxModule *vfx_module;
@@ -220,14 +205,14 @@ class ChrIns
     };
 
     unsigned char unk8[0x28];
-    mapid_st current_map;
-    mapid_st previous_map;
-    mapid_st current_map2;
-    mapid_st previous_map2;
+    mapid current_map;
+    mapid previous_map;
+    mapid current_map2;
+    mapid previous_map2;
     unsigned char unk40[0x138];
     CS::SpecialEffect *special_effects;
     unsigned char unk180[0x10];
-    modules_st *modules;
+    modules *modules;
     unsigned char unk198[0x3e8];
 };
 

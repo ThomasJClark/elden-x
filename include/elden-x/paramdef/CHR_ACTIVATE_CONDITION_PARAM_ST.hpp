@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct chr_activate_condition_param_st
-{
+struct chr_activate_condition_param_st {
     /**
      * @brief Appearance condition _ sunny
      *
@@ -136,8 +133,8 @@ struct chr_activate_condition_param_st
     unsigned char pad2[2];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::chr_activate_condition_param_st) == 8,
               "CHR_ACTIVATE_CONDITION_PARAM_ST paramdef size does not match detected "

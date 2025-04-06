@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct load_balancer_new_draw_dist_scale_param_st
-{
+struct load_balancer_new_draw_dist_scale_param_st {
     /**
      * @brief Activation level (start)
      *
@@ -74,8 +71,8 @@ struct load_balancer_new_draw_dist_scale_param_st
     unsigned char reserve2[24];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::load_balancer_new_draw_dist_scale_param_st) == 48,
               "LOAD_BALANCER_NEW_DRAW_DIST_SCALE_PARAM_ST paramdef size does not match "

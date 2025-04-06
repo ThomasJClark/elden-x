@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct cs_motion_blur_quality_detail
-{
+struct cs_motion_blur_quality_detail {
     /**
      * @brief Motion blur enabled
      */
@@ -55,5 +52,5 @@ struct cs_motion_blur_quality_detail
     float blurMaxLengthScale{0.75f};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

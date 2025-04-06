@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct bullet_param_st
-{
+struct bullet_param_st {
     /**
      * @brief Attack ID
      *
@@ -841,8 +838,8 @@ struct bullet_param_st
     unsigned char pad4[8];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::bullet_param_st) == 272,
               "BULLET_PARAM_ST paramdef size does not match detected size");

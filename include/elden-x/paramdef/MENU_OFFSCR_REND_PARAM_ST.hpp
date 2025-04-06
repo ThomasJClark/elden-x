@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct menu_offscr_rend_param_st
-{
+struct menu_offscr_rend_param_st {
     /**
      * @brief Camera gaze point X
      */
@@ -92,8 +89,8 @@ struct menu_offscr_rend_param_st
     unsigned char pad[4];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::menu_offscr_rend_param_st) == 64,
               "MENU_OFFSCR_REND_PARAM_ST paramdef size does not match detected size");

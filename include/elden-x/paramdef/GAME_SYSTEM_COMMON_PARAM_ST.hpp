@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct game_system_common_param_st
-{
+struct game_system_common_param_st {
     /**
      * @brief Basic toughness durability recovery time
      *
@@ -2056,8 +2053,8 @@ struct game_system_common_param_st
     unsigned char endPad[108];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::game_system_common_param_st) == 1024,
               "GAME_SYSTEM_COMMON_PARAM_ST paramdef size does not match detected size");

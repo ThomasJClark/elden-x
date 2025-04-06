@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct equip_param_gem_st
-{
+struct equip_param_gem_st {
     /**
      * @brief Do you remove it from the NT version output?
      *
@@ -697,8 +694,8 @@ struct equip_param_gem_st
     unsigned char pad6[8];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::equip_param_gem_st) == 96,
               "EQUIP_PARAM_GEM_ST paramdef size does not match detected size");

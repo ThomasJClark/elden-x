@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct legacy_distant_view_parts_replace_param
-{
+struct legacy_distant_view_parts_replace_param {
     /**
      * @brief Map ID
      *
@@ -143,8 +140,8 @@ struct legacy_distant_view_parts_replace_param
     int LimitedMapRegioAssetIdRangeMax{-1};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::legacy_distant_view_parts_replace_param) == 64,
               "LEGACY_DISTANT_VIEW_PARTS_REPLACE_PARAM paramdef size does not match "

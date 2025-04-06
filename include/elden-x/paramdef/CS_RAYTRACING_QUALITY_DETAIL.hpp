@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct cs_raytracing_quality_detail
-{
+struct cs_raytracing_quality_detail {
     /**
      * @brief Enable ray traced ambient occlusion.
      */
@@ -38,5 +35,5 @@ struct cs_raytracing_quality_detail
     float renderDistance{0.0f};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

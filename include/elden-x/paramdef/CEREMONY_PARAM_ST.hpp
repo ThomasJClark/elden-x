@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct ceremony_param_st
-{
+struct ceremony_param_st {
     /**
      * @brief Event layer ID
      *
@@ -52,8 +49,8 @@ struct ceremony_param_st
     unsigned char pad2[16];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::ceremony_param_st) == 36,
               "CEREMONY_PARAM_ST paramdef size does not match detected size");

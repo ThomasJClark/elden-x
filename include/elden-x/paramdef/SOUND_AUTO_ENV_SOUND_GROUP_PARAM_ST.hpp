@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct sound_auto_env_sound_group_param_st
-{
+struct sound_auto_env_sound_group_param_st {
     /**
      * @brief Sound No
      *
@@ -42,8 +39,8 @@ struct sound_auto_env_sound_group_param_st
     float FollowRate{0.015f};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::sound_auto_env_sound_group_param_st) == 16,
               "SOUND_AUTO_ENV_SOUND_GROUP_PARAM_ST paramdef size does not match detected "

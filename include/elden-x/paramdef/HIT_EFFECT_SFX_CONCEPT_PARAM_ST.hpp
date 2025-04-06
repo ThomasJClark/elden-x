@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct hit_effect_sfx_concept_param_st
-{
+struct hit_effect_sfx_concept_param_st {
     /**
      * @brief Iron: Concept 1
      */
@@ -84,8 +81,8 @@ struct hit_effect_sfx_concept_param_st
     unsigned char reserve[52];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::hit_effect_sfx_concept_param_st) == 80,
               "HIT_EFFECT_SFX_CONCEPT_PARAM_ST paramdef size does not match detected "

@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct cs_graphics_config_param_st
-{
+struct cs_graphics_config_param_st {
     /**
      * @brief Texture filter quality
      *
@@ -113,8 +110,8 @@ struct cs_graphics_config_param_st
     unsigned char m_dummy_1[2];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::cs_graphics_config_param_st) == 16,
               "CS_GRAPHICS_CONFIG_PARAM_ST paramdef size does not match detected size");

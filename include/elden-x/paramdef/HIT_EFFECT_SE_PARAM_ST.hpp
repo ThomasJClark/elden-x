@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct hit_effect_se_param_st
-{
+struct hit_effect_se_param_st {
     /**
      * @brief Iron: Slash: Small
      */
@@ -689,8 +686,8 @@ struct hit_effect_se_param_st
     unsigned char reserve[100];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::hit_effect_se_param_st) == 640,
               "HIT_EFFECT_SE_PARAM_ST paramdef size does not match detected size");

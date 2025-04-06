@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct grass_type_param_st
-{
+struct grass_type_param_st {
     /**
      * @brief LOD distance
      */
@@ -195,8 +192,8 @@ struct grass_type_param_st
     wchar_t model1Name[16];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::grass_type_param_st) == 276,
               "GRASS_TYPE_PARAM_ST paramdef size does not match detected size");

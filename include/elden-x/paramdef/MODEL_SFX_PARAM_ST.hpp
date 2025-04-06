@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct model_sfx_param_st
-{
+struct model_sfx_param_st {
     /**
      * @brief 0: SfxID
      */
@@ -108,5 +105,5 @@ struct model_sfx_param_st
     unsigned char reserve_7[8];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct posture_control_param_pro_st
-{
+struct posture_control_param_pro_st {
     /**
      * @brief Right arm_inside and outside
      */
@@ -194,8 +191,8 @@ struct posture_control_param_pro_st
     unsigned char pad[8];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::posture_control_param_pro_st) == 80,
               "POSTURE_CONTROL_PARAM_PRO_ST paramdef size does not match detected size");

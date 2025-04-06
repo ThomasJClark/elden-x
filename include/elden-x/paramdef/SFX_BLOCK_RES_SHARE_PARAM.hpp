@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct sfx_block_res_share_param
-{
+struct sfx_block_res_share_param {
     /**
      * @brief Block Sfx resource reference map number
      *
@@ -20,8 +17,8 @@ struct sfx_block_res_share_param
     unsigned int shareBlockRsMapUidVal{0};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::sfx_block_res_share_param) == 4,
               "SFX_BLOCK_RES_SHARE_PARAM paramdef size does not match detected size");

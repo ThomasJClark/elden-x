@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct game_info_param
-{
+struct game_info_param {
     /**
      * @brief Title MsgID
      *
@@ -48,5 +45,5 @@ struct game_info_param
     unsigned char Pad[12];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

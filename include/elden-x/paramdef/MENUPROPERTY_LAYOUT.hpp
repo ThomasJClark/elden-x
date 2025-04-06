@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct menuproperty_layout
-{
+struct menuproperty_layout {
     /**
      * @brief Layout path
      */
@@ -39,8 +36,8 @@ struct menuproperty_layout
     unsigned char reserved[4];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::menuproperty_layout) == 32,
               "MENUPROPERTY_LAYOUT paramdef size does not match detected size");

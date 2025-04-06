@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct network_param_st
-{
+struct network_param_st {
     /**
      * @brief Sign height offset [m]
      */
@@ -878,8 +875,8 @@ struct network_param_st
     unsigned char pad14_1[8];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::network_param_st) == 632,
               "NETWORK_PARAM_ST paramdef size does not match detected size");

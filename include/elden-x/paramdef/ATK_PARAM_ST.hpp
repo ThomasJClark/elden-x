@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct atk_param_st
-{
+struct atk_param_st {
     /**
      * @brief 0 radius per
      *
@@ -1483,8 +1480,8 @@ struct atk_param_st
     unsigned char pad7[10];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::atk_param_st) == 456,
               "ATK_PARAM_ST paramdef size does not match detected size");

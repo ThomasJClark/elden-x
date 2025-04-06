@@ -2,32 +2,21 @@
 
 #include <stdexcept>
 
-namespace er
-{
-namespace CS
-{
+namespace er {
+namespace CS {
 
 /**
  * Source:
  * https://github.com/vswarte/chains-bindings/blob/main/crates/game/src/cs/world_chr_man.rs#L170
  */
-template <typename T> class ChrSet
-{
-  public:
+template <typename T>
+class ChrSet {
+public:
     unsigned char unk8[0x50];
 
-    virtual unsigned int capacity()
-    {
-        return 0;
-    };
-    virtual T *at(unsigned int index)
-    {
-        return nullptr;
-    };
-    virtual T &operator[](unsigned int index)
-    {
-        return *at(index);
-    };
+    virtual unsigned int capacity() { return 0; };
+    virtual T *at(unsigned int index) { return nullptr; };
+    virtual T &operator[](unsigned int index) { return *at(index); };
     virtual void unkfn3(){};
     virtual void unkfn4(){};
     virtual void unkfn5(){};

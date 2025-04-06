@@ -5,14 +5,11 @@
 
 #include "../singletons.hpp"
 
-namespace er
-{
-namespace CS
-{
+namespace er {
+namespace CS {
 
-class WorldChrManImp : public FD4::FD4Singleton<WorldChrManImp, FD4::singleton_index::WorldChrMan>
-{
-  public:
+class WorldChrManImp : public FD4::FD4Singleton<WorldChrManImp, FD4::singleton_index::WorldChrMan> {
+public:
     virtual ~WorldChrManImp() = default;
 
     unsigned char unk8[0x10ed8];

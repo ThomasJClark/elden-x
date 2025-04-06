@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct ai_anim_tbl_param
-{
+struct ai_anim_tbl_param {
     /**
      * @brief Attack 1 EzState Anime Number
      */
@@ -616,5 +613,5 @@ struct ai_anim_tbl_param
     unsigned char pad0[13];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

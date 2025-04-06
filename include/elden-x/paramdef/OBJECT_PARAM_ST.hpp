@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct object_param_st
-{
+struct object_param_st {
     /**
      * @brief HP
      *
@@ -552,5 +549,5 @@ struct object_param_st
     unsigned char pad_5[40];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

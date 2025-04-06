@@ -5,16 +5,13 @@
 #include "singletons.hpp"
 #include "steam_id.hpp"
 
-namespace er
-{
+namespace er {
 
-namespace DLNR3D
-{
+namespace DLNR3D {
 class ManagerImplSteam;
 
-class Session
-{
-  public:
+class Session {
+public:
     virtual ~Session() = default;
 
     unsigned char unk8[0x3c0];
@@ -24,9 +21,8 @@ class Session
 
 static_assert(0x568 == sizeof(Session));
 
-class SessionSteam : public Session
-{
-  public:
+class SessionSteam : public Session {
+public:
     virtual ~SessionSteam() = default;
 
     unsigned char unk568[0x90];
@@ -34,9 +30,8 @@ class SessionSteam : public Session
 
 static_assert(0x5f8 == sizeof(SessionSteam));
 
-class SessionManagerSteam
-{
-  public:
+class SessionManagerSteam {
+public:
     virtual ~SessionManagerSteam() = default;
     virtual void unkfn1(){};
     virtual void unkfn2(){};
@@ -62,9 +57,8 @@ static_assert(0x20 == __builtin_offsetof(SessionManagerSteam, session_capacity))
 static_assert(0x24 == __builtin_offsetof(SessionManagerSteam, session_count));
 static_assert(0xb0 == sizeof(SessionManagerSteam));
 
-class ManagerImplSteam
-{
-  public:
+class ManagerImplSteam {
+public:
     virtual ~ManagerImplSteam() = default;
 
     unsigned char unk8[0x708];
@@ -75,14 +69,11 @@ class ManagerImplSteam
 static_assert(0x710 == __builtin_offsetof(ManagerImplSteam, session_manager));
 }
 
-namespace CS
-{
+namespace CS {
 class CSSessionManager
-    : public FD4::FD4Singleton<CSSessionManager, FD4::singleton_index::CSSessionManager>
-{
-  public:
-    struct player_entry
-    {
+    : public FD4::FD4Singleton<CSSessionManager, FD4::singleton_index::CSSessionManager> {
+public:
+    struct player_entry {
         void *unk0;
         void *unk8;
         steam_id_type steam_id;
@@ -100,31 +91,22 @@ class CSSessionManager
     player_entry host_player_entry;
     unsigned char unk190[0x1c8];
 
-    std::span<player_entry> player_entries()
-    {
-        return {player_entries_begin, player_entries_end};
-    }
+    std::span<player_entry> player_entries() { return {player_entries_begin, player_entries_end}; }
 
-    std::span<DLNR3D::SessionSteam *> sessions()
-    {
+    std::span<DLNR3D::SessionSteam *> sessions() {
         return {impl->session_manager.sessions,
                 static_cast<size_t>(impl->session_manager.session_count)};
     }
 
-    void end_session(DLNR3D::Session *session, int unk2 = 0, void *unk3 = nullptr)
-    {
+    void end_session(DLNR3D::Session *session, int unk2 = 0, void *unk3 = nullptr) {
         impl->session_manager.end_session(session->unk3c8, unk2, unk3);
     }
 
-    void end_session2(DLNR3D::Session *session)
-    {
+    void end_session2(DLNR3D::Session *session) {
         impl->session_manager.end_session2(session->unk3c8);
     };
 
-    void kick(int unk1, void *unk2, int unk3)
-    {
-        impl->session_manager.kick_out(unk1, unk2, unk3);
-    }
+    void kick(int unk1, void *unk2, int unk3) { impl->session_manager.kick_out(unk1, unk2, unk3); }
 };
 
 typedef CSSessionManager CSSessionManagerImp;

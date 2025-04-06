@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct phantom_param_st
-{
+struct phantom_param_st {
     /**
      * @brief A
      *
@@ -206,8 +203,8 @@ struct phantom_param_st
     float glowScale{0.f};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::phantom_param_st) == 56,
               "PHANTOM_PARAM_ST paramdef size does not match detected size");

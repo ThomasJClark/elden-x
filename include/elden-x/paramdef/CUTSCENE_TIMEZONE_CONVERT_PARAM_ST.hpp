@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct cutscene_timezone_convert_param_st
-{
+struct cutscene_timezone_convert_param_st {
     /**
      * @brief Pre-conversion time zone start time [hour]
      *
@@ -26,8 +23,8 @@ struct cutscene_timezone_convert_param_st
     float DstCutscenTime{0.f};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::cutscene_timezone_convert_param_st) == 8,
               "CUTSCENE_TIMEZONE_CONVERT_PARAM_ST paramdef size does not match detected "

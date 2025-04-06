@@ -1,5 +1,5 @@
-#include <chrono>
 #include <spdlog/spdlog.h>
+#include <chrono>
 #include <thread>
 
 #include <elden-x/params/params.hpp>
@@ -7,18 +7,14 @@
 
 static er::CS::SoloParamRepository **address = nullptr;
 
-bool er::CS::SoloParamRepository::are_params_ready()
-{
+bool er::CS::SoloParamRepository::are_params_ready() {
     auto solo_param_repository = er::CS::SoloParamRepository::instance();
-    if (!solo_param_repository)
-    {
+    if (!solo_param_repository) {
         return false;
     }
 
-    for (auto entry : solo_param_repository->param_entries)
-    {
-        if (!entry.res_cap[0])
-        {
+    for (auto entry : solo_param_repository->param_entries) {
+        if (!entry.res_cap[0]) {
             return false;
         }
     }
@@ -26,12 +22,10 @@ bool er::CS::SoloParamRepository::are_params_ready()
     return true;
 }
 
-void er::CS::SoloParamRepository::wait_for_params()
-{
+void er::CS::SoloParamRepository::wait_for_params() {
     SPDLOG_INFO("Waiting for params...");
 
-    while (!are_params_ready())
-    {
+    while (!are_params_ready()) {
         std::this_thread::sleep_for(std::chrono::seconds(1));
     }
 }

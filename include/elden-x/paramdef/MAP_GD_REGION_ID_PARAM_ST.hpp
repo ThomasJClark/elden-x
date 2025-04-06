@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct map_gd_region_id_param_st
-{
+struct map_gd_region_id_param_st {
     /**
      * @brief Do you remove it from the NT version output?
      *
@@ -38,8 +35,8 @@ struct map_gd_region_id_param_st
     unsigned char Reserve[24];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::map_gd_region_id_param_st) == 32,
               "MAP_GD_REGION_ID_PARAM_ST paramdef size does not match detected size");

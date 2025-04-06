@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct bonfire_warp_sub_category_param_st
-{
+struct bonfire_warp_sub_category_param_st {
     /**
      * @brief Do you remove it from the NT version output?
      *
@@ -52,8 +49,8 @@ struct bonfire_warp_sub_category_param_st
     unsigned char pad[4];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::bonfire_warp_sub_category_param_st) == 16,
               "BONFIRE_WARP_SUB_CATEGORY_PARAM_ST paramdef size does not match detected "

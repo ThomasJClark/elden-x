@@ -3,27 +3,23 @@
 #include "../steam_id.hpp"
 #include "chr.hpp"
 
-namespace er
-{
+namespace er {
 
-namespace CS
-{
+namespace CS {
 
 class EquipMagicData;
 class EquipItemData;
 
-class ChrAsm
-{
-  public:
-    enum class arm_style_type : unsigned int
-    {
+class ChrAsm {
+public:
+    enum class arm_style_type : unsigned int {
         one_hand = 1,
         two_hand_left = 2,
         two_hand_right = 3,
     };
 
-    template <typename T> struct gear_type
-    {
+    template <typename T>
+    struct gear_type {
         T left_weapon_id1;
         T right_weapon_id1;
         T left_weapon_id2;
@@ -82,9 +78,8 @@ static_assert(0xe0 == __builtin_offsetof(ChrAsm, unke0));
 static_assert(0xe4 == __builtin_offsetof(ChrAsm, unke4));
 static_assert(0xe8 == sizeof(ChrAsm));
 
-class EquipInventoryData
-{
-  public:
+class EquipInventoryData {
+public:
     virtual ~EquipInventoryData() = default;
 
     unsigned char unk8[0x120];
@@ -92,9 +87,8 @@ class EquipInventoryData
 
 static_assert(0x128 == sizeof(EquipInventoryData));
 
-class EquipGameData
-{
-  public:
+class EquipGameData {
+public:
     virtual ~EquipGameData() = default;
 
     unsigned char unk8[0x64];
@@ -113,11 +107,9 @@ static_assert(0x288 == __builtin_offsetof(EquipGameData, equip_item_data));
 static_assert(0x290 == __builtin_offsetof(EquipGameData, unk290));
 static_assert(0x4b0 == sizeof(EquipGameData));
 
-class PlayerGameData
-{
-  public:
-    struct attributes_st
-    {
+class PlayerGameData {
+public:
+    struct attributes {
         int vigor;
         int mind;
         int endurance;
@@ -128,18 +120,14 @@ class PlayerGameData
         int arcane;
     };
 
-    enum class body_type_en : unsigned char
-    {
-        type_b = 0, // Female
-        type_a = 1, // Male
+    enum class body_type_en : unsigned char {
+        type_b = 0,  // Female
+        type_a = 1,  // Male
     };
 
     virtual ~PlayerGameData() = default;
 
-    std::wstring_view name()
-    {
-        return std::wstring_view{&name_c_str[0]};
-    }
+    std::wstring_view name() { return std::wstring_view{&name_c_str[0]}; }
 
     unsigned char unk8[0x8];
     int hp;
@@ -149,7 +137,7 @@ class PlayerGameData
     int stamina;
     int stamina_max;
     unsigned char unk28[0x14];
-    attributes_st attributes;
+    attributes attributes;
     unsigned char unk5c[0xc];
     int rune_level;
     unsigned char unk6c[0x30];
@@ -185,17 +173,15 @@ static_assert(0x2b0 == __builtin_offsetof(PlayerGameData, equip_game_data));
 static_assert(0x760 == __builtin_offsetof(PlayerGameData, unk760));
 static_assert(0xb68 == sizeof(PlayerGameData));
 
-class PlayerNetworkSession
-{
-  public:
+class PlayerNetworkSession {
+public:
     virtual ~PlayerNetworkSession() = default;
 
     steam_id_type steam_id;
 };
 
-class PlayerSessionHolder
-{
-  public:
+class PlayerSessionHolder {
+public:
     virtual ~PlayerSessionHolder() = default;
 
     void *unk8;
@@ -209,9 +195,8 @@ static_assert(0x18 == __builtin_offsetof(PlayerSessionHolder, network_session2))
 static_assert(0x20 == __builtin_offsetof(PlayerSessionHolder, unk20));
 static_assert(0x28 == sizeof(PlayerSessionHolder));
 
-class PlayerIns : public CS::ChrIns
-{
-  public:
+class PlayerIns : public CS::ChrIns {
+public:
     virtual ~PlayerIns() = default;
 
     CS::PlayerGameData *game_data;

@@ -1,7 +1,6 @@
 #pragma once
 
-namespace er
-{
+namespace er {
 
 // If the SteamWorks SDK is included, use the actual Steam ID structure. Otherwise, use a 64
 // bit integer.

@@ -1,13 +1,10 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 
-struct sign_puddle_tab_param_st
-{
+struct sign_puddle_tab_param_st {
     /**
      * @brief isDlcTab
      */
@@ -23,5 +20,5 @@ struct sign_puddle_tab_param_st
     int unknown_0xc{0};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};

@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct player_common_param_st
-{
+struct player_common_param_st {
     /**
      * @brief Player's automatic foot effect SFX identifier [3 digits]
      *
@@ -392,8 +389,8 @@ struct player_common_param_st
     unsigned char reserved41[28];
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::player_common_param_st) == 256,
               "PLAYER_COMMON_PARAM_ST paramdef size does not match detected size");

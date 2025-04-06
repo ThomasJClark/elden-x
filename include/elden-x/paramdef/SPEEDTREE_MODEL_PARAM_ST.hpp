@@ -1,16 +1,13 @@
 /* This file was automatically generated from XML paramdefs. */
 #pragma once
 
-namespace er
-{
-namespace paramdef
-{
+namespace er {
+namespace paramdef {
 /**
  * @brief This struct was automatically generated from XML paramdefs.
  *
  */
-struct speedtree_model_param_st
-{
+struct speedtree_model_param_st {
     /**
      * @brief Leaf minimum fade value
      */
@@ -62,8 +59,8 @@ struct speedtree_model_param_st
     float BillboardBackSpecularWeakenParam{1.f};
 };
 
-}; // namespace paramdef
-}; // namespace er
+};
+};
 
 static_assert(sizeof(er::paramdef::speedtree_model_param_st) == 40,
               "SPEEDTREE_MODEL_PARAM_ST paramdef size does not match detected size");

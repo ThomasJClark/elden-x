@@ -5,10 +5,8 @@
 /**
  * Many of the known commands for ELDEN RING talkscripts, taken for the most part from ESDLang
  */
-namespace er
-{
-namespace talk_command
-{
+namespace er {
+namespace talk_command {
 
 constexpr ezstate::command talk_to_player{.bank = 1, .id = 1};
 constexpr ezstate::command remove_my_aggro{.bank = 1, .id = 5};
