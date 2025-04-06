@@ -7,10 +7,10 @@
  */
 #pragma once
 
-#include "../paramdef/paramdefs.hpp"
-#include "param_defines.hpp"
-#include "param_iterator.hpp"
-#include "params.hpp"
+#include "./paramdef/paramdefs.hpp"
+#include "./params/param_defines.hpp"
+#include "./params/param_iterator.hpp"
+#include "./params/solo_param_repository.hpp"
 
 #include <algorithm>
 #include <atomic>

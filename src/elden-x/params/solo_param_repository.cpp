@@ -2,7 +2,7 @@
 #include <chrono>
 #include <thread>
 
-#include <elden-x/params/params.hpp>
+#include <elden-x/params/solo_param_repository.hpp>
 #include <elden-x/utils/modutils.hpp>
 
 static er::CS::SoloParamRepository **address = nullptr;

@@ -41,7 +41,7 @@ add_library(elden-x STATIC
   src/elden-x/game_man.cpp
   src/elden-x/task.cpp
   src/elden-x/utils/modutils.cpp
-  src/elden-x/params/params.cpp
+  src/elden-x/params/solo_param_repository.cpp
   src/elden-x/singletons.cpp)
 
 set_target_properties(elden-x PROPERTIES LINKER_LANGUAGE CXX)
