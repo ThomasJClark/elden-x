@@ -4,11 +4,12 @@ namespace er {
 
 namespace CS {
 
-class MsgRepositoryImp {
+class MsgRepository {
 public:
-    static MsgRepositoryImp *instance();
+    static MsgRepository *instance();
 };
 
+typedef MsgRepository MsgRepositoryImp;
 }
 
 enum class msgbnd : unsigned int {

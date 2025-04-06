@@ -8,9 +8,9 @@
 namespace er {
 namespace CS {
 
-class WorldChrManImp : public FD4::FD4Singleton<WorldChrManImp, FD4::singleton_index::WorldChrMan> {
+class WorldChrMan : public FD4::FD4Singleton<WorldChrMan, FD4::singleton_index::WorldChrMan> {
 public:
-    virtual ~WorldChrManImp() = default;
+    virtual ~WorldChrMan() = default;
 
     unsigned char unk8[0x10ed8];
     CS::ChrSet<PlayerIns> player_chr_set;
@@ -22,11 +22,13 @@ public:
     unsigned char unk1e510[0xed0];
 };
 
-static_assert(0x10ee0 == __builtin_offsetof(WorldChrManImp, player_chr_set));
-static_assert(0x10f38 == __builtin_offsetof(WorldChrManImp, ghost_chr_set));
-static_assert(0x10f90 == __builtin_offsetof(WorldChrManImp, spirit_ash_chr_set));
-static_assert(0x10fe8 == __builtin_offsetof(WorldChrManImp, debug_chr_set));
-static_assert(0x1e508 == __builtin_offsetof(WorldChrManImp, main_player));
-static_assert(0x1f3e0 == sizeof(WorldChrManImp));
+static_assert(0x10ee0 == __builtin_offsetof(WorldChrMan, player_chr_set));
+static_assert(0x10f38 == __builtin_offsetof(WorldChrMan, ghost_chr_set));
+static_assert(0x10f90 == __builtin_offsetof(WorldChrMan, spirit_ash_chr_set));
+static_assert(0x10fe8 == __builtin_offsetof(WorldChrMan, debug_chr_set));
+static_assert(0x1e508 == __builtin_offsetof(WorldChrMan, main_player));
+static_assert(0x1f3e0 == sizeof(WorldChrMan));
+
+typedef WorldChrMan WorldChrManImp;
 }
 }

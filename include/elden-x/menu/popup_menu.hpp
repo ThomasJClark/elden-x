@@ -5,13 +5,13 @@
 namespace er {
 namespace CS {
 
-class CSMenuManImp;
+class CSMenuMan;
 
 class CSPopupMenu {
 public:
     virtual ~CSPopupMenu() = default;
 
-    CS::CSMenuManImp *owner;
+    CS::CSMenuMan *owner;
     CS::MenuWindow *window;
 };
 

@@ -7,14 +7,15 @@
 namespace er {
 namespace CS {
 
-class CSMenuManImp : public FD4::FD4Singleton<CSMenuManImp, FD4::singleton_index::CSMenuMan> {
+class CSMenuMan : public FD4::FD4Singleton<CSMenuMan, FD4::singleton_index::CSMenuMan> {
 public:
-    virtual ~CSMenuManImp() = default;
+    virtual ~CSMenuMan() = default;
 
     unsigned char unk8[0x78];
 
     CS::CSPopupMenu *popup_menu;
 };
 
+typedef CSMenuMan CSMenuManImp;
 }
 }
