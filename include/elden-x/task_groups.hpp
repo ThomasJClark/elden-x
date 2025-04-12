@@ -1,6 +1,7 @@
 #pragma once
 
 namespace er {
+namespace FD4 {
 
 /**
  * All groups of async events, as shared by Dasaav in a post on ?ServerName?
@@ -179,4 +180,5 @@ enum class task_group : unsigned short {
     FrameEnd,
 };
 
+}
 }

@@ -3,11 +3,13 @@
 
 #include <spdlog/spdlog.h>
 
-typedef void cs_task_imp_register_task_fn(er::CS::CSTask *, er::task_group, er::CS::CSEzTask *);
+typedef void cs_task_imp_register_task_fn(er::CS::CSTask *,
+                                          er::FD4::task_group,
+                                          er::CS::CSEzTask *);
 
 static cs_task_imp_register_task_fn *cs_task_imp_register_task;
 
-void er::CS::CSTask::register_task(task_group group, CSEzTask &task) {
+void er::CS::CSTask::register_task(er::FD4::task_group group, CSEzTask &task) {
     if (!cs_task_imp_register_task) {
         cs_task_imp_register_task = modutils::scan<cs_task_imp_register_task_fn>({
             .aob = "e8 ????????"        // call DLPanic

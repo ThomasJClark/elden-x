@@ -18,6 +18,19 @@ struct task_data {
     int seed;
 };
 
+/**
+ * Has something to do with the OS thread that the task is running on. Each task group is always
+ * in the same affinity, and most are in thread0.
+ */
+enum class task_affinity : unsigned char {
+    thread0 = 0,
+    thread1 = 1,
+    thread2 = 2,
+    thread3 = 3,
+    thread4 = 4,
+    thread5 = 5,
+};
+
 class FD4TaskBase {
 private:
     int unk8;
@@ -30,7 +43,7 @@ public:
 
     virtual ~FD4TaskBase() = default;
 
-    virtual void execute(task_data *data) = 0;
+    virtual void execute(task_data *data, task_group group, task_affinity affinity) = 0;
 };
 }
 
@@ -40,7 +53,7 @@ class CSEzTask;
 class CSEzTaskProxy : public FD4::FD4TaskBase {
 private:
     CS::CSEzTask *owner;
-    task_group group;
+    FD4::task_group group;
 };
 
 /**
@@ -57,7 +70,7 @@ public:
     /**
      * Register the specified task to run asyncronously each frame in the given task group
      */
-    void register_task(task_group group, CSEzTask &task);
+    void register_task(FD4::task_group group, CSEzTask &task);
 };
 }
 
