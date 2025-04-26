@@ -9,11 +9,15 @@ project(elden-x
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_INTERPROCEDURAL_OPTIMIZATION TRUE)
 
+option(ER_WITH_HOOKS "Support hooking functions using MinHook" ON)
+
 include(FetchContent)
 
-FetchContent_Declare(minhook
-  GIT_REPOSITORY        https://github.com/TsudaKageyu/minhook.git
-  GIT_TAG               f5485b8454544c2f034c78f8f127c1d03dea3636)
+if (ER_WITH_HOOKS)
+  FetchContent_Declare(minhook
+    GIT_REPOSITORY        https://github.com/TsudaKageyu/minhook.git
+    GIT_TAG               f5485b8454544c2f034c78f8f127c1d03dea3636)
+endif()
 
 FetchContent_Declare(pattern16
   GIT_REPOSITORY        https://github.com/Dasaav-dsv/Pattern16.git
@@ -30,7 +34,11 @@ FetchContent_Declare(spdlog
 # Set iterator debug level to 0 for ELDEN RING ABI compatibility
 add_definitions(-D_ITERATOR_DEBUG_LEVEL=0)
 
-FetchContent_MakeAvailable(minhook pattern16 spdlog)
+if (ER_WITH_HOOKS)
+  FetchContent_MakeAvailable(minhook)
+endif()
+
+FetchContent_MakeAvailable(pattern16 spdlog)
 
 add_library(pattern16 INTERFACE)
 target_include_directories(pattern16 INTERFACE ${pattern16_SOURCE_DIR}/include)
@@ -46,5 +54,12 @@ add_library(elden-x STATIC
   src/elden-x/singletons.cpp)
 
 set_target_properties(elden-x PROPERTIES LINKER_LANGUAGE CXX)
+
 target_include_directories(elden-x PUBLIC include)
-target_link_libraries(elden-x minhook pattern16 spdlog)
+
+if (ER_WITH_HOOKS)
+  target_link_libraries(elden-x minhook)
+  target_compile_definitions(elden-x PRIVATE ER_WITH_HOOKS)
+endif()
+
+target_link_libraries(elden-x pattern16 spdlog)

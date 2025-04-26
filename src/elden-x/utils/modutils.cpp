@@ -6,7 +6,10 @@
 #include <stdexcept>
 #include <string>
 
-#include <MinHook.h>
+#ifdef ER_WITH_HOOKS
+    #include <MinHook.h>
+#endif
+
 #include <Pattern16.h>
 #include <spdlog/spdlog.h>
 #define WIN32_LEAN_AND_MEAN
@@ -60,13 +63,19 @@ void modutils::initialize() {
                   nt_headers->OptionalHeader.SizeOfImage};
     }
 
+#ifdef ER_WITH_HOOKS
     auto mh_status = MH_Initialize();
     if (mh_status != MH_OK) {
         throw runtime_error(string("Error initializing MinHook: ") + MH_StatusToString(mh_status));
     }
+#endif
 }
 
-void modutils::deinitialize() { MH_Uninitialize(); }
+void modutils::deinitialize() {
+#ifdef ER_WITH_HOOKS
+    MH_Uninitialize();
+#endif
+}
 
 uintptr_t modutils::impl::scan_memory(uintptr_t address, const std::string &aob) {
     if (!address) {
@@ -102,6 +111,7 @@ uintptr_t modutils::impl::scan(const scanopts &opts) {
     return apply_offsets(result, opts.offset, opts.relative_offsets);
 }
 
+#ifdef ER_WITH_HOOKS
 void modutils::impl::hook(void *function, void *detour, void **trampoline) {
     auto mh_status = MH_CreateHook(function, detour, trampoline);
     if (mh_status != MH_OK) {
@@ -119,3 +129,4 @@ void modutils::enable_hooks() {
         throw runtime_error(string("Error enabling hooks: ") + MH_StatusToString(mh_status));
     }
 }
+#endif

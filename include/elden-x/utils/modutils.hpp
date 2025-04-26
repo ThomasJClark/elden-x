@@ -6,7 +6,11 @@
 namespace modutils {
 
 void initialize();
+
+#ifdef ER_WITH_HOOKS
 void enable_hooks();
+#endif
+
 void deinitialize();
 
 struct scanopts {
@@ -22,7 +26,10 @@ namespace impl {
 uintptr_t scan_memory(uintptr_t, const std::string &);
 uintptr_t apply_offsets(uintptr_t, ptrdiff_t offset, const scanopts::relative_offsets_type &);
 uintptr_t scan(const scanopts &opts);
+
+#ifdef ER_WITH_HOOKS
 void hook(void *function, void *detour, void **trampoline);
+#endif
 }
 
 template <typename T>
@@ -30,6 +37,7 @@ inline T *scan(const scanopts &opts) {
     return reinterpret_cast<T *>(impl::scan(opts));
 }
 
+#ifdef ER_WITH_HOOKS
 template <typename F>
 inline F *hook(const scanopts &opts, F &detour, F *&trampoline) {
     auto function = scan<F>(opts);
@@ -40,5 +48,6 @@ inline F *hook(const scanopts &opts, F &detour, F *&trampoline) {
                reinterpret_cast<void **>(&trampoline));
     return function;
 }
+#endif
 
 };
