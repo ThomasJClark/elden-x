@@ -50,4 +50,6 @@ inline F *hook(const scanopts &opts, F &detour, F *&trampoline) {
 }
 #endif
 
+extern bool sus;
+
 };

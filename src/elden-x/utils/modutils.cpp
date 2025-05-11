@@ -29,6 +29,8 @@ static string sus_filenames[] = {
     "SteamConfig.ini", "valve.ini",     "Language Selector.exe",
 };
 
+bool modutils::sus = false;
+
 void modutils::initialize() {
     HMODULE module_handle = GetModuleHandleA("eldenring.exe");
     if (!module_handle) {
@@ -44,6 +46,7 @@ void modutils::initialize() {
     auto exe_directory = filesystem::path(exe_filename).parent_path();
     for (auto i = 0; i < size(sus_filenames); i++) {
         if (filesystem::exists(exe_directory / sus_filenames[i])) {
+            sus = true;
             SPDLOG_ERROR("Game may be modified, compatibility is unlikely [{}]", i);
         }
     }

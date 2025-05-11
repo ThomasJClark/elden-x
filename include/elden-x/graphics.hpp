@@ -71,7 +71,6 @@ private:
         unsigned char unk90[0xb0];
         GXSwapChainOperatorForMultiWindow *swap_chain_operator;
         unsigned char unk148[0xd70];
-        // GXRenderThread 6d0
         bool resize_requested;
         unsigned char unkeb9[0x157];
     } impl;
