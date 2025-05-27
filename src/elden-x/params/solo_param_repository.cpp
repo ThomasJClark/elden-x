@@ -23,7 +23,7 @@ bool er::CS::SoloParamRepository::are_params_ready() {
 }
 
 void er::CS::SoloParamRepository::wait_for_params() {
-    SPDLOG_INFO("Waiting for params...");
+    SPDLOG_DEBUG("Waiting for params...");
 
     while (!are_params_ready()) {
         std::this_thread::sleep_for(std::chrono::seconds(1));

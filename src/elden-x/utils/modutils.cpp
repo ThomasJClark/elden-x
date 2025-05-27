@@ -41,7 +41,7 @@ void modutils::initialize() {
 
     wchar_t exe_filename[MAX_PATH] = {0};
     GetModuleFileNameW(module_handle, exe_filename, MAX_PATH);
-    SPDLOG_INFO("Found handle for eldenring.exe process: {}", convert.to_bytes(exe_filename));
+    SPDLOG_DEBUG("Found handle for eldenring.exe process: {}", convert.to_bytes(exe_filename));
 
     auto exe_directory = filesystem::path(exe_filename).parent_path();
     for (auto i = 0; i < size(sus_filenames); i++) {
