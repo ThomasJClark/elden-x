@@ -59,7 +59,7 @@ target_include_directories(elden-x PUBLIC include)
 
 if (ER_WITH_HOOKS)
   target_link_libraries(elden-x minhook)
-  target_compile_definitions(elden-x PRIVATE ER_WITH_HOOKS)
+  target_compile_definitions(elden-x PUBLIC ER_WITH_HOOKS)
 endif()
 
 target_link_libraries(elden-x pattern16 spdlog)
