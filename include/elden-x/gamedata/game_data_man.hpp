@@ -1,6 +1,10 @@
-#include "../chr/player.hpp"
+#pragma once
 
-#include <array>
+#ifndef ER_NIGHTREIGN
+
+    #include "../chr/player.hpp"
+
+    #include <array>
 
 namespace er {
 
@@ -35,3 +39,5 @@ public:
 
 }
 }
+
+#endif

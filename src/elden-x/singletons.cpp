@@ -28,18 +28,22 @@ typedef const char *get_runtime_class_name_fn(er::FD4::FD4RuntimeClass *);
  * https://github.com/The-Grand-Archives/Elden-Ring-CT-TGA/blob/427134e30b06476341f670e083d5d5cd0e029b3e/table_files/include/tga/fd4_singleton.h
  */
 void er::FD4::find_singletons() {
+#ifdef ER_NIGHTREIGN
+    this_thread::sleep_for(std::chrono::seconds(1));
+#else
     // Wait until SetBaseAddr() has been called in WinMain so we know static data has been
     // initialized. This should happen almost immediately, but if there are multiple DLL mods with
     // blocking DllMains it may be delayed.
     auto &base_addr = *modutils::scan<HMODULE>({
         .aob = "ff 15 ????????"  // call [CommandLineToArgvW]
                "48 8b ce"        // mov rcx, rsi
-               "48 8b f8"        // mov rdi, rax
+               "48 8b ??"        // mov r?i, rax
                "e8 ????????",    // call SetBaseAddr
         .offset = 12,
         .relative_offsets = {{1, 5}, {3, 7}},
     });
     while (!base_addr) this_thread::yield();
+#endif
 
     uintptr_t match = 0;
     while (match = modutils::impl::scan_memory(match ? match + 50 : 0,

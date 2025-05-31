@@ -1,7 +1,9 @@
-#include <elden-x/gamedata/game_data_man.hpp>
-#include <elden-x/utils/modutils.hpp>
+#ifndef ER_NIGHTREIGN
 
-#include <spdlog/spdlog.h>
+    #include <elden-x/gamedata/game_data_man.hpp>
+    #include <elden-x/utils/modutils.hpp>
+
+    #include <spdlog/spdlog.h>
 
 static er::CS::GameDataMan **address = nullptr;
 
@@ -25,3 +27,5 @@ er::CS::GameDataMan *er::CS::GameDataMan::instance() {
 
     return *address;
 }
+
+#endif
