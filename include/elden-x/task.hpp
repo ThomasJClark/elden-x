@@ -47,7 +47,7 @@ namespace CS {
 class CSEzTask;
 
 class CSEzTaskProxy : public FD4::FD4TaskBase {
-private:
+public:
     CS::CSEzTask *owner;
     FD4::task_group group;
 };

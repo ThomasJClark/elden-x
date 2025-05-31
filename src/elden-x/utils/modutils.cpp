@@ -32,16 +32,22 @@ static string sus_filenames[] = {
 bool modutils::sus = false;
 
 void modutils::initialize() {
-    HMODULE module_handle = GetModuleHandleA("eldenring.exe");
+#ifdef ER_NIGHTREIGN
+    #define EXE_NAME "nightreign.exe"
+#else
+    #define EXE_NAME "eldenring.exe"
+#endif
+
+    HMODULE module_handle = GetModuleHandleA(EXE_NAME);
     if (!module_handle) {
-        throw runtime_error("Failed to get handle for eldenring.exe process");
+        throw runtime_error("Failed to get handle for " EXE_NAME " process");
     }
 
     wstring_convert<codecvt_utf8_utf16<wchar_t>, wchar_t> convert;
 
     wchar_t exe_filename[MAX_PATH] = {0};
     GetModuleFileNameW(module_handle, exe_filename, MAX_PATH);
-    SPDLOG_DEBUG("Found handle for eldenring.exe process: {}", convert.to_bytes(exe_filename));
+    SPDLOG_DEBUG("Found handle for " EXE_NAME " process: {}", convert.to_bytes(exe_filename));
 
     auto exe_directory = filesystem::path(exe_filename).parent_path();
     for (auto i = 0; i < size(sus_filenames); i++) {

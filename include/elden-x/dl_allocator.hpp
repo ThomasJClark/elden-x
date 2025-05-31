@@ -53,15 +53,14 @@ public:
         allocator.FreeMemory(reinterpret_cast<void *>(pAllocation));
     }
 
-    template <typename T1, typename T2>
-    friend bool operator==(const DLAllocatorAdapter<T1> &lhs,
-                           const DLAllocatorAdapter<T2> &rhs) noexcept {
-        return &lhs.allocator == &rhs.allocator;
-    }
-
-private:
     DLAllocationInterface &allocator;
 };
+
+template <typename T1, typename T2>
+inline static bool operator==(const DLAllocatorAdapter<T1> &lhs,
+                              const DLAllocatorAdapter<T2> &rhs) noexcept {
+    return &lhs.allocator == &rhs.allocator;
+}
 
 }
 }

@@ -34,7 +34,7 @@ void er::FD4::find_singletons() {
     auto &base_addr = *modutils::scan<HMODULE>({
         .aob = "ff 15 ????????"  // call [CommandLineToArgvW]
                "48 8b ce"        // mov rcx, rsi
-               "48 8b f8"        // mov rdi, rax
+               "48 8b ??"        // mov r?i, rax
                "e8 ????????",    // call SetBaseAddr
         .offset = 12,
         .relative_offsets = {{1, 5}, {3, 7}},

@@ -10,6 +10,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_INTERPROCEDURAL_OPTIMIZATION TRUE)
 
 option(ER_WITH_HOOKS "Support hooking functions using MinHook" ON)
+option(ER_NIGHTREIGN "Experimental support for ELDEN RING NIGHTREIGN" OFF)
 
 include(FetchContent)
 
@@ -60,6 +61,10 @@ target_include_directories(elden-x PUBLIC include)
 if (ER_WITH_HOOKS)
   target_link_libraries(elden-x minhook)
   target_compile_definitions(elden-x PUBLIC ER_WITH_HOOKS)
+endif()
+
+if (ER_NIGHTREIGN)
+  target_compile_definitions(elden-x PUBLIC ER_NIGHTREIGN)
 endif()
 
 target_link_libraries(elden-x pattern16 spdlog)
