@@ -72,6 +72,30 @@ public:
      */
     void register_task(FD4::task_group group, CSEzTask &task);
 };
+
+class CSEzRabbitTaskBase : public CSEzTask {
+public:
+    int unk18;
+    int unk1c;
+};
+
+class CSEzRabbitTask : public CSEzRabbitTaskBase {};
+
+template <typename T>
+class CSEzUpdateTask : CSEzRabbitTask {
+public:
+    T *arg;
+    void (*callback)(T *arg);
+
+    CSEzUpdateTask(T *arg, void (*callback)(T *arg))
+        : arg(arg),
+          callback(callback) {}
+
+    virtual void execute(FD4::task_data *data, FD4::task_group group, FD4::task_affinity affinity) {
+        callback(arg);
+    }
+};
+
 }
 
 }
