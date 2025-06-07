@@ -18,17 +18,13 @@ struct task_data {
     int seed;
 };
 
-/**
- * Has something to do with the OS thread that the task is running on. Each task group is always
- * in the same affinity, and most are in thread0.
- */
-enum class task_affinity : unsigned char {
-    thread0 = 0,
-    thread1 = 1,
-    thread2 = 2,
-    thread3 = 3,
-    thread4 = 4,
-    thread5 = 5,
+enum class task_runner : unsigned char {
+    runner0 = 0,
+    runner1 = 1,
+    runner2 = 2,
+    runner3 = 3,
+    runner4 = 4,
+    runner5 = 5,
 };
 
 class FD4TaskBase {
@@ -43,7 +39,7 @@ public:
 
     virtual ~FD4TaskBase() = default;
 
-    virtual void execute(task_data *data, task_group group, task_affinity affinity) = 0;
+    virtual void execute(task_data *data, task_group group, task_runner affinity) = 0;
 };
 }
 
@@ -91,7 +87,7 @@ public:
         : arg(arg),
           callback(callback) {}
 
-    virtual void execute(FD4::task_data *data, FD4::task_group group, FD4::task_affinity affinity) {
+    virtual void execute(FD4::task_data *data, FD4::task_group group, FD4::task_runner affinity) {
         callback(arg);
     }
 };
