@@ -11,9 +11,9 @@ namespace CS {
 class MenuUnionJob;
 
 enum class menu_flag : unsigned short {
-    sparring = 200,
-    unk201 = 201,
-    unk202 = 202,
+    roundtable_menu = 200,
+    roundtable_location_list = 201,
+    roundtable_map = 202,
     expeditions = 203,
     expeditions_target = 204,
     expeditions_matchmaking_settings = 205,
