@@ -75,11 +75,23 @@ enum class menu_flag : unsigned short {
     system_menu_controls = 1001,
 };
 
-enum class menu_flag_state : unsigned char {
-    off = 0,
-    on = 1,
-    unk3 = 3,
-    unk7 = 7,
+struct menu_flag_state {
+    /**
+     * True if the menu is displayed, or is in a list of tabs that are displayed and the menu was
+     * previously the active tab
+     */
+    bool enabled : 1;
+
+    /**
+     * True if the menu is currently visible
+     */
+    bool visible : 1;
+
+    /**
+     * True if the menu is visible and not obscured by a child menu that currently has focus
+     * (e.g. the effect details popup on the status screen)
+     */
+    bool foreground : 1;
 };
 
 class CSMenuMan : public FD4::FD4Singleton<CSMenuMan, FD4::singleton_index::CSMenuMan> {
