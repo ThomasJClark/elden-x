@@ -1,5 +1,6 @@
 #pragma once
 
+#include "chr_debug_reload.hpp"
 #include "chr_nr.hpp"
 #include "chrset.hpp"
 
@@ -16,34 +17,36 @@ class WorldChrMan : public FD4::FD4Singleton<WorldChrMan, FD4::singleton_index::
 public:
     virtual ~WorldChrMan() = default;
 
-    unsigned char unk8[0x9a38];
+    uint8_t unk8[0x9a38];
     CS::ChrSet<PlayerIns> player_chr_set;
     CS::ChrSet<PlayerIns> ghost_chr_set;
     CS::ChrSet<ChrIns> spirit_ash_chr_set;
     CS::ChrSet<ChrIns> debug_chr_set;
-    unsigned char unk9ba0[0xd948];
+    uint8_t unk9ba0[0xd948];
     CS::PlayerIns *main_player;
-    unsigned char unk174f0[0x180];
+    uint8_t unk174f0[0xb8];
+    chr_debug_reload debug_reload;
+    uint8_t unk175c8[0xa8];
     er::CS::CSEzUpdateTask<er::CS::WorldChrMan> update_task1;
-    unsigned char unk176a0[0x28];
+    uint8_t unk176a0[0x28];
     er::CS::CSEzUpdateTask<er::CS::WorldChrMan> update_task2;
     er::CS::CSEzUpdateTask<er::CS::WorldChrMan> update_task3;
-    unsigned char unk17728[0x20];
+    uint8_t unk17728[0x20];
     er::CS::CSEzUpdateTask<er::CS::WorldChrMan> update_task4;
     er::CS::CSEzUpdateTask<er::CS::WorldChrMan> update_task5;
-    unsigned char unk177a8[0x20];
+    uint8_t unk177a8[0x20];
     er::CS::CSEzUpdateTask<er::CS::WorldChrMan> update_task6;
     er::CS::CSEzUpdateTask<er::CS::WorldChrMan> update_task7;
     er::CS::CSEzUpdateTask<er::CS::WorldChrMan> update_task8;
     er::CS::CSEzUpdateTask<er::CS::WorldChrMan> update_task9;
-    unsigned char unk17888[0x20];
+    uint8_t unk17888[0x20];
     er::CS::CSEzUpdateTask<er::CS::WorldChrMan> update_task10;
-    unsigned char unk178d8[0x100];
+    uint8_t unk178d8[0x100];
     er::CS::CSEzUpdateTask<er::CS::WorldChrMan> update_task11;
     er::CS::CSEzUpdateTask<er::CS::WorldChrMan> update_task12;
     er::CS::CSEzUpdateTask<er::CS::WorldChrMan> update_task13;
     er::CS::CSEzUpdateTask<er::CS::WorldChrMan> update_task14;
-    unsigned char unk17a98[0x20];
+    uint8_t unk17a98[0x20];
     er::CS::CSEzUpdateTask<er::CS::WorldChrMan> update_task15;
     er::CS::CSEzUpdateTask<er::CS::WorldChrMan> update_task16;
     er::CS::CSEzUpdateTask<er::CS::WorldChrMan> update_task17;
@@ -55,6 +58,7 @@ static_assert(0x9a98 == __builtin_offsetof(WorldChrMan, ghost_chr_set));
 static_assert(0x9af0 == __builtin_offsetof(WorldChrMan, spirit_ash_chr_set));
 static_assert(0x9b48 == __builtin_offsetof(WorldChrMan, debug_chr_set));
 static_assert(0x174E8 == __builtin_offsetof(WorldChrMan, main_player));
+static_assert(0x175a8 == __builtin_offsetof(WorldChrMan, debug_reload));
 static_assert(0x17670 == __builtin_offsetof(WorldChrMan, update_task1));
 static_assert(0x176c8 == __builtin_offsetof(WorldChrMan, update_task2));
 static_assert(0x176f8 == __builtin_offsetof(WorldChrMan, update_task3));
