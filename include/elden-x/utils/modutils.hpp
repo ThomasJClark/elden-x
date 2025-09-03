@@ -1,5 +1,8 @@
 #pragma once
 
+#define WIN32_LEAN_AND_MEAN
+#include <Windows.h>
+
 #include <stdexcept>
 #include <vector>
 
@@ -36,6 +39,20 @@ template <typename T>
 inline T *scan(const scanopts &opts) {
     return reinterpret_cast<T *>(impl::scan(opts));
 }
+
+template <typename T>
+bool patch(const scanopts &opts, T value) {
+    auto addr = scan<T>(opts);
+    if (addr) {
+        uint32_t protection;
+        if (VirtualProtect(addr, sizeof(T), PAGE_EXECUTE_READWRITE, (PDWORD)&protection)) {
+            *addr = value;
+            return VirtualProtect(addr, sizeof(T), protection, (PDWORD)&protection) &&
+                   FlushInstructionCache(GetCurrentProcess(), addr, sizeof(T));
+        }
+    }
+    return false;
+};
 
 #ifdef ER_WITH_HOOKS
 template <typename F>
