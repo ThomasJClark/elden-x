@@ -460,7 +460,16 @@ struct sp_effect_vfx_param_st {
      */
     short footDecalMaterialOffsetOverwriteId{-1};
 
-    unsigned char pad[14];
+    unsigned char pad1[2];
+
+    unsigned char unknown_0x98[2];
+
+    /**
+     * @brief Is the transformation armor ID just for the arms protectors?
+     */
+    bool isArmsTransformProtectorId : 1 {false};
+
+    unsigned char pad2[7];
 };
 
 };
